@@ -1,0 +1,4 @@
+Name,Department,Birth month
+Parker man,Accounting,July
+John Smith,IT,December
+Bill Gates, Google, May

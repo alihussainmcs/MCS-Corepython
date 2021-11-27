@@ -1,0 +1,17 @@
+seek and tell -----
+To know the position of pointer, use tell() method.
+n = f.tell()
+n - represents the byte position
+f - represents file object
+
+To move file pointer from one point to another, use seek() method.it makes two arguments
+f.seek(offset, from where)
+offset - represents how many bytes to move
+from where- represents 0, 1, 2 0-beginning
+f.seek(10, 0)
+This will move pointer to 11th byte 10+1  from beginning
+
+f.seek(-10, 2)
+This will move the pointer to 9th byte (-10+1) from ending
+2 represents ending of file
+-10 represents moving back in the file

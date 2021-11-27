@@ -1,0 +1,698 @@
+
+
+CREATE TABLE emp_details(
+name varchar(25),
+eid integer,
+designation varchar(25),
+salary integer);
+select * from emp_details;
+
+
+
+INSERT INTO emp_details values('surya', 11250, 'manager',15000);
+
+INSERT INTO emp_details VALUES('varma',11251, 'manager',15500);
+INSERT INTO emp_details VALUES('kalyan',11252,'manager',15500);
+INSERT INTO emp_details VALUES('sharma',11253,'manager',15560);
+INSERT INTO emp_details VALUES('vihan',10256,'engineer',12000);
+INSERT INTO emp_details VALUES('vikram',10258,'engineer',12500);
+INSERT INTO emp_details VALUES('vishali',10259,'hr',10000);
+
+SELECT*FROM emp_details;
+
+INSERT INTO emp_details VALUES('sreekanth',10267,'hr',10200);
+
+INSERT INTO emp_details VALUES('ishaan',10268,'supervisor',8500);
+INSERT INTO emp_details VALUES('kiran',10269,'supervisor',8000);
+SELECT * FROM emp_details;
+
+DELETE FROM emp_details WHERE eid = 10268;
+DELETE FROM emp_details WHERE name = 'kiran';
+SELECT*FROM emp_details;
+
+INSERT INTO emp_details VALUES('ishaan',10268,'supervisor',8500);
+INSERT INTO emp_details VALUES('kiran',10269,'supervisor',8000);
+SELECT * FROM emp_details;
+
+SELECT * FROM emp_details;
+
+ALTER TABLE emp_details ADD COLUMN place varchar(15);
+ALTER TABLE emp_details ADD COLUMN email varchar(25);
+ALTER TABLE emp_details ADD COLUMN benefits integer;
+ALTER TABLE emp_details ADD COLUMN bonus integer;
+
+SELECT * FROM emp_details;
+
+ALTER TABLE emp_details drop column place;
+SELECT * FROM emp_details;
+
+ALTER TABLE emp_details drop column email;
+ALTER TABLE emp_details DROP COLUMN bonus;
+ALTER TABLE emp_details DROP COLUMN benefits;
+
+
+SELECT * FROM emp_details;
+
+
+UPDATE emp_details SET salary = 10100 where name ='kiran';
+select * from emp_details;
+
+CREATE TABLE emp_details_copy as SELECT * FROM  emp_details; 
+ALTER TABLE emp_details_copy ADD COLUMN branch varchar(50);
+select * from emp_details_copy;
+DROP TABLE emp_details_copy;
+
+
+INSERT INTO emp_details values('mani',12345,'engineer',12000);
+UPDATE emp_details SET salary = 12500 WHERE name = 'mani';
+SELECT * FROM emp_details;
+DELETE FROM emp_details where name = 'mani';
+SELECT * FROM emp_details;
+ 
+SELECT name,eid,designation,salary from emp_details WHERE designation = 'hr';
+SELECT name,eid,designation from emp_details where salary < 12000;
+SELECT name,eid,designation from emp_details where salary > 12000;
+SELECT name,eid,salary from emp_details where designation = 'manager';
+SELECT name,eid,salary from emp_details where designation = 'supervisor';
+SELECT sum(salary) total_sal from emp_details;
+
+SELECT sum(salary) hr_sal from emp_details where designation = 'hr';
+SELECT sum(salary) manager_sal from emp_details where designation = 'manager';
+SELECT SUM(salary) supervisor_sal from emp_details where designation = 'supervisor';
+
+SELECT * from emp_details;
+SELECT sum(salary) engineer_sal from emp_details where designation = 'engineer';
+SELECT name,designation,salary from emp_details where name LIKE '%a%';
+SELECT name,designation,salary from emp_details where name LIKE '%r%';
+SELECT name,designation,salary from emp_details where name LIKE '_u%';
+SELECT name,designation,salary from emp_details where designation Like 'm%';
+SELECT name,designation,salary from emp_details where designation LIKE '%n%';
+
+SELECT name,designation,salary from emp_details where designation LIKE '%e__';
+SELECT name,eid,designation,salary from emp_details where designation LIKE '%e_';
+SELECT name,eid,designation,salary from emp_details where name LIKE '__l%';
+SELECT name,eid,designation,salary from emp_details where name LIKE '%h%';
+---REQUIREMENT
+---employee name start with letter s
+SELECT name, eid,designation,salary from emp_details where name LIKE 's%';
+SELect name, eid,salary from emp_details where name LIKE 'k%';
+
+--employee name start with second letter h
+SELECT name,eid,salary from emp_details where name LIKE '_h%';
+SELECT name,eid,salary from emp_details where name LIKE '_a%';
+
+--employee name start with third letter r
+SELECT name,eid,salary from emp_details where name LIKE '__r%';
+SELECT name,eid,salary from emp_details where name LIKE '__l%';
+
+---employee name start with fourth letter y
+SELECT name,eid salary from emp_details where name LIKE '___y%';
+
+---employee name start with fifth letter 
+SELECT name,eid ,salary from emp_details where name LIKE '____a%'
+
+--employee name with letter a
+SELECT name,eid,salary from emp_details where name LIKE '%a%';
+
+employee name end with letter a
+SELECT name,eid,salary from emp_details where name LIKE '%a';
+SELECT name,eid,salary from emp_details where name LIKE '%n';
+
+---employee name end with second letter a
+SELECT name,eid,salary from emp_details where name LIKE '%a_';
+SELECT name,eid,salary from emp_details where name LIKE '%m_';
+
+---(Using underscore(_)).It represents single character
+Requirement:-
+--display employee details and employee name third character from last should be
+letter "r".
+SELECT name,eid,salary from emp_details where name LIKE '%r__';
+
+--display employee details and employee name 4rth  character from last should be
+letter "a".
+SELECT name,eid,salary from emp_details where name LIKE '%a___';
+
+-----------------
+--Structure of SQL Query--
+-----------------
+SELECT
+FROM
+WHERE
+GROUP BY
+HAVING 
+ORDER BY
+
+CASE Statement:-
+---------------
+--Syntax:-
+
+SELECT
+CASE 
+ WHEN column_name1 = name THEN
+ val1
+ WHEN column_name1 = eid THEN
+ Val2
+ ELSE
+ Val3
+END column_n
+
+SELECT
+CASE
+WHEN salary >= 12000 THEN
+salary + 1500
+ELSE
+salary + 100
+END column_n, name
+FROM emp_details;
+
+
+SELECT
+CASE
+WHEN salary = 15000 THEN
+salary + 5000
+WHEN salary <15000 THEN
+salary +10000
+WHEN salary = 12000 THEN
+salary - 5000
+WHEN salary < 10000 THEN
+salary - 8000
+ELSE
+salary + 30000
+END salaryinc,name,designation
+FROM
+emp_details;
+
+
+
+SELECT
+CASE
+WHEN salary < 10000 THEN
+salary - 1000
+WHEN salary > 12000 THEN
+salary - 5000
+ELSE 
+salary + 50000
+END
+INCsal,name,eid,designation
+FROM 
+emp_details;
+
+
+SELECT
+CASE
+WHEN designation = 'engineer' THEN
+'engineer'||'is'||'srengineer'
+WHEN designation = 'manager' THEN
+'manager'||'is'||'srmanager'||'whose is having salary '||salary
+
+ELSE
+designation 
+END newdesignation,name,eid
+FROM
+emp_details;
+
+ 
+ select
+ CASE 
+ WHEN designation='manager' then
+ name||' is '||name
+ WHEN designation='engineer' then
+ name||' is '||name||'  whose is having salary '||salary
+
+ END employee_name
+ FROM emp_details;
+ 
+ 
+ SELECT
+ CASE
+ WHEN name = 'sharma' THEN
+ designation||'is'||designation||'salary is 15000'||salary+2000
+ WHEN designation = 'manager' THEN
+ 'manager'||'is'||'sr.manager'||'salary is '||salary+15000
+ 
+ END salaryhike,name,eid,salary
+ FROM emp_details;
+ 
+
+---ALIAS
+
+ --Syntax
+ SELECT column_name AS alias_name
+FROM table_name;
+--AS keyword is optional
+SELECT column_name alias_name
+FROM table_name;
+
+SELECT
+name empname,
+eid empidno,
+salary sal,
+designation job
+FROM
+emp_details;
+
+
+SELECT * FROM emp_details;
+
+
+SELECT
+salary salary_hike,
+name employee_name
+FROM
+emp_details;
+
+SELECT 
+name employe_name,
+salary salary_upadte,
+eid EMPLOYEE_ID,
+designation job
+FROM
+emp_details;
+
+SELECT*FROM student;
+
+SELECT
+name student_name,
+id student_id,
+mobile student_mobile,
+marks marks_secured
+FROM
+student;
+
+---TABLE alias name
+
+SELECT
+s.name student_name,
+s.id student_id,
+s.mobile student_mobile,
+marks student_secured
+FROM
+student s;
+
+SELECT 
+e.name employee_name,
+e.eid employee_id,
+e.salary employee_salary,
+e.designation employee_job
+from
+emp_details e;
+
+SELECT
+e.name,
+s.name,
+e.salary,
+s.marks
+FROM
+student s, 
+emp_details e
+where
+e.name = s.name;
+
+
+SELECT
+e.name,
+e.salary,
+e.designation,
+e.eid,
+s.name,
+s.marks,
+s.mobile,
+s.id
+FROM
+emp_details e,
+student s;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CREATE TABLE emp_details(
+name varchar(25),
+eid integer,
+designation varchar(25),
+salary integer);
+select * from emp_details;
+
+INSERT INTO emp_details values('surya', 11250, 'manager',15000);
+
+INSERT INTO emp_details VALUES('varma',11251, 'manager',15500);
+INSERT INTO emp_details VALUES('kalyan',11252,'manager',15500);
+INSERT INTO emp_details VALUES('sharma',11253,'manager',15560);
+INSERT INTO emp_details VALUES('vihan',10256,'engineer',12000);
+INSERT INTO emp_details VALUES('vikram',10258,'engineer',12500);
+INSERT INTO emp_details VALUES('vishali',10259,'hr',10000);
+
+SELECT*FROM emp_details;
+
+INSERT INTO emp_details VALUES('sreekanth',10267,'hr',10200);
+
+INSERT INTO emp_details VALUES('ishaan',10268,'supervisor',8500);
+INSERT INTO emp_details VALUES('kiran',10269,'supervisor',8000);
+SELECT * FROM emp_details;
+
+DELETE FROM emp_details WHERE eid = 10268;
+DELETE FROM emp_details WHERE name = 'kiran';
+SELECT*FROM emp_details;
+
+INSERT INTO emp_details VALUES('ishaan',10268,'supervisor',8500);
+INSERT INTO emp_details VALUES('kiran',10269,'supervisor',8000);
+SELECT * FROM emp_details;
+
+SELECT * FROM emp_details;
+
+ALTER TABLE emp_details ADD COLUMN place varchar(15);
+ALTER TABLE emp_details ADD COLUMN email varchar(25);
+ALTER TABLE emp_details ADD COLUMN benefits integer;
+ALTER TABLE emp_details ADD COLUMN bonus integer;
+
+SELECT * FROM emp_details;
+
+ALTER TABLE emp_details drop column place;
+SELECT * FROM emp_details;
+
+ALTER TABLE emp_details drop column email;
+ALTER TABLE emp_details DROP COLUMN bonus;
+ALTER TABLE emp_details DROP COLUMN benefits;
+
+
+SELECT * FROM emp_details;
+
+
+UPDATE emp_details SET salary = 10100 where name ='kiran';
+select * from emp_details;
+
+CREATE TABLE emp_details_copy as SELECT * FROM  emp_details; 
+ALTER TABLE emp_details_copy ADD COLUMN branch varchar(50);
+select * from emp_details_copy;
+DROP TABLE emp_details_copy;
+
+
+INSERT INTO emp_details values('mani',12345,'engineer',12000);
+UPDATE emp_details SET salary = 12500 WHERE name = 'mani';
+SELECT * FROM emp_details;
+DELETE FROM emp_details where name = 'mani';
+SELECT * FROM emp_details;
+ 
+SELECT name,eid,designation,salary from emp_details WHERE designation = 'hr';
+SELECT name,eid,designation from emp_details where salary < 12000;
+SELECT name,eid,designation from emp_details where salary > 12000;
+SELECT name,eid,salary from emp_details where designation = 'manager';
+SELECT name,eid,salary from emp_details where designation = 'supervisor';
+SELECT sum(salary) total_sal from emp_details;
+
+SELECT sum(salary) hr_sal from emp_details where designation = 'hr';
+SELECT sum(salary) manager_sal from emp_details where designation = 'manager';
+SELECT SUM(salary) supervisor_sal from emp_details where designation = 'supervisor';
+
+SELECT * from emp_details;
+SELECT sum(salary) engineer_sal from emp_details where designation = 'engineer';
+SELECT name,designation,salary from emp_details where name LIKE '%a%';
+SELECT name,designation,salary from emp_details where name LIKE '%r%';
+SELECT name,designation,salary from emp_details where name LIKE '_u%';
+SELECT name,designation,salary from emp_details where designation Like 'm%';
+SELECT name,designation,salary from emp_details where designation LIKE '%n%';
+
+SELECT name,designation,salary from emp_details where designation LIKE '%e__';
+SELECT name,eid,designation,salary from emp_details where designation LIKE '%e_';
+SELECT name,eid,designation,salary from emp_details where name LIKE '__l%';
+SELECT name,eid,designation,salary from emp_details where name LIKE '%h%';
+---REQUIREMENT
+---employee name start with letter s
+SELECT name, eid,designation,salary from emp_details where name LIKE 's%';
+SELect name, eid,salary from emp_details where name LIKE 'k%';
+
+--employee name start with second letter h
+SELECT name,eid,salary from emp_details where name LIKE '_h%';
+SELECT name,eid,salary from emp_details where name LIKE '_a%';
+
+--employee name start with third letter r
+SELECT name,eid,salary from emp_details where name LIKE '__r%';
+SELECT name,eid,salary from emp_details where name LIKE '__l%';
+
+---employee name start with fourth letter y
+SELECT name,eid salary from emp_details where name LIKE '___y%';
+
+---employee name start with fifth letter 
+SELECT name,eid ,salary from emp_details where name LIKE '____a%'
+
+--employee name with letter a
+SELECT name,eid,salary from emp_details where name LIKE '%a%';
+
+employee name end with letter a
+SELECT name,eid,salary from emp_details where name LIKE '%a';
+SELECT name,eid,salary from emp_details where name LIKE '%n';
+
+---employee name end with second letter a
+SELECT name,eid,salary from emp_details where name LIKE '%a_';
+SELECT name,eid,salary from emp_details where name LIKE '%m_';
+
+---(Using underscore(_)).It represents single character
+Requirement:-
+--display employee details and employee name third character from last should be
+letter "r".
+SELECT name,eid,salary from emp_details where name LIKE '%r__';
+
+--display employee details and employee name 4rth  character from last should be
+letter "a".
+SELECT name,eid,salary from emp_details where name LIKE '%a___';
+
+-----------------
+--Structure of SQL Query--
+-----------------
+SELECT
+FROM
+WHERE
+GROUP BY
+HAVING 
+ORDER BY
+
+CASE Statement:-
+---------------
+--Syntax:-
+
+SELECT
+CASE 
+ WHEN column_name1 = name THEN
+ val1
+ WHEN column_name1 = eid THEN
+ Val2
+ ELSE
+ Val3
+END column_n
+
+SELECT
+CASE
+WHEN salary >= 12000 THEN
+salary + 1500
+ELSE
+salary + 100
+END column_n, name
+FROM emp_details;
+
+
+SELECT
+CASE
+WHEN salary = 15000 THEN
+salary + 5000
+WHEN salary <15000 THEN
+salary +10000
+WHEN salary = 12000 THEN
+salary - 5000
+WHEN salary < 10000 THEN
+salary - 8000
+ELSE
+salary + 30000
+END salaryinc,name,designation
+FROM
+emp_details;
+
+
+
+SELECT
+CASE
+WHEN salary < 10000 THEN
+salary - 1000
+WHEN salary > 12000 THEN
+salary - 5000
+ELSE 
+salary + 50000
+END
+INCsal,name,eid,designation
+FROM 
+emp_details;
+
+
+SELECT
+CASE
+WHEN designation = 'engineer' THEN
+'engineer'||'is'||'srengineer'
+WHEN designation = 'manager' THEN
+'manager'||'is'||'srmanager'||'whose is having salary '||salary
+
+ELSE
+designation 
+END newdesignation,name,eid
+FROM
+emp_details;
+
+ 
+ select
+ CASE 
+ WHEN designation='manager' then
+ name||' is '||name
+ WHEN designation='engineer' then
+ name||' is '||name||'  whose is having salary '||salary
+
+ END employee_name
+ FROM emp_details;
+ 
+ 
+ SELECT
+ CASE
+ WHEN name = 'sharma' THEN
+ designation||'is'||designation||'salary is 15000'||salary+2000
+ WHEN designation = 'manager' THEN
+ 'manager'||'is'||'sr.manager'||'salary is '||salary+15000
+ 
+ END salaryhike,name,eid,salary
+ FROM emp_details;
+ 
+
+---ALIAS
+
+ --Syntax
+ SELECT column_name AS alias_name
+FROM table_name;
+--AS keyword is optional
+SELECT column_name alias_name
+FROM table_name;
+
+SELECT
+name empname,
+eid empidno,
+salary sal,
+designation job
+FROM
+emp_details;
+
+
+SELECT * FROM emp_details;
+
+
+SELECT
+salary salary_hike,
+name employee_name
+FROM
+emp_details;
+
+SELECT 
+name employe_name,
+salary salary_upadte,
+eid EMPLOYEE_ID,
+designation job
+FROM
+emp_details;
+
+SELECT*FROM student;
+
+SELECT
+name student_name,
+id student_id,
+mobile student_mobile,
+marks marks_secured
+FROM
+student;
+
+---TABLE alias name
+
+SELECT
+s.name student_name,
+s.id student_id,
+s.mobile student_mobile,
+marks student_secured
+FROM
+student s;
+
+SELECT 
+e.name employee_name,
+e.eid employee_id,
+e.salary employee_salary,
+e.designation employee_job
+from
+emp_details e;
+
+SELECT
+e.name,
+s.name,
+e.salary,
+s.marks
+FROM
+student s, 
+emp_details e
+where
+e.name = s.name;
+
+
+SELECT
+e.name,
+e.salary,
+e.designation,
+e.eid,
+s.name,
+s.marks,
+s.mobile,
+s.id
+FROM
+emp_details e,
+student s;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

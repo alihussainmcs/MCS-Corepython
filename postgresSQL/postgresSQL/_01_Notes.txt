@@ -1,0 +1,133 @@
+Database:
+A database is an organized collection of structured information, or data, stored
+in our local system.Together, the data and the DBMS, along with the applications that are associated with them,
+are referred to as a database system, often shortened to just database.
+
+DBMS:
+
+Database Management Systems (DBMS) are used to store, retrieve, and run queries on data.
+A DBMS serves as an interface between an end-user and a database, allowing users to create, read, update,
+and delete data in the database.
+
+DBMS manage the data, the database engine, and the database schema, allowing for data to be manipulated
+or extracted by users and other programs. This helps provide data security, data integrity, concurrency,
+and uniform data administration procedures.
+
+
+what is progresSQL ?
+
+It is a highly stable database management system, backed by more than 20 years of community development
+which has contributed to its high levels of resilience, integrity, and correctness. PostgreSQL is used as
+the primary data store or data warehouse for many web, mobile, geospatial, and analytics applications.
+
+What is difference between SQL and PostgreSQL?
+
+SQL server is a database management system which is mainly used for e-commerce and providing different data
+warehousing solutions.
+PostgreSQL is an advanced version of SQL which provides support to different functions of SQL like
+foreign keys, sub queries, triggers, and different user-defined types and functions.
+
+What is OLAP?
+
+Online Analytical Processing, a category of software tools which provide analysis of data for business decisions.
+OLAP systems allow users to analyze database information from multiple database systems at one time.
+The primary objective is data analysis and not data processing.
+
+What is OLTP?
+
+Online transaction processing shortly known as OLTP supports transaction-oriented applications in a 3-tier
+architecture. OLTP administers day to day transaction of an organization.
+
+
+Application developer tools: sql-dev, oracle designer, oracle developer, sqlplus, pl/sql. postgresql
+
+Data types:
+
+1.Numeric: int, float, decimal, number
+2.cheracter/string: char, varchar, varchar(2),
+  char - predefined length upto 2000 bytes
+  varchar-
+  varchar(2) - upto 4000 bytes
+
+
+Types of languages in sql/ postgresql
+
+1.DDl - Data Defination Language
+  create: create table <name> (name varchar(30), age integer)
+  alter: alter table  which makes add or delete columns
+  drop : removes the entire table from data base
+
+2.DML - Data manupulation Language
+  insert: to insert data into row wise row wise
+  update: to update the data in table of specific item
+  delete : to delete the data in table of speccific item or entire row data.
+
+3.DRL: Data Retrieval language
+  select : using select * from table retrieves the data
+4.TCL: Transaction control
+  roll back: which makes you return the changes done
+  commit: It makes the changes done in table saved and not able rollback
+  save : It makes save the changes done and you can roll back or commit here.
+
+
+
+
+CREATE TABLE student1(
+student1_name varchar(25),
+student1_id varchar(25),
+student1_mobile varchar(25),
+student1_marks integer,
+student1_fathername varchar(25),
+student1_place varchar(25)
+);
+INSERT INTO student1 VALUES('mahindra','124g1a0131','9652265878',450,'ramu','anantapur');
+INSERT INTO student1 VALUES('kishore','124g1a0132','7965326415',562, 'shyam','anantapur');
+SELECT * FROM student1;
+
+INSERT INTO student1 VALUES('kishore','124g1a0132','9658456465',632,'hari','anantapur');
+INSERT INTO student1 VALUES('krishna','124g1a0133','7896541231',785,'varma','anantapur');
+INSERT INTO student1 VALUES('vinay','124g1a0134','9656878456',564,'kiran','anantapur');
+SELECT * FROM student1;
+
+DELETE FROM student1 WHERE student1_marks = 632;
+DELETE FROM student1 WHERE student1_name = 'krishna';
+DELETE FROM student1 WHERE student1_fathername = 'kiran';
+SELECT * FROM student1;
+
+DROP TABLE student1;
+SELECT * FROM student1;
+
+ALTER TABLE student1 ADD COLUMN student1_email  varchar(50);
+select student1_email from student1;
+
+
+UPDATE student1 SET student1_email='mahi@gmail.com' WHERE student1_name = 'mahindra';
+select * from student1;
+UPDATE student1 SET student1_email = 'ki1234@gmail.com' WHERE student1_name='kishore';
+UPDATE student1 SET student1_email = 'krishnam@gmail.com' WHERE student1_id = '124g1a0133';
+UPDATE student1 SET student1_email = 'vinay456@gmail.com' WHERE student1_marks = 564;
+select student1_email FROM student1;
+
+
+CREATE TABLE student1_copy AS SELECT * FROM student1 WHERE 1 = 1;
+SELECT * from student1_copy;
+
+
+DROP TABLE student1_copy;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,2 @@
+This is the sentence I am Writing to show the example of the seek() method working in Python.
+The line no. 2 for showing the second method of writing the seek() method is python
