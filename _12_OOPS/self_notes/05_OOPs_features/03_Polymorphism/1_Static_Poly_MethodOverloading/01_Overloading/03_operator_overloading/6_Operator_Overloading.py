@@ -74,7 +74,7 @@ print("Adding both objects ", ali + mani)  # ali.__add__(mani)
 
 https://www.programiz.com/python-programming/operator-overloading
 Python operators work for built-in classes. 
-But same operator behaves differently with different types. For example, the + operator will, 
+But same operator behaves differently with different types. For example_1, the + operator will, 
 perform arithmetic addition on two numbers, merge two lists and concatenate two strings.
 Addition
 p1 + p2

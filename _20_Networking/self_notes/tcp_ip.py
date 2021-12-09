@@ -109,7 +109,7 @@ This layer allows the user to interact with the application.
 When one application layer protocol wants to communicate with another application layer, it forwards its data to the
     transport layer.
 There is an ambiguity occurs in the application layer. Every application cannot be placed inside the application layer
-      except those who interact with the communication system. For example: text editor cannot be considered in
+      except those who interact with the communication system. For example_1: text editor cannot be considered in
       application layer while web browser using HTTP protocol to interact with the network where HTTP protocol is an
       application layer protocol.
 Following are the main protocols used in the application layer:

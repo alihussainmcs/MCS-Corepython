@@ -11,7 +11,6 @@ Python Datetime module supplies classes to work with date and time. These classe
 The DateTime module is categorized into 6 main classes –
 
 
-
 date – An idealized naive date, assuming the current Gregorian calendar always was, and always will be, in effect. Its
         attributes are year, month and day.
 
@@ -37,7 +36,7 @@ Constructor syntax:
 class datetime.date(year, month, day)
 The arguments must be in the following range –
 
-MINYEAR <= year <= MAXYEAR
+MIN YEAR <= year <= MAX YEAR
 1 <= month <= 12
 1 <= day <= number of days in the given month and year
 Note – If the argument is not an integer it will raise a TypeError and if it is outside the range a ValueError will be
@@ -131,7 +130,9 @@ print("------------------------------------------------------------------------"
 
 """
 List of Date class Methods
+
 Function Name 	    Description
+
 ctime()	            Return a string representing the date
 fromisocalendar()	Returns a date corresponding to the ISO calendar
 fromisoformat()   	Returns a date object from the string representation of the date
@@ -504,15 +505,15 @@ serves the date-time conversion functionalities and helps users serving internat
 from datetime import datetime
 from pytz import timezone
 
-format = "%Y-%m-%d %H:%M:%S %Z%z"
+format_1 = "%Y-%m-%d %H:%M:%S %Z%z"
 
 # Current time in UTC
 now_utc = datetime.now(timezone('UTC'))
-print(now_utc.strftime(format))
+print(now_utc.strftime(format_1))
 
 timezones = ['Asia/Kolkata', 'Europe/Kiev', 'America/New_York']
 
 for tzone in timezones:
     # Convert to Asia/Kolkata time zone
     now_asia = now_utc.astimezone(timezone(tzone))
-    print(now_asia.strftime(format))
+    print(now_asia.strftime(format_1))

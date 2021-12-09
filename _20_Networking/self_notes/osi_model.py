@@ -3,7 +3,7 @@ The OSI model:
 No network book is complete without first going over the Open System Interconnection (OSI) model.
 The model is a conceptional model that componentizes the telecommunication functions into different layers. The model
 defines seven layers, and each layer sits independently on top of another one, as long as they follow defined
-structures and characteristics. For example, in the network layer, IP, can sit on top of the different types of data
+structures and characteristics. For example_1, in the network layer, IP, can sit on top of the different types of data
 link layers, such as Ethernet or frame relay. The OSI reference model is a good way to normalize different and
 diverse technologies into a set of common language that people can agree on. This greatly reduces the scope for
 parties working on individual layers and allows them to look at specific tasks in depth without worrying too much

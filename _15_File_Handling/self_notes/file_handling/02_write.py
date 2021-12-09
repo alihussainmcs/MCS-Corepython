@@ -53,7 +53,7 @@ understanding of data structures along with their applications.
 Almost all problems require the candidate to demonstrate a deep understanding of data structures. It doesn’t matter 
 whether you have just graduated (from a university or coding bootcamp), or you have decades of experience.
 
-Sometimes interview questions explicitly mention a data structure, for example, “given a binary tree.” Other times 
+Sometimes interview questions explicitly mention a data structure, for example_1, “given a binary tree.” Other times 
 it’s implicit, like “we want to track the number of books associated with each author.”
 
 Learning data structures is essential even if you’re just trying to get better at your current job. Let’s start with 

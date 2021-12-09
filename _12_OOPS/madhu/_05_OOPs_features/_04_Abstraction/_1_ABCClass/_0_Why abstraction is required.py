@@ -12,7 +12,7 @@ Sub class   : Specific behavior wrt sub class
 
 # SC 1 :When few methods are same for all sub classes,
         few are unique for each sub class #1
-#1 .Below is the perfect example of using inheritance
+#1 .Below is the perfect example_1 of using inheritance
                            Animal
                               eating()
                   Cat      Dog     Tiger      Lion
@@ -27,7 +27,7 @@ Sub class   : Specific behavior wrt sub class
 
 #3. Methods ==> ****  This is wrong apporach ****
 Only in Sub classes : Code duplication.
-For example one method is common for all classes,then code duplication will happen
+For example_1 one method is common for all classes,then code duplication will happen
 
                   Cat        Dog         Tiger      Lion
                     c1()       d1()       t1()        l1()

@@ -33,14 +33,14 @@ print(names2)
 
 print("-----------------------------------------------------------------------------------------------")
 
-# The following example uses a list comprehension to build a list of squares of the numbers between 1 and 10.
+# The following example_1 uses a list comprehension to build a list of squares of the numbers between 1 and 10.
 
 # Example: List Comprehension
 squares = [x * x for x in range(11)]
 print(squares)
 
 print("-----------------------------------------------------------------------------------------------")
-# It is possible to use nested loops in a list comprehension expression. In the following example, all combinations of
+# It is possible to use nested loops in a list comprehension expression. In the following example_1, all combinations of
 #              items from two lists in the form of a tuple are added in a third list object.
 
 # Example: List Comprehension
@@ -51,7 +51,7 @@ print(nums)
 
 print("-------------------------------------------------------------------------------------------------")
 
-# The following example demonstrates the if..else loop with a list comprehension.
+# The following example_1 demonstrates the if..else loop with a list comprehension.
 
 # Example: List Comprehension
 

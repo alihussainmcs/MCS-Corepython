@@ -76,8 +76,8 @@ member methods : Methods (Instance Methods,Class Methods,Static Methods)
 Class  ===> Logical  -- DATA    Physical -- METHODS
 Object ===> Physical -- DATA    Logical  -- METHODS (Through method access)
 
-Ex : class is an example for encapsulation
-     object is also an example
+Ex : class is an example_1 for encapsulation
+     object is also an example_1
 
 
 0_sir_notes = Employee1(100,"MadhuN",15000)

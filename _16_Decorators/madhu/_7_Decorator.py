@@ -22,8 +22,8 @@ def sub(a, b):
 # add(1, 3)
 # sub(1, 3)
 '''
-Step 1 : First class function : my_decorator function will be called and executed by receviing our method name as argument.  
-Step 2 : Nested function      : In my_decorator function,nested will be there which will receive our method arguments.
+Step 1: First class function:my_decorator function will be called and executed by receiving our method name as argument.  
+Step 2: Nested function      : In my_decorator function,nested will be there which will receive our method arguments.
 Step 3:  Returnging function  : wrapper function(i.e. nested function)  name will be returnred
 
 wrapper(a,b)

@@ -248,7 +248,7 @@ group.sort()
 
 for d in group:
     print(d)
-print("example 2")
+print("example_1 2")
 list = []
 list.append(date.today())
 d = date(2012, 6, 6)

@@ -26,13 +26,13 @@ print("The number of times alphabet o repeated is:", str1.find('o', 2, 16))
 
 print("The number of times alphabet O repeated is:", str1.find('O', 2, 16))
 
-# Here in the above example the output is -1 because capital O is given it is case sensitive
+# Here in the above example_1 the output is -1 because capital O is given it is case sensitive
 
 str1 = "python is a good language"
 
 print('The index value of good is:', str1.find('good'))
 
-# Here in the above example the output is 12 because g index is 12 so it will show the starting letter index in output
+# Here in the above example_1 the output is 12 because g index is 12 so it will show the starting letter index in output
 
 print("The python present in the string or not:", "python" in str1)
 

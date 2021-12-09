@@ -14,7 +14,7 @@ How to Create Generator function in Python?
 
 It is quite simple to create a generator in Python. It is similar to the normal function defined by the
 def keyword and uses a yield keyword instead of return. Or we can say that if the body of any function contains a
-yield statement, it automatically becomes a generator function. Consider the following example:
+yield statement, it automatically becomes a generator function. Consider the following example_1:
 """
 
 
@@ -40,7 +40,7 @@ the function.
 
 Using multiple yield Statement
 
-We can use the multiple yield statement in the generator function. Consider the following example.
+We can use the multiple yield statement in the generator function. Consider the following example_1.
 """
 print("--------------------------------------------------------------------------------------------------")
 
@@ -97,7 +97,7 @@ print("-------------------------------------------------------------------------
 In the above program, list comprehension has returned the list of cube of elements whereas generator expression 
 has returned the reference of calculated value. Instead of applying a for loop, we can also call next() on the 
 generator object. 
-Let's consider another example: 
+Let's consider another example_1: 
 """
 
 list_2 = [1, 2, 3, 4, 5, 6]
@@ -138,7 +138,7 @@ __next__() function.
 2. Memory efficient Generators are memory efficient for a large number of sequences. The normal function returns a 
 sequence of the list which creates an entire sequence in memory before returning the result, but the generator 
 function calculates the value and pause their execution. It resumes for successive call. An infinite sequence 
-generator is a great example of memory optimization. Let's discuss it in the below example by using 
+generator is a great example_1 of memory optimization. Let's discuss it in the below example_1 by using 
 sys.getsizeof() function. 
 
 """
@@ -167,7 +167,7 @@ scenario, the generator can generate a pipeline with a series of operations. Bel
 4. Generate Infinite Sequence
 
 The generator can produce infinite items. Infinite sequences cannot be contained within the memory and since generators 
-produce only one item at a time, consider the following example:
+produce only one item at a time, consider the following example_1:
 """
 print("------------------------------------------------------------------------------------")
 

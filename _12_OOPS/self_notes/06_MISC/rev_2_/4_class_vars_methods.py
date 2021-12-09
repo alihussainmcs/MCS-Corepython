@@ -13,7 +13,7 @@ class University:
 clg1 = University("RGPV", 4620, "MP")
 clg1.uni()
 
-print(".....................2nd example of class ...................")
+print(".....................2nd example_1 of class ...................")
 
 
 class Mask:

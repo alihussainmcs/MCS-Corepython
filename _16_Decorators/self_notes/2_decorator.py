@@ -124,7 +124,7 @@ print("Sum =", sum_two_numbers(a, b))
 print("-----------------------------------------------------------------------------------")
 
 """
-In the above example, you may notice a keen difference in the parameters of the inner function. The inner function takes
+In the above example_1, you may notice a keen difference in the parameters of the inner function. The inner function takes
 the argument as *args and **kwargs which means that a tuple of positional arguments or a dictionary of keyword arguments
 can be passed of any length. This makes it a general decorator that can decorate a function having any number of 
 arguments.
@@ -161,4 +161,4 @@ def num():
 
 print(num())
 
-# The above example is similar to calling the function as     --–>     decor1(decor(num))
+# The above example_1 is similar to calling the function as     --–>     decor1(decor(num))

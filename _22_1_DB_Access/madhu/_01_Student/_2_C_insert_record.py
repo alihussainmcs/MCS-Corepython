@@ -9,7 +9,7 @@ try:
     #Step1 : Get connection
     conn = psycopg2.connect(database="postgres",
                             user="postgres",
-                            password="vn2",
+                            password="12345",
                             host="localhost",
                             port="5432")
     #Step2 : Get cursor on db connection
@@ -21,9 +21,9 @@ try:
         cursor.execute(query, record)
     '''
     #Step3 : Prepare sql query
-    rec1 = "INSERT INTO STUDENT VALUES(101, 'MADHU', 'ABC')"
-    rec2 = "insert into student values(102, 'Prakash', 'AREM')"
-    rec3 = "insert into STUDENT values(103, 'Kiran', 'VN2')"
+    rec1 = "INSERT INTO STUDENT_1 VALUES(101, 'MADHU', 'ABC')"
+    rec2 = "insert into student_1 values(102, 'Prakash', 'AREM')"
+    rec3 = "insert into STUDENT_1 values(103, 'Kiran', 'VN2')"
     # Step4 : Execute sql query
     cursor.execute(rec1)
     cursor.execute(rec2)

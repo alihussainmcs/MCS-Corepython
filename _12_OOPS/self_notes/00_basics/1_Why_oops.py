@@ -113,7 +113,7 @@ class Employee:
 ali = Employee(101, 'Al Hussain', 15000)  # x = 10
 ali.get_einfo()
 
-print(".....................2nd example of class ...................")
+print(".....................2nd example_1 of class ...................")
 
 
 class Student:
@@ -131,7 +131,7 @@ class Student:
 
 ali = Student(16, 'Jokar', 65)
 ali.get_sinfo()
-print(".....................3rd example of class ...................")
+print(".....................3rd example_1 of class ...................")
 
 
 class Univercity:
@@ -148,7 +148,7 @@ class Univercity:
 
 clg1 = Univercity("RGPV", 4620, "MP")
 clg1.uni()
-print(".....................4th example of class ...................")
+print(".....................4th example_1 of class ...................")
 
 
 class Mask:

@@ -19,7 +19,7 @@ are lambdas. This is also the case in Python. Thus, we won't go into this distin
 What is the syntax of a lambda function (or lambda operator)?
 lambda arguments: expression
 Think of lambdas as one-line methods without a name. They work practically the same as any other method in Python,
-for example:
+for example_1:
 """
 
 print(".................lambda...............")
@@ -73,7 +73,7 @@ map_object = map(starts_with_A, fruit)
 
 print(list(map_object))
 
-print("............2nd example map..............")
+print("............2nd example_1 map..............")
 
 
 # Python program to demonstrate working
@@ -96,14 +96,14 @@ result = map(lambda x: x + x, numbers)
 print(list(result))
 
 # Add two lists using map and lambda
-print("............3rd example map..............")
+print("............3rd example_1 map..............")
 
 numbers1 = [1, 2, 3]
 numbers2 = [4, 5, 6]
 
 result = map(lambda x, y: x + y, numbers1, numbers2)
 print(list(result))
-print("............4th example map..............")
+print("............4th example_1 map..............")
 
 # List of strings
 lst = ['sat', 'bat', 'cat', 'mat']
@@ -163,7 +163,7 @@ As the name suggests, filter() forms a new list that contains only elements that
 The syntax is:
 
 filter(function, iterable(s))
-Using the previous example, we can see that the new list will only contain elements for which the starts_with_A() 
+Using the previous example_1, we can see that the new list will only contain elements for which the starts_with_A() 
 function returns True:
 """
 
@@ -192,7 +192,7 @@ filter_object = filter(lambda s: s[0] == "A", fruit)
 
 print(list(filter_object))
 
-print("..........2nd example......................")
+print("..........2nd example_1......................")
 
 # a list contains both even and odd numbers.
 seq = [0, 1, 2, 3, 5, 8, 13]
@@ -205,7 +205,7 @@ print(list(result))
 result = filter(lambda x: x % 2 == 0, seq)
 print(list(result))
 
-print("..............3rd example........................")
+print("..............3rd example_1........................")
 # random list
 random_list = [1, 'a', 0, False, True, '0']
 
@@ -235,7 +235,7 @@ This process repeats until we've gone through all the elements in the sequence.
 The optional argument initial is used, when present, at the beginning of this "loop" with the first element in the 
 first call to function. In a way, the initial element is the 0th element, before the first one, when provided.
 
-reduce() is a bit harder to understand than map() and filter(), so let's look at a step by step example:
+reduce() is a bit harder to understand than map() and filter(), so let's look at a step by step example_1:
 
 We start with a list [2, 4, 7, 3] and pass the add(x, y) function to reduce() alongside this list, without an initial 
 value
@@ -285,7 +285,7 @@ And the code would result in:
 With an initial value: 26
 """
 
-print(".............3rd example...........")
+print(".............3rd example_1...........")
 
 # python code to demonstrate working of reduce()
 

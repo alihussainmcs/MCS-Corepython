@@ -1,5 +1,5 @@
 """
-Multiple generators can be used to pipeline a series of operations. This is best illustrated using an example.
+Multiple generators can be used to pipeline a series of operations. This is best illustrated using an example_1.
 
 Suppose we have a generator that produces the numbers in the Fibonacci series. And we have another generator for
 squaring numbers.

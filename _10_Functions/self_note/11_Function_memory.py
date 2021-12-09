@@ -32,7 +32,7 @@ To begin with, your interview preparations Enhance your Data Structures concepts
 And to begin with your Machine Learning Journey, join the Machine Learning - Basic Level Course
 
 The paradigms of “Pass by value”, “Pass by Reference” and “Pass by object Reference” can be understood by 
-exploring the below example functions.
+exploring the below example_1 functions.
 Look into the two functions defined below:
 """
 
@@ -165,8 +165,8 @@ Objects in Python
 In Python, everything is treated as an object. Every object has these three attributes:
 
 Identity – This refers to the address that the object refers to in the computer’s memory.
-Type – This refers to the kind of object that is created. For example- integer, list, string etc. 
-Value – This refers to the value stored by the object. For example – List=[1,2,3] would hold the numbers 1,2 and 3
+Type – This refers to the kind of object that is created. For example_1- integer, list, string etc. 
+Value – This refers to the value stored by the object. For example_1 – List=[1,2,3] would hold the numbers 1,2 and 3
 While ID and Type cannot be changed once it’s created, values can be changed for Mutable objects.
 
 Mutable Objects in Python
@@ -202,7 +202,7 @@ Output [3]: Delhi, Mumbai, Kolkata, Chennai
 print(hex(id(cities)))
 
 Output [4]: 0x1691d7de8c8
-The above example shows us that we were able to change the internal state of the object ‘cities’ by adding one 
+The above example_1 shows us that we were able to change the internal state of the object ‘cities’ by adding one 
 more city ‘Chennai’ to it, yet, the memory address of the object did not change. This confirms that we did not 
 create a new object, rather, the same object was changed or mutated. Hence, we can say that the object which is a
  type of list with reference variable name ‘cities’ is a MUTABLE OBJECT.
@@ -256,7 +256,7 @@ print(hex(id(weekdays)))
 
 Output [4]: 0x1691cc8ad68
 
-This above example shows that we were able to use the same variable name that is referencing an object which is a 
+This above example_1 shows that we were able to use the same variable name that is referencing an object which is a 
 type of tuple with seven elements in it. However, the ID or the memory location of the old & new tuple is not the 
 same. We were not able to change the internal state of the object ‘weekdays’. The Python program manager created a 
 new object in the memory address and the variable name ‘weekdays’ started referencing the new object with eight
@@ -267,14 +267,14 @@ Also Read: Understanding the Exploratory Data Analysis (EDA) in Python
 
 Where can you use mutable and immutable objects:
 
-Mutable objects can be used where you want to allow for any updates. For example, you have a list of employee names
+Mutable objects can be used where you want to allow for any updates. For example_1, you have a list of employee names
  in your organizations, and that needs to be updated every time a new member is hired. You can create a mutable list,
   and it can be updated easily.
 
 Immutability offers a lot of useful applications to different sensitive tasks we do in a network centred environment 
 where we allow for parallel processing. By creating immutable objects, you seal the values and ensure that no threads
  can invoke overwrite/update to your data. This is also useful in situations where you would like to write a piece of
-  code that cannot be modified. For example, a debug code that attempts to find the value of an immutable object.
+  code that cannot be modified. For example_1, a debug code that attempts to find the value of an immutable object.
 
 Watch outs:  Non transitive nature of Immutability:
 
@@ -393,7 +393,7 @@ select an element from a tuple just like in a string. Hence, they are immutable.
 
 Exceptions in immutability
 Like all, there are exceptions in the immutability in python too. Not all immutable objects are really mutable. 
-This will lead to a lot of doubts in your mind. Let us just take an example to understand this.
+This will lead to a lot of doubts in your mind. Let us just take an example_1 to understand this.
 
 Consider a tuple ‘tup’.
 
@@ -453,7 +453,7 @@ Copy an Object in Python
 In Python, we use = operator to create a copy of an object. You may think that this creates a new object; 
 it doesn't. It only creates a new variable that shares the reference of the original object.
 
-Let's take an example where we create a list named old_list and pass an object reference to new_list using = operator.
+Let's take an example_1 where we create a list named old_list and pass an object reference to new_list using = operator.
 
 Example 1: Copy using = operator
 old_list = [[1, 2, 3], [4, 5, 6], [7, 8, 'a']]
@@ -486,7 +486,7 @@ To make these copy work, we use the copy module.
 
 Copy Module
 We use the copy module of Python for shallow and deep copy operations. Suppose, you need to copy the compound 
-list say x. For example:
+list say x. For example_1:
 
 import copy
 copy.copy(x)
@@ -559,7 +559,7 @@ at index [1][1] were modified. This is because, both lists share the reference o
 Deep Copy
 A deep copy creates a new object and recursively adds the copies of nested objects present in the original elements.
 
-Let’s continue with example 2. However, we are going to create deep copy using deepcopy() function present in copy 
+Let’s continue with example_1 2. However, we are going to create deep copy using deepcopy() function present in copy 
 module. The deep copy creates independent copy of original object and all its nested objects.
 
 Example 5: Copying a list using deepcopy()

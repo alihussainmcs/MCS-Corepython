@@ -19,7 +19,7 @@ the opinion given by experienced developers, public web data, some previous surv
 Text/Code Editor: Code editors are the lightweight tool that allows you to write and edit the code with some features
 such as syntax highlighting and code formatting. It provided fewer features than IDE.
 Integrated Development Environment (IDE): IDEs are full-fledged environment which provide all the essential tools
-needed for software development. It just does’t handle the code (for example, write, edit, syntax highlighting
+needed for software development. It just does’t handle the code (for example_1, write, edit, syntax highlighting
  and auto-completion) but also provides other features such as debugging, execution, testing, and code
  formatting that helps programmers.
 Let’s start with some overview of the best code editor based on certain terms…

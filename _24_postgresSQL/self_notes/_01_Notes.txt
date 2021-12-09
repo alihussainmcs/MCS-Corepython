@@ -1,0 +1,118 @@
+What is PostgreSQL – Introduction
+
+Brief History of PostgreSQL:
+PostgreSQL also known as Postgres, was developed by Michael Stonebraker of the University of California, Berkley.
+   It started as the Ingres Project and later evolved into Postgresql as we know today. In the year 1982, Michael
+   Stonebraker started a post-Ingres project to address the problems with contemporary database systems. He was
+   awarded the Turing Award in the year 2014 for the projects and techniques pioneered in them.
+
+The POSTGRES project aimed at adding the fewest features like the ability to define various data types and to fully
+     describe relationships – something used widely, but maintained completely by the end-user. POSTGRES used various
+     ideas of Ingres, but had its unique source code.
+
+The initial version of PostgreSQL was designed to run on UNIX-like platforms. However, it was then evolved to be mobile
+      so that it could run on other platforms such as Mac OS X, Solaris, and Windows.
+
+What is PostgreSQL?
+PostgreSQL is one of the most advanced general-purpose object-relational database management system and is open-source.
+   Being an open-source software, its source code is available under PostgreSQL license, a liberal open source license.
+   Anyone with the right skills is free to use, modify, and distribute PostgreSQL in any form. As it is highly stable,
+   very low effort is required to maintain this DBMS.
+
+
+Why PostgreSQL is best for you?
+The key features that make PostgreSQL a reliable and user-friendly are listed below:
+
+User-defined types
+Table inheritance
+Sophisticated locking mechanism
+Foreign key referential integrity
+Views, rules, subquery
+Nested transactions (save points)
+Multi-version concurrency control (MVCC)
+Asynchronous replication
+Native Microsoft Windows Server version
+Tablespace
+Point-in-time recovery
+Why PostgreSQL is unique in itself?
+Below is the list of features that makes PostgreSQL stand-out among other DBMS:
+
+The multi-version concurrency control (MVCC) feature was first implemented by PostgreSQL.
+Custom functions developed in languages like C/C++, Python, Java, etc can be added to PostgreSQL.
+As PostgreSQL is designed to be extensible, one can define their own data types, index types, functional languages, etc.
+If one intends to remove any part of the system, one can always develop a custom plugin to enhance it to meet their
+   specific requirements.
+Large Scale users of PostgreSQL
+A number of companies have built products and solutions using PostgreSQL. Few of those companies are Apple, Fujitsu,
+   Red Hat, Cisco, Juniper Network, etc.
+
+
+Install PostgreSQL on Windows
+Last Updated : 05 Oct, 2021
+This is a step-by-step guide to install PostgreSQL on a windows machine. Since PostgreSQL version 8.0, a window
+   installer is available to make the installation process fairly easier.
+We will be installing PostgreSQL version 11.3 on Windows 10 in this article.
+
+There are three crucial steps for the installation of PostgreSQL as follows:
+
+Download PostgreSQL installer for Windows
+
+Install PostgreSQL
+
+Verify the installation
+
+Downloading PostgreSQL Installer for Windows
+You can download the latest stable PostgreSQL Installer specific to your Windows by clicking here
+
+
+Installing the PostgreSQL installer
+After downloading the installer double click on it and follow the below steps:
+
+Step 1: Click the Next button
+
+
+
+
+
+Step 2: Choose the installation folder, where you want PostgreSQL to be installed, and click on Next.
+
+
+Step 3: Select the components as per your requirement to install and click the Next button.
+
+
+Step 4: Select the database directory where you want to store the data an click on Next.
+
+
+Step 5: Set the password for the database superuser (Postgres)
+
+
+Step 6: Set the port for PostgreSQL. Make sure that no other applications are using this port. If unsure leave it to
+    its default (5432) and click on Next.
+
+
+Step 7: Choose the default locale used by the database and click the Next button.
+
+
+Step 8: Click the Next button to start the installation.
+
+
+Wait for the installation to complete, it might take a few minutes.
+
+
+Step 9: Click the Finish button to complete the PostgreSQL installation.
+
+
+Verifying the Installation of PostgreSQL
+There are a couple of ways to verify the installation of PostgreSQL like connecting to the database server using some
+    client applications like pgAdmin or psql.
+The quickest way though is to use the psql shell. For that follow the below steps:
+
+
+Step 1: Search for the psql shell in the windows search bar and open it.
+
+
+Step 2: Enter all the necessary information like the server, database, port, username, and
+password and press Enter.
+
+
+Step 3: Use the command SELECT version(); you will see the following result:

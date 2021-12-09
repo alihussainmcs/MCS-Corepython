@@ -1,4 +1,3 @@
-
 import threading
 
 print("current thread:", threading.current_thread().getName())
@@ -16,8 +15,10 @@ print("-------------------------------------------------------------------------
 
 from threading import *
 
+
 def movie():
     print("Movie running successfully in Theatres")
+
 
 for i in range(5):
     m = Thread(target=movie())
@@ -49,10 +50,10 @@ class Mythread(Thread):
         for i in range(1, 6):
             print(i)
 
+
 t1 = Mythread()
 t1.start()
 t1.join()
-
 
 # program to create thread tha access the instance variables
 
@@ -75,6 +76,8 @@ s.get_details()
 '''
 from threading import *
 from time import *
+
+
 class Mythread:
 
     def prepareTea(self):
@@ -91,19 +94,13 @@ class Mythread:
         print("Add sugar and wait for 3 minutes")
         sleep(3)
         print("done")
+
     def task3(self):
         print("filter it serve it === end")
         print("done")
+
 
 obj = Mythread()
 t = Thread(target=obj.prepareTea())
 
 t.start()
-
-
-
-
-
-
-
-

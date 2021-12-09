@@ -1,6 +1,6 @@
 # P01. check given word is palindrome or not
 """
-          A string is said to be palindrome if the reverse of the string is the same as string. For example,
+          A string is said to be palindrome if the reverse of the string is the same as string. For example_1,
                 “radar” is a palindrome, but “radix” is not a palindrome.
 """
 

@@ -18,7 +18,7 @@ This will move the pointer to 9th byte (-10+1) from ending
 -10 represents moving back in the file
 
 """
-print('------------------------------------- 1st example  ----------------------------------------------')
+print('------------------------------------- 1st example_1  ----------------------------------------------')
 f = open("text.txt", "r")
 # the second parameter of the seek method is by default 0
 f.seek(100)
@@ -30,7 +30,7 @@ print(f.readlines())
 f.close()
 
 
-print('--------------------------------- 2nd example -----------------------------------------------')
+print('--------------------------------- 2nd example_1 -----------------------------------------------')
 
 fi = open("text.txt", "r+")
 print("Name of the file: ", fi.name)

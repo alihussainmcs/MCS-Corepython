@@ -43,7 +43,7 @@ FTP (File Transfer Protocol) etc...
 Python has a socket method that let programmers' set-up different types of socket virtually. The syntax for the socket
     method is:
               g = socket.socket (socket_family, type_of_socket, protocol=value)
-For example, if we want to establish a TCP socket, we can write the following code snippet:
+For example_1, if we want to establish a TCP socket, we can write the following code snippet:
 """
 
 import socket

@@ -12,5 +12,5 @@ from _22_2_DB_String._2_CREATE_mulitple_strs._1_controller import get_str_len
 # UI Layer
 if __name__ == '__main__':
     str1 = input("Enter string details  : ")
-    resp = get_str_len(str1)  # flask, django
+    resp = get_str_len(str1)  # 00_flask, django
     print("String length :", resp)

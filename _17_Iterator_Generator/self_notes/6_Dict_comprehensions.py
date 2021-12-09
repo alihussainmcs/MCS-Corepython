@@ -4,7 +4,7 @@ Python Dictionary Comprehension
 Like List Comprehension, Python allows dictionary comprehensions. We can create dictionaries using simple expressions.
 A dictionary comprehension takes the form {key: value for (key, value) in iterable}
 
-Let’s see a example,lets assume we have two lists named keys and value now,
+Let’s see a example_1,lets assume we have two lists named keys and value now,
 
 """
 # Python code to demonstrate dictionary

@@ -24,7 +24,7 @@ ali = Employee(201, 'ILA', 20000)
 '''
 
 
-# Default arguments example
+# Default arguments example_1
 
 
 class Employee:

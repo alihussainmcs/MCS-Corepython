@@ -134,7 +134,7 @@ Output:
 4
 6
 8
-In the example, the while statement checks if count is less than 10.
+In the example_1, the while statement checks if count is less than 10.
 
 Initially, count is zero so the statement is true and it executes the body of while. Then the count gets incremented
 by 2. Again we check the condition and this goes on till the condition becomes false.
@@ -148,7 +148,7 @@ Usually, when a condition is always True in a while loop, the loop will become a
 careful when writing conditions and while updating variables used in the loop.
 
 In Python shell, we can the program on an infinite loop by using CTRL + C. Sometimes, we need to implement an
-infinite terminate loop for example, when reading frames from a webcam.
+infinite terminate loop for example_1, when reading frames from a webcam.
 
 Code:
 
@@ -183,7 +183,7 @@ Here the else statement didn’t get executed because the break statement ends t
  therefore never becomes false.
 
 3. Python Nested Loops
-We can nest a loop inside another loop which simply means that a loop within a loop. Let’s see this with an example.
+We can nest a loop inside another loop which simply means that a loop within a loop. Let’s see this with an example_1.
 
 Code:
 
@@ -201,7 +201,7 @@ Output:
 2 , 5
 2 , 6
 2 , 7
-From this example, you can observe that the first iteration of the outer loop will run the whole inner loop and then
+From this example_1, you can observe that the first iteration of the outer loop will run the whole inner loop and then
 in the next iteration of the outer loop, the inner loop gets executed again. This process is repeated until we
 reach the end of the outer loop.
 
@@ -241,7 +241,7 @@ The continue statement is used to skip the next statements in the loop.
 When the program reaches the continue statement, the program skips the statements after continue and the flow
  reaches the next iteration of the loop.
 
-Let’s take the same example –
+Let’s take the same example_1 –
 
 Code:
 

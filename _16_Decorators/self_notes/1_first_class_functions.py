@@ -39,7 +39,7 @@ yell = shout
 print(yell('Hello'))
 print("-------------------------------------------------------------")
 """
-In the above example, we have assigned the function shout to a variable. This will not call the function instead it 
+In the above example_1, we have assigned the function shout to a variable. This will not call the function instead it 
 takes the function object referenced by a shout and creates a second name pointing to it, yell.
 
 Example 2: Passing the function as an argument
@@ -67,7 +67,7 @@ greet(whisper)
 print("-------------------------------------------------------------")
 
 """
-In the above example, the greet function takes another function as a parameter (shout and whisper in this case). The 
+In the above example_1, the greet function takes another function as a parameter (shout and whisper in this case). The 
 function passed as an argument is then called inside the function greet.
 
 Example 3: Returning functions from another functions.
@@ -87,7 +87,7 @@ add_15 = create_adder(15)
 
 print(add_15(10))
 """
-In the above example, we have created a function inside of another function and then have returned the function created 
+In the above example_1, we have created a function inside of another function and then have returned the function created 
 inside.
 The above three examples depict the important concepts that are needed to understand decorators. 
 """

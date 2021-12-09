@@ -1,5 +1,6 @@
 """
-Python Regular Expressions The regular expressions can be defined as the sequence of characters which are used to
+Python Regular Expressions
+The regular expressions can be defined as the sequence of characters which are used to
 search for a pattern in a string. The module re provides the support to use regex in the python program. The re
 module throws an exception if there is some error while using the regular expression.
 
@@ -74,7 +75,7 @@ The findall() function
 This method returns a list containing a list of all matches of a pattern within the string. It returns the patterns in 
 the order they are found. If there are no matches, then an empty list is returned.
 
-Consider the following example.
+Consider the following example_1.
 
 Example
 '''
@@ -374,7 +375,7 @@ print(res.span())
 
 '''
 Getting matched substring
-group() method returns the part of the string for which the patterns match. See the below example for a better 
+group() method returns the part of the string for which the patterns match. See the below example_1 for a better 
 understanding.
 Example: Getting matched substring 
 '''

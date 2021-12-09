@@ -22,7 +22,7 @@ Example
 pass, break, continue.. etc are reserved for special meaning in Python. So, we should
 not declare keyword as a variable name.
 How to Declare and use a Variable
-Let see an example. We will declare variable "a" and print it.
+Let see an example_1. We will declare variable "a" and print it.
 a=100
 print (a)
 Re-declare a Variable

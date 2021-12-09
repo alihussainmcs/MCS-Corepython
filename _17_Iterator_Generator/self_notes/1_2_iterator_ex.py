@@ -72,7 +72,7 @@ print("-------------------------------------------------------------------------
 
 
 # A simple Python program to demonstrate
-# working of iterators using an example type
+# working of iterators using an example_1 type
 # that iterates from 10 to given value
 
 # An iterable user defined type

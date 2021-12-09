@@ -8,13 +8,13 @@ try:
     # Step1 : Get connection
     conn = psycopg2.connect(database="postgres",
                             user="postgres",
-                            password="vn2",
+                            password="12345",
                             host="localhost",
                             port="5432")
     #Step2 : Get cursor on db connection
     cursor = conn.cursor()
     #Step3 : Prepare sql query
-    query = "SELECT * FROM STUDENT"
+    query = "SELECT * FROM STUDENT_1"
     #Step4 : Execute sql query
     cursor.execute(query)
     # print("Selection : ",cursor.fetchall())

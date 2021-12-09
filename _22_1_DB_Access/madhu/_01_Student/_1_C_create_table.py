@@ -23,7 +23,7 @@ try:
     conn = psycopg2.connect(host="localhost",
                             port="5432",
                             user="postgres",
-                            password="vn2")
+                            password="12345")
     print("Connection object : ", type(conn), conn)
 
     # Step2 : Get cursor on db connection
@@ -31,7 +31,7 @@ try:
     print("Cursor object : ", type(cursor), cursor)
 
     # Step3: Prepare SQL Query
-    query = "CREATE TABLE STUDENT(student_id INTEGER PRIMARY KEY, name VARCHAR(100), school VARCHAR(20))"
+    query = "CREATE TABLE STUDENT_1(student_id INTEGER PRIMARY KEY, name VARCHAR(100), school VARCHAR(20))"
 
     # Step4 : Execute sql query
     cursor.execute(query)

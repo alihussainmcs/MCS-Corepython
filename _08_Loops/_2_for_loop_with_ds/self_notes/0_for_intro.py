@@ -12,7 +12,7 @@ tup = (1, 4, 6, 101, 10 + 11j)  # tuple
 st = {1, 8, 9, 20, 121}  # set
 dict_1 = {101: 'name', 102: 'id', 103: 'branch', 104: 'department'}
 
-# While loop example
+# While loop example_1
 i = 1
 while i <= 10:
     print("I value : ", i)

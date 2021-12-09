@@ -83,7 +83,7 @@ print(all([False, True, True, False]))
 # True is found in the iterables
 print(all([False, False, False]))
 
-print(".........   example      .....................")
+print(".........   example_1      .....................")
 # This code explains how can we
 # use 'any' function on list
 list1 = []
@@ -748,7 +748,7 @@ calculate a value we get more precise value than str() function.
 Following are differences:
 
 str() is used for creating output for end user while repr() is mainly used for debugging and development. repr’s goal 
-is to be unambiguous and str’s is to be readable. For example, if we suspect a float has a small rounding error, repr 
+is to be unambiguous and str’s is to be readable. For example_1, if we suspect a float has a small rounding error, repr 
 will show us while str may not.
 repr() compute the “official” string representation of an object (a representation that has all information about the 
 object) and str() is used to compute the “informal” string representation of an object (a representation that is useful
@@ -821,7 +821,7 @@ emp = Employee("Captain", 10000)
 print('Salary of employee :', emp._sal)
 """
 Similarly if there is a child class extending the class Employee then it can also access the protected member variables
-of the class Employee. Let's have an example:
+of the class Employee. Let's have an example_1:
 """
 
 """

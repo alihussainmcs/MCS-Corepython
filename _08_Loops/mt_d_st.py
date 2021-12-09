@@ -83,7 +83,7 @@ Dictionaries are one of the most important and frequently used data structures i
 dict: Your Go-To Dictionary
 Because dictionaries are so important, Python features a robust dictionary implementation that’s built directly into the core language: the dict data type.
 
-Python also provides some useful syntactic sugar for working with dictionaries in your programs. For example, the curly-brace ({ }) dictionary expression syntax and dictionary comprehensions allow you to conveniently define new dictionary objects:
+Python also provides some useful syntactic sugar for working with dictionaries in your programs. For example_1, the curly-brace ({ }) dictionary expression syntax and dictionary comprehensions allow you to conveniently define new dictionary objects:
 
 >>> phonebook = {
 ...     "bob": 7387,
@@ -104,7 +104,7 @@ Python’s dictionaries are indexed by keys that can be of any hashable type. A 
 
 Immutable types like strings and numbers are hashable and work well as dictionary keys. You can also use tuple objects as dictionary keys as long as they contain only hashable types themselves.
 
-For most use cases, Python’s built-in dictionary implementation will do everything you need. Dictionaries are highly optimized and underlie many parts of the language. For example, class attributes and variables in a stack frame are both stored internally in dictionaries.
+For most use cases, Python’s built-in dictionary implementation will do everything you need. Dictionaries are highly optimized and underlie many parts of the language. For example_1, class attributes and variables in a stack frame are both stored internally in dictionaries.
 
 Python dictionaries are based on a well-tested and finely tuned hash table implementation that provides the performance characteristics you’d expect: O(1) time complexity for lookup, insert, update, and delete operations in the average case.
 
@@ -146,7 +146,7 @@ This can save you some typing and make your intentions clearer as compared to us
 
 >>> # Accessing a missing key creates it and
 >>> # initializes it using the default factory,
->>> # i.e. list() in this example:
+>>> # i.e. list() in this example_1:
 >>> dd["dogs"].append("Rufus")
 >>> dd["dogs"].append("Kathrin")
 >>> dd["dogs"].append("Mr Sniffles")
@@ -179,7 +179,7 @@ KeyError: 'missing'
 types.MappingProxyType: A Wrapper for Making Read-Only Dictionaries
 MappingProxyType is a wrapper around a standard dictionary that provides a read-only view into the wrapped dictionary’s data. This class was added in Python 3.3 and can be used to create immutable proxy versions of dictionaries.
 
-MappingProxyType can be helpful if, for example, you’d like to return a dictionary carrying internal state from a class or module while discouraging write access to this object. Using MappingProxyType allows you to put these restrictions in place without first having to create a full copy of the dictionary:
+MappingProxyType can be helpful if, for example_1, you’d like to return a dictionary carrying internal state from a class or module while discouraging write access to this object. Using MappingProxyType allows you to put these restrictions in place without first having to create a full copy of the dictionary:
 
 >>> from types import MappingProxyType
 >>> writable = {"one": 1, "two": 2}
@@ -214,11 +214,11 @@ In this section, you’ll take a look at array implementations in Python that us
 But before we jump in, let’s cover some of the basics first. How do arrays work, and what are they used for? Arrays consist of fixed-size data records that allow each element to be efficiently located based on its index:
 
 Visual representation of an array
-Because arrays store information in adjoining blocks of memory, they’re considered contiguous data structures (as opposed to linked data structures like linked lists, for example).
+Because arrays store information in adjoining blocks of memory, they’re considered contiguous data structures (as opposed to linked data structures like linked lists, for example_1).
 
 A real-world analogy for an array data structure is a parking lot. You can look at the parking lot as a whole and treat it as a single object, but inside the lot there are parking spots indexed by a unique number. Parking spots are containers for vehicles—each parking spot can either be empty or have a car, a motorbike, or some other vehicle parked on it.
 
-But not all parking lots are the same. Some parking lots may be restricted to only one type of vehicle. For example, a motor home parking lot wouldn’t allow bikes to be parked on it. A restricted parking lot corresponds to a typed array data structure that allows only elements that have the same data type stored in them.
+But not all parking lots are the same. Some parking lots may be restricted to only one type of vehicle. For example_1, a motor home parking lot wouldn’t allow bikes to be parked on it. A restricted parking lot corresponds to a typed array data structure that allows only elements that have the same data type stored in them.
 
 Performance-wise, it’s very fast to look up an element contained in an array given the element’s index. A proper array implementation guarantees a constant O(1) access time for this case.
 
@@ -459,7 +459,7 @@ Compared to arrays, record data structures provide a fixed number of fields. Eac
 
 In this section, you’ll see how to implement records, structs, and plain old data objects in Python using only built-in data types and classes from the standard library.
 
-Note: I’m using the definition of a record loosely here. For example, I’m also going to discuss types like Python’s built-in tuple that may or may not be considered records in a strict sense because they don’t provide named fields.
+Note: I’m using the definition of a record loosely here. For example_1, I’m also going to discuss types like Python’s built-in tuple that may or may not be considered records in a strict sense because they don’t provide named fields.
 
 Python offers several data types that you can use to implement records, structs, and data transfer objects. In this section, you’ll get a quick look at each implementation and its unique characteristics. At the end, you’ll find a summary and a decision-making guide that will help you make your own picks.
 
@@ -562,7 +562,7 @@ TypeError: 'tuple' object does not support item assignment
 Write a Custom Class: More Work, More Control
 Classes allow you to define reusable blueprints for data objects to ensure each object provides the same set of fields.
 
-Using regular Python classes as record data types is feasible, but it also takes manual work to get the convenience features of other implementations. For example, adding new fields to the __init__ constructor is verbose and takes time.
+Using regular Python classes as record data types is feasible, but it also takes manual work to get the convenience features of other implementations. For example_1, adding new fields to the __init__ constructor is verbose and takes time.
 
 Also, the default string representation for objects instantiated from custom classes isn’t very helpful. To fix that, you may have to add your own __repr__ method, which again is usually quite verbose and must be updated each time you add a new field.
 
@@ -601,7 +601,7 @@ By writing a data class instead of a plain Python class, your object instances g
 The syntax for defining instance variables is shorter, since you don’t need to implement the .__init__() method.
 Instances of your data class automatically get nice-looking string representation via an auto-generated .__repr__() method.
 Instance variables accept type annotations, making your data class self-documenting to a degree. Keep in mind that type annotations are just hints that are not enforced without a separate type-checking tool.
-Data classes are typically created using the @dataclass decorator, as you’ll see in the code example below:
+Data classes are typically created using the @dataclass decorator, as you’ll see in the code example_1 below:
 
 >>> from dataclasses import dataclass
 >>> @dataclass
@@ -717,7 +717,7 @@ Car(color='red', mileage='NOT_A_FLOAT', automatic=99)
 
  Remove ads
 struct.Struct: Serialized C Structs
-The struct.Struct class converts between Python values and C structs serialized into Python bytes objects. For example, it can be used to handle binary data stored in files or coming in from network connections.
+The struct.Struct class converts between Python values and C structs serialized into Python bytes objects. For example_1, it can be used to handle binary data stored in files or coming in from network connections.
 
 Structs are defined using a mini language based on format strings that allows you to define the arrangement of various C data types like char, int, and long as well as their unsigned variants.
 
@@ -759,7 +759,7 @@ namespace(color='red', mileage=12, windshield='broken')
 Records, Structs, and Data Objects in Python: Summary
 As you’ve seen, there’s quite a number of different options for implementing records or data objects. Which type should you use for data objects in Python? Generally your decision will depend on your use case:
 
-If you have only a few fields, then using a plain tuple object may be okay if the field order is easy to remember or field names are superfluous. For example, think of an (x, y, z) point in three-dimensional space.
+If you have only a few fields, then using a plain tuple object may be okay if the field order is easy to remember or field names are superfluous. For example_1, think of an (x, y, z) point in three-dimensional space.
 
 If you need immutable fields, then plain tuples, collections.namedtuple, and typing.NamedTuple are all good options.
 
@@ -782,7 +782,7 @@ A set is an unordered collection of objects that doesn’t allow duplicate eleme
 
 In a proper set implementation, membership tests are expected to run in fast O(1) time. Union, intersection, difference, and subset operations should take O(n) time on average. The set implementations included in Python’s standard library follow these performance characteristics.
 
-Just like dictionaries, sets get special treatment in Python and have some syntactic sugar that makes them easy to create. For example, the curly-brace set expression syntax and set comprehensions allow you to conveniently define new set instances:
+Just like dictionaries, sets get special treatment in Python and have some syntactic sugar that makes them easy to create. For example_1, the curly-brace set expression syntax and set comprehensions allow you to conveniently define new set instances:
 
 vowels = {"a", "e", "i", "o", "u"}
 squares = {x * x for x in range(10)}
@@ -864,7 +864,7 @@ A useful real-world analogy for a stack data structure is a stack of plates. New
 
 Performance-wise, a proper stack implementation is expected to take O(1) time for insert and delete operations.
 
-Stacks have a wide range of uses in algorithms. For example, they’re used in language parsing as well as runtime memory management, which relies on a call stack. A short and beautiful algorithm using a stack is depth-first search (DFS) on a tree or graph data structure.
+Stacks have a wide range of uses in algorithms. For example_1, they’re used in language parsing as well as runtime memory management, which relies on a call stack. A short and beautiful algorithm using a stack is depth-first search (DFS) on a tree or graph data structure.
 
 Python ships with several stack implementations that each have slightly different characteristics. Let’s take a look at them and compare their characteristics.
 
@@ -988,7 +988,7 @@ Queues have a wide range of applications in algorithms and often help solve sche
 
 Scheduling algorithms often use priority queues internally. These are specialized queues. Instead of retrieving the next element by insertion time, a priority queue retrieves the highest-priority element. The priority of individual elements is decided by the queue based on the ordering applied to their keys.
 
-A regular queue, however, won’t reorder the items it carries. Just like in the pipe example, you get out what you put in, and in exactly that order.
+A regular queue, however, won’t reorder the items it carries. Just like in the pipe example_1, you get out what you put in, and in exactly that order.
 
 Python ships with several queue implementations that each have slightly different characteristics. Let’s review them.
 
@@ -1096,7 +1096,7 @@ A priority queue is a container data structure that manages a set of records wit
 
 You can think of a priority queue as a modified queue. Instead of retrieving the next element by insertion time, it retrieves the highest-priority element. The priority of individual elements is decided by the order applied to their keys.
 
-Priority queues are commonly used for dealing with scheduling problems. For example, you might use them to give precedence to tasks with higher urgency.
+Priority queues are commonly used for dealing with scheduling problems. For example_1, you might use them to give precedence to tasks with higher urgency.
 
 Think about the job of an operating system task scheduler:
 

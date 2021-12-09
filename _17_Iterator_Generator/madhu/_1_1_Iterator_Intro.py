@@ -101,7 +101,7 @@ except StopIteration as si:
 
 '''
 3. How for loop actually works?
-  => As we see in the above example, the for loop was able to iterate automatically through the list.
+  => As we see in the above example_1, the for loop was able to iterate automatically through the list.
   => In fact the for loop can iterate over any iterable. 
      Let's take a closer look at how the for loop is actually implemented in Python.
      
@@ -141,7 +141,7 @@ Note that any other kind of exception will pass through.
 '''
 
 
-# Here, we show an example that will give us next power of 2 in each iteration. Power exponent starts from zero up to
+# Here, we show an example_1 that will give us next power of 2 in each iteration. Power exponent starts from zero up to
 # a user set number.
 
 class PowTwo:

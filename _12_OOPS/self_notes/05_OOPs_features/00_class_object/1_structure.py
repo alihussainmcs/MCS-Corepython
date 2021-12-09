@@ -74,8 +74,8 @@ ali = Employee(100,'Ali H, 15000)
 Class  ===> Logical  -- DATA    Physical -- METHODS
 Object ===> Physical -- DATA    Logical  -- METHODS (Through method access)
 
-Ex : class is an example for encapsulation
-     object is also an example
+Ex : class is an example_1 for encapsulation
+     object is also an example_1
 
 
 ali = Employee1(100,"AliH",15000)

@@ -63,7 +63,7 @@ class B(A):
 
 '''
 B has 3 behaviors   - execute() from super class through inheritance
-                    - read() i.e, from sub class overriden method
+                    - read() i.e, from sub class overridden method
                     - write() from sub class(its  own method)
 
 a1 = A()

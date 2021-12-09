@@ -28,7 +28,7 @@ class Quadrilateral(Polygon):
 
 
 '''
-# Perfect example for Abstract class
+# Perfect example_1 for Abstract class
 Abstraction - Hiding implementation details
             - 0 to 100%   - combination of concrete and abstract methods
             - 0%          - all concrete methods

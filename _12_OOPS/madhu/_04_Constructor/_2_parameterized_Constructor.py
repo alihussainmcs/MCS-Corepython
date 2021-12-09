@@ -22,7 +22,7 @@ madhu = Employee(200, 'MadhuN', 10000)
             - keyword arguments
 
 '''
-# Default arguments example
+# Default arguments example_1
 class Employee:
     # parameterized constructors
     def __init__(self, eid=None, name=None, sal=None):  # Constructor overloading

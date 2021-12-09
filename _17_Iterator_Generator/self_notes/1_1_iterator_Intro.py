@@ -96,7 +96,7 @@ print(next(my_iter))
 
 """
 StopIteration
-The example above would continue forever if you had enough next() statements, or if it was used in a for loop.
+The example_1 above would continue forever if you had enough next() statements, or if it was used in a for loop.
 
 To prevent the iteration to go on forever, we can use the StopIteration statement.
 

@@ -10,7 +10,7 @@ try:
     7 / 0
 except ArithmeticError as e:
     print(e)
-print('This is an example of catching ArithmeticError')
+print('This is an example_1 of catching ArithmeticError')
 
 print("--------------------------------------------------------")
 """

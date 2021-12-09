@@ -2,7 +2,7 @@
 # find(str, beg=0 end=len(string))
 mg = 'hi hello hi hello hi hi '
 
-Str = "this is string example....wow!!!"
+Str = "this is string example_1....wow!!!"
 
 print("String Str is : ", Str)
 

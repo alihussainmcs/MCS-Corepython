@@ -1,6 +1,7 @@
 """
 Traceback (most recent call last):
-  File "C:/Users/0_sir_notes/git_projects/Batch_13/B13_PythonTraining/_13_Exception_handling/_1_Introduction.py", line 20, in <module>
+  File "C:/Users/0_sir_notes/git_projects/Batch_13/B13_PythonTraining/_13_Exception_handling/_1_Introduction.py", line
+                    20, in <module>
     x = int(input("Enter numerator value :"))
 ValueError: invalid literal for int() with base 10: 'dfgads'
 """
@@ -24,7 +25,7 @@ blocks :if else elif for while  function class
 
 blocks to handle the exception    
 try*      : Code which causes the exception
-except*   : to handle exception occured in try block
+except*   : to handle exception occurred in try block
 else
 finally
 '''

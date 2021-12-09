@@ -95,7 +95,7 @@ Banker’s Rounding
 The __future__ module
 Python 3.x introduced some Python 2-incompatible keywords and features that can be imported via the in-built __future__ 
 module in Python 2. It is recommended to use __future__ imports it if you are planning Python 3.x support for your code.
- For example, if we want Python 3.x’s integer division behavior in Python 2, we can import it via
+ For example_1, if we want Python 3.x’s integer division behavior in Python 2, we can import it via
 
 from __future__ import division
 '''

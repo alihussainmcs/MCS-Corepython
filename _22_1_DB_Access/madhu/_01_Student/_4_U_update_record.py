@@ -7,11 +7,11 @@ import psycopg2
 try:
     conn = psycopg2.connect(database="postgres", 
                             user="postgres",
-                            password="vn2",
+                            password="12345",
                             host="localhost",
                             port="5432")
     cursor = conn.cursor()
-    query = "UPDATE STUDENT set name = 'MadhuSudhan Naidu Nettem' where student_id = 101"
+    query = "UPDATE STUDENT_1 set name = 'MadhuSudhan Naidu Nettem' where student_id = 101"
     res = cursor.execute(query)
     print("Record Updated successfully : ", res)
     conn.commit()

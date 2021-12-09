@@ -28,7 +28,7 @@ Derived class
 '''
 XX ==> Only Super class : Animal,Employee : Unnecessarily other behavior also will come to our object
 
-XX ==> Only Sub classes : Code duplication. For example one method is common for all classes,then code duplication will happen
+XX ==> Only Sub classes : Code duplication. For example_1 one method is common for all classes,then code duplication will happen
 
 Solution : Use Inheritance 
            Implement classes as Super class - Sub class mechansim

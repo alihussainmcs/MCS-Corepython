@@ -48,7 +48,7 @@ way to build web-enabled applications. From simple blogs to complex AJAX-rich ap
 8) Name few Python web application frameworks?
 A) There are many Python web application frameworks are there, they are django – Django is a
 high-level Python Web framework. web2py – An open source full-stack python web framework for scalable, secure and
-portable flask – A lightweight Python web framework based on Werkzeug and Jinja 2. grok – An open-source Web
+portable 00_flask – A lightweight Python web framework based on Werkzeug and Jinja 2. grok – An open-source Web
 framework based on Zope Toolkit technology. tornado – Tornado is a scalable, non-blocking web server and web
 application framework. cherrypy – CherryPy is an object-oriented web application framework. turbogears – A
 Python-based database web app framework with Ajax integration. google app engine – A platform for developing and
@@ -116,13 +116,13 @@ piecewise. 25) Is Python is a case sensitive? A) Python language is case sensiti
 different from A. The variable of Michel is different from the variable of michel. If we assume a value for a (
 lowercase a) and then call A (uppercase A), we will see the following error message: Copy >>>a=2 >>>A Traceback (most
 recent call last): File “<pyshell#1>”, line 1, in <module> A NameError: name ‘A’ is not defined >>> In the above
-example, A is not assigned any value. Thus, when we call it by typing A, we will receive an error message. Note that
+example_1, A is not assigned any value. Thus, when we call it by typing A, we will receive an error message. Note that
 the last line mentions NameError instead of TypeError. In Python, we use name for variables. Python Interview
 Questions And Answers For Freshers 26) What is a file in Python? A) A file is some information or data which stays in
 the computer storage devices. Python gives you easy ways to manipulate these files. Generally we divide files in two
 categories, text file and binary file. Text files are simple text where as the binary files contain binary data which
 is only readable by computer. 27) What is the input function in Python? A) Input can come in various ways,
-for example from a database, another computer, mouse clicks and movements or from the internet. Yet, in most cases
+for example_1 from a database, another computer, mouse clicks and movements or from the internet. Yet, in most cases
 the input stems from the keyboard. For this purpose, Python provides the function input(). input has an optional
 parameter, which is the prompt string. 28) Is Python a compiled or interpreted language? A) Python will fall under
 byte code interpreted. . py source code is first compiled to byte code as .pyc. This byte code can be interpreted (
@@ -142,10 +142,10 @@ with extremely large amounts of data. You can download PyTables and use it for f
 line? >>>100/(1+0.1)^2 A) It will give the error message saying that ^ is not supported. >>>100/(1+0.1)^2 Traceback (
 most recent call last): File “<psyhell#1>, line 1, in <module> 100/(1+0.1)^2 TypeError: unsupported operand type(s)
 for ^: ‘float’ and ‘int’ >>> 35) How do you find the current version of Python? A) By using sys.version we can fidn
-the current version of Python. See below example, # import sys >>>sys.version ‘3.6.4 (v3.6.4:d047928ae3f6,
+the current version of Python. See below example_1, # import sys >>>sys.version ‘3.6.4 (v3.6.4:d047928ae3f6,
 April 16 2018, 00:10:25) [MSC v.1600 64 bit (Intel)]’ >>> Python Questions And Answers For 1 Year Experienced 36)
 What is the difference between interpreted and compiled languages? A) Java (interpreted) and C (or C++) (compiled)
-might have been a better example. Basically, compiled code can be executed directly by the computer’s CPU. The code
+might have been a better example_1. Basically, compiled code can be executed directly by the computer’s CPU. The code
 of interpreted languages however must be translated at run-time from any format to CPU machine instructions. This
 translation is done by an interpreter. 37) Is Python Interpreted or Compiled? A) py source code is first compiled to
 byte code as .pyc. This byte code can be interpreted (official CPython), or JIT compiled (PyPy). Python source code (
@@ -160,14 +160,14 @@ functions are throw-away functions, i.e. they are just needed where they have be
 mainly used in combination with the functions filter(), map() and reduce(). Python Advanced Interview Questions 41)
 What is a list in Python? A) A list is a data structure in Python that is a mutable, or changeable, ordered sequence
 of elements. Each element or value that is inside of a list is called an item. 42) What is the input function in
-Python? A) Input can come in various ways, for example from a database, another computer, mouse clicks and movements
+Python? A) Input can come in various ways, for example_1 from a database, another computer, mouse clicks and movements
 or from the internet. Yet, in most cases the input stems from the keyboard. For this purpose, Python provides the
 function input(). input has an optional parameter, which is the prompt string. 43) What is standard output in Python?
 A) Standard output and standard error (commonly abbreviated stdout and stderr) are pipes that are built into every
 UNIX system. When you print something, it goes to the stdout pipe; when your program crashes and prints out debugging
 information (like a traceback in Python), it goes to the stderr pipe. 44) What is the meaning of DEF in Python? A) A
 function in Python is defined by a def statement. Example: def f(): print(‘In function f’) print(‘When does this
-print?’) Best Python Interview Questions 45) How do you call functions in Python? A) We will see with the example: #
+print?’) Best Python Interview Questions 45) How do you call functions in Python? A) We will see with the example_1: #
 Defining a function def my_function(): print(“Hello From My Function!”) # print a simple greeting by calling a
 function my_function() 46) What is self in Python? A) The first argument of every class method, including init,
 is always a reference to the current instance of the class. By convention, this argument is always named self. In the
@@ -181,7 +181,7 @@ term for an ordered set. There are several types of sequences in Python, the fol
 Lists are the most versatile sequence type. The elements of a list can be any object, and lists are mutable – they
 can be changed. 50) What does ORD () do in Python? A) ord(c) in Python Given a string of length one,
 return an integer representing the Unicode code point of the character when the argument is a unicode object,
-or the value of the byte when the argument is an 8-bit string. For example, ord(‘a’) returns the integer 97. Python
+or the value of the byte when the argument is an 8-bit string. For example_1, ord(‘a’) returns the integer 97. Python
 Interview Questions For 2 Years Experienced 51) What is a tuple in Python? A) A tuple is a sequence of immutable
 Python objects. Tuples are sequences, just like lists. The differences between tuples and lists are, the tuples
 cannot be changed unlike lists. 52) What is a list in Python? A) A list is a data structure in Python that is a
@@ -196,14 +196,14 @@ number, currently as a string into a proper number. 55) Can you explain this why
 is not defined A) In the above code, sqrt() function is available in the “math” module and that we have to load
 import the “math” module before we can call the “sqrt()” functions. Python Top Interview Questions 56) What is a
 module in python? A) In Python, module is a package that contains a set of functions to do a specific task. For
-example “math” module provides some math related functions like sqrt(). 57) What is the use of dir() function? A)
+example_1 “math” module provides some math related functions like sqrt(). 57) What is the use of dir() function? A)
 After assigning values to a few variables, we could use the dir() function to show their existence. In the following
-example, variables p, av, and d are shown among other names. >>>av=100 >>>p=0.1 >>>d=5 >>>dir() [‘p’, ‘av’,
+example_1, variables p, av, and d are shown among other names. >>>av=100 >>>p=0.1 >>>d=5 >>>dir() [‘p’, ‘av’,
 ‘d’] 58) How can you unsign or delete variable in Python? A) Whenever we write code for any application, it might be
 a good practice to delete those variables that we no longer need. In this case, we could use the del() function to
 remove or unsign a variable. 59) What is tuple in Python? A) In Python, a tuple is a data type or object. A tuple
 could contain multiple data types such as integer, float, string, and even another tuple. All data items are included
-in a pair of parentheses as shown in the following example: # x=(‘John’,21) >>>x (‘John’, 21) 60) How can you find
+in a pair of parentheses as shown in the following example_1: # x=(‘John’,21) >>>x (‘John’, 21) 60) How can you find
 length of a tuple in Python? A) Like with strings and lists, we can calculate the length of a tuple by using len().
 Python Interview Questions For 3 Years Experienced 61) What is string replication operator in Python? A) * is the
 string replication operator, repeating a single string however many times you would like through the integer you
@@ -288,7 +288,7 @@ entirely in Python. 95) What is a data structure in Python? A) The builtin data 
 tuples, dictionaries, strings, sets and frozensets. Lists, strings and tuples are ordered sequences of objects.
 Unlike strings that contain only characters, list and tuples can contain any type of objects. Interview Questions on
 Python For Experienced 96) What is coercion? A) The implicit conversion of an instance of one type to another during
-an operation which involves two arguments of the same type. For example, int(3.15) converts the floating point number
+an operation which involves two arguments of the same type. For example_1, int(3.15) converts the floating point number
 to the integer 3, but in 3+4.5, each argument is of a different type (one int, one float), and both must be converted
 to the same type before they can be added or it will raise a TypeError. Without coercion, all arguments of even
 compatible types would have to be normalized to the same value by the programmer, e.g., float(3)+4.5 rather than just
@@ -344,7 +344,7 @@ negative number, which means it counts from the end of the array instead of the 
 the array a[-2:] # last two items in the array a[:-2] # everything except the last two items Similarly, step may be a
 negative number: a[::-1] # all items in the array, reversed a[1::-1] # the first two items, reversed a[:-3:-1] # the
 last two items, reversed a[-3::-1] # everything except the last two items, reversed Python is kind to the programmer
-if there are fewer items than you ask for. For example, if you ask for a[:-2] and a only contains one element,
+if there are fewer items than you ask for. For example_1, if you ask for a[:-2] and a only contains one element,
 you get an empty list instead of an error. Sometimes you would prefer the error, so you have to be aware that this
 may happen. 109) How to clone or copy a list in Python? What are the options to clone or copy a list in Python? Using
 new_list = my_list then modifies new_list every time my_list changes. Why is this? With new_list = my_list,
@@ -435,7 +435,7 @@ from inner to outer. G, Global (module) — Names assigned at the top-level of a
 statement in a def within the file. B, Built-in (Python) — Names preassigned in the built-in names module : open,
 range,SyntaxError,… So, in the case of code1 class Foo: code2 def spam….. code3 for code4..: code5 x() The for loop
 does not have its own namespace. In LEGB order, the scopes would be L : local, in def spam (in code3, code 4,
-code5). E : Enclosed function, any enclosing functions (if the whole example were in another def) G : Global. Were
+code5). E : Enclosed function, any enclosing functions (if the whole example_1 were in another def) G : Global. Were
 there any x declared globally in the module (code1)? B : Any builtin x in Python. x will never be found in code2 (
 even in cases where you might expect it would) Python Developer Interview Questions And Answers 116) What does ** (
 double star/asterisk) and * (star/asterisk) do for parameters? In the following method definitions, what does the *
@@ -455,12 +455,12 @@ passed as keyword arguments. 117) Calling an external command in Python? How can
 I’d typed it at the Unix shell or Windows command prompt) from within a Python script? A) Look at the subprocess
 module in the standard library: from subprocess import call call([“ls”, “-l”]) The advantage of subprocess vs system
 is that it is more flexible (you can get the stdout, stderr, the “real” status code, better error handling,
-etc…). 118) What does if __name__ == “__main__”: do? # Threading example import time, thread def myfunction(string,
+etc…). 118) What does if __name__ == “__main__”: do? # Threading example_1 import time, thread def myfunction(string,
 sleeptime, lock, *args): while True: lock.acquire() time.sleep(sleeptime) lock.release() time.sleep(sleeptime) if
 __name__ == “__main__”: lock = thread.allocate_lock() thread.start_new_thread(myfunction, (“Thread #: 1”, 2,
 lock)) thread.start_new_thread(myfunction, (“Thread #: 2”, 2, lock)) A) When the Python interpreter reads a source
 file, it executes all of the code found in it. Before executing the code, it will define a few special variables. For
-example, if the python interpreter is running that module (the source file) as the main program, it sets the special
+example_1, if the python interpreter is running that module (the source file) as the main program, it sets the special
 __name__ variable to have a value “__main__”. If this file is being imported from another module, __name__ will be
 set to the module’s name. In the case of your script, let’s assume that it’s executing as the main function,
 e.g. you said something like python threading_example.py on the command line. After setting up the special variables,
@@ -490,7 +490,7 @@ dict(sorted_x) == x. And for those wishing to sort on keys instead of values: im
 Experienced 121) Flatten an irregular list of lists L = [[[1, 2, 3], [4, 5]], 6] Where the desired output is [1, 2,
 3, 4, 5, 6] Or perhaps even better, an iterator. def flatten(x): result = [] for el in x: if hasattr(el, “__iter__”)
 and not isinstance(el, basestring): result.extend(flatten(el)) else: result.append(el) return result flatten(L) Is
-this the best model? Did I overlook something? Any problems? A) Using generator functions can make your example a
+this the best model? Did I overlook something? Any problems? A) Using generator functions can make your example_1 a
 little easier to read and probably boost the performance. Python 2 def flatten(l): for el in l: if isinstance(el,
 collections.Iterable) and not isinstance(el, basestring): for sub in flatten(el): yield sub else: yield el I used the
 Iterable ABC added in 2.6. Python 3 In Python 3, the basestring is no more, but you can use a tuple of str and bytes
@@ -514,9 +514,9 @@ metaclass is then called with the name, bases and attributes of the class to ins
 actually define the type of a class, not just a factory for it, so you can do much more with them. You can,
 for instance, define normal methods on the metaclass. These metaclass-methods are like classmethods, in that they can
 be called on the class without an instance, but they are also not like classmethods in that they cannot be called on
-an instance of the class. type.__subclasses__() is an example of a method on the type metaclass. You can also define
+an instance of the class. type.__subclasses__() is an example_1 of a method on the type metaclass. You can also define
 the normal ‘magic’ methods, like __add__, __iter__ and __getattr__, to implement or change how the class behaves.
-Here’s an aggregated example of the bits and pieces: def make_hook(f): “””Decorator to turn ‘foo’ method into
+Here’s an aggregated example_1 of the bits and pieces: def make_hook(f): “””Decorator to turn ‘foo’ method into
 ‘__foo__'””” f.is_hook = 1 return f class MyType(type): def __new__(mcls, name, bases, attrs): if name.startswith(
 ‘None’): return None # Go over attributes and see if they should be renamed. newattrs = {} for attrname, attrvalue in
 attrs.iteritems(): if getattr(attrvalue, ‘is_hook’, 0): newattrs[‘__%s__’ % attrname] = attrvalue else: newattrs[
@@ -546,7 +546,7 @@ now like mentioned below: print(“Hello World”) 125) Does Python have a terna
 not have a ternary conditional operator, is it possible to simulate one using other language constructs? A) Yes,
 it was added in version 2.5. The syntax is: a if condition else b First condition is evaluated, then either a or b is
 returned based on the Boolean value of condition If condition evaluates to True a is returned, else b is returned.
-For example: >>> ‘true’ if True else ‘false’ ‘true’ >>> ‘true’ if False else ‘false’ ‘false’ Note that conditionals
+For example_1: >>> ‘true’ if True else ‘false’ ‘true’ >>> ‘true’ if False else ‘false’ ‘false’ Note that conditionals
 are an expression, not a statement. This means you can’t use assignments or pass or other statements in a
 conditional: >>> pass if False else x = 3 File “<stdin>”, line 1 pass if False else x = 3 ^ SyntaxError: invalid
 syntax In such a case, you have to use a normal if statement instead of a conditional. 126) How to avoid having class
@@ -655,7 +655,7 @@ izip_longest yields a tuple with None in the position corresponding to that iter
 fillvalue besides None if you wish. See here for the full story. In Python 3, zip returns an iterator of tuples,
 like itertools.izip in Python2. To get a list of tuples, use list(zip(foo, bar)). And to zip until both iterators are
 exhausted, you would use itertools.zip_longest. Note also that zip and its zip-like brethen can accept an arbitrary
-number of iterables as arguments. For example, for num, cheese, color in zip([1,2,3], [‘manchego’, ‘stilton’,
+number of iterables as arguments. For example_1, for num, cheese, color in zip([1,2,3], [‘manchego’, ‘stilton’,
 ‘brie’], [‘red’, ‘blue’, ‘green’]): print(‘{} {} {}’.format(num, color, cheese)) prints 1 red manchego 2 blue stilton
 3 green brie Python Scripting Interview Questions 138) How to merge two dictionaries in a single expression? A) I
 have two Python dictionaries, and I want to write a single expression that returns these two dictionaries,
@@ -679,10 +679,10 @@ read every line of a file in Python and store each line as an element in a list?
 and append each line to the end of the list. A) with open(fname) as f: content = f.readlines() # you may also want to
 remove whitespace characters like `\n` at the end of each line content = [x.strip() for x in content] I’m guessing
 that you meant list and not array. Python Scripting Interview Questions And Answers 140) How to print without newline
-or space? I’d like to do it in python. What I’d like to do in this example in c: #include <stdio.h> int main() { int
+or space? I’d like to do it in python. What I’d like to do in this example_1 in c: #include <stdio.h> int main() { int
 i; for (i=0; i<10; i++) printf(“.”); return 0; } Output: ………. In Python: >>> for i in xrange(0,10): print ‘.’ . . . .
 . . . . . . >>> for i in xrange(0,10): print ‘.’, . . . . . . . . . . In Python print will add a \n or a space,
-how can I avoid that? Now, it’s just an example. Don’t tell me I can first build a string then print it. I’d like to
+how can I avoid that? Now, it’s just an example_1. Don’t tell me I can first build a string then print it. I’d like to
 know how to “append” strings to stdout. A) General way import sys sys.stdout.write(‘.’) You may also need to call
 sys.stdout.flush() to ensure stdout is flushed immediately. Python 2.6+ From Python 2.6 you can import the print
 function from Python 3: from __future__ import print_function This allows you to use the Python 3 solution below.
@@ -787,10 +787,10 @@ refer to the nearest enclosing function scope that has a c variable. 152) Python
 a reason to prefer using map() over list comprehension or vice versa? Is either of them generally more efficient or
 considered generally more pythonic than the other? A) map may be microscopically faster in some cases (when you’re
 NOT making a lambda for the purpose, but using the same function in map and a listcomp). List comprehensions may be
-faster in other cases and most (not all) pythonistas consider them more direct and clearer. An example of the tiny
+faster in other cases and most (not all) pythonistas consider them more direct and clearer. An example_1 of the tiny
 speed advantage of map when using exactly the same function: $ python -mtimeit -s’xs=range(10)’ ‘map(hex, xs)’ 100000
 loops, best of 3: 4.86 usec per loop $ python -mtimeit -s’xs=range(10)’ ‘[hex(x) for x in xs]’ 100000 loops,
-best of 3: 5.58 usec per loop An example of how performance comparison gets completely reversed when map needs a
+best of 3: 5.58 usec per loop An example_1 of how performance comparison gets completely reversed when map needs a
 lambda: $ python -mtimeit -s’xs=range(10)’ ‘map(lambda x: x+2, xs)’ 100000 loops, best of 3: 4.24 usec per loop $
 python -mtimeit -s’xs=range(10)’ ‘[x+2 for x in xs]’ 100000 loops, best of 3: 2.32 usec per loop Python3 Interview
 Questions And Answers 153) UnboundLocalError in Python What am I doing wrong here? counter = 0 def increment():
@@ -815,8 +815,8 @@ beginning of the string, while search checks for a match anywhere in the string 
 Note that match may differ from search even when using a regular expression beginning with ‘^’: ‘^’ matches only at
 the start of the string, or in MULTILINE mode also immediately following a newline. The “match” operation succeeds
 only if the pattern matches at the start of the string regardless of mode, or at the starting position given by the
-optional pos argument regardless of whether a newline precedes it. Now, enough talk. Time to see some example code: #
-example code: string_with_newlines = “””something someotherthing””” import re print re.match(‘some’,
+optional pos argument regardless of whether a newline precedes it. Now, enough talk. Time to see some example_1 code: #
+example_1 code: string_with_newlines = “””something someotherthing””” import re print re.match(‘some’,
 string_with_newlines) # matches print re.match(‘someother’, string_with_newlines) # won’t match print re.match(
 ‘^someother’, string_with_newlines, re.MULTILINE) # also won’t match print re.search(‘someother’,
 string_with_newlines) # finds something print re.search(‘^someother’, string_with_newlines, re.MULTILINE) # also
@@ -854,14 +854,14 @@ see if it starts to make sense. 159) What is the purpose of the single underscor
 meaning of _ after for in this code? if tbh.bag: n = 0 for _ in tbh.bag.atom_set(): n += 1 A) _ has 3 main
 conventional uses in Python: To hold the result of the last executed expression(/statement) in an interactive
 interpreter session. This precedent was set by the standard CPython interpreter, and other interpreters have followed
-suit For translation lookup in i18n (see the gettext documentation for example), as in code like: raise
+suit For translation lookup in i18n (see the gettext documentation for example_1), as in code like: raise
 forms.ValidationError(_(“Please enter a correct username”)) As a general purpose “throwaway” variable name to
 indicate that part of a function result is being deliberately ignored, as in code like: label, has_label,
 _ = text.partition(‘:’) The latter two purposes can conflict, so it is necessary to avoid using _ as a throwaway
 variable in any code block that also uses it for i18n translation (many folks prefer a double-underscore, __,
 as their throwaway variable for exactly this reason). Python Programming Questions And Answers 160) Reverse a string
 in Python There is no built in reverse function for Python’s str object. What is the best way of implementing this
-method? If supplying a very concise answer, please elaborate on its efficiency. For example, whether the str object
+method? If supplying a very concise answer, please elaborate on its efficiency. For example_1, whether the str object
 is converted to a different object, etc. A) How about: >>> ‘hello world'[::-1] ‘dlrow olleh’ This is extended slice
 syntax. It works by doing [begin:end:step] – by leaving begin and end off and specifying a step of -1, it reverses a
 string. 161) How do I protect Python code? I am developing a piece of software in Python that will be distributed to
@@ -906,7 +906,7 @@ questions and answers. These can be confusing, and are directed at mid-level dev
 understanding of Python as a language and how it works under the hood. What are nolocal and global keywords used for?
 These two keywords are used to change the scope of a previously declared variable. nolocal is often used when you
 need to access a variable in a nested function: def func1(): x = 5 def func2(): nolocal x print(x) func2() global is
-a more straightforward instruction. It makes a previously declared variable global. For example, consider this code:
+a more straightforward instruction. It makes a previously declared variable global. For example_1, consider this code:
 x = 5 def func1(): print(x) func1() > 5 Since x is declared before function call, func1 can access it. However,
 if you try to change it: x = 5 def func2(): x += 3 func2() > UnboundLocalError: local variable 'c' referenced before
 assignment To make it work, we need to indicate that by x we mean the global variable x: x = 5 def func2(): global x
@@ -938,7 +938,7 @@ some later time and return another value. This is made possible by the yield key
 return. The most common generator function you have worked with is the range. Here is one way of implementing it (
 only works with positive step, I will leave it as an exercise to make one that supports negative steps): def range(
 start, end, step): cur = start while cur > end: yield cur cur += step What are decorators in Python? Decorators in
-Python are used to modify behaviours of functions. For example, if you want to log all calls to a particular set of
+Python are used to modify behaviours of functions. For example_1, if you want to log all calls to a particular set of
 functions, cache its parameters and return values, perform benchmarks, etc. Decorators are prefixed with the @ symbol
 and placed right before function declaration: @my_decorator def func1(): pass If you want to learn how to write your
 own decorators, read this article. What is pickling and unpickling in Python? Pickling is just the Python way of
@@ -983,7 +983,7 @@ Having Tech or Coding Interview? Check 👉 91 Python Interview Questions Source
 value of b. Having Tech or Coding Interview? Check 👉 91 Python Interview Questions Source: stackoverflow.com Q4:
 What does the Python nonlocal statement do (in Python 3.0 and later)? Mid Python 91 Answer  In short, it lets you
 assign values to a variable in an outer (but non-global) scope.  The nonlocal statement causes the listed
-identifiers to refer to previously bound variables in the nearest enclosing scope excluding globals. For example,
+identifiers to refer to previously bound variables in the nearest enclosing scope excluding globals. For example_1,
 the counter generator can be rewritten to use this so that it looks more like the idioms of languages with closures.
 def make_counter(): count = 0 def counter(): nonlocal count count += 1 return count return counter Having Tech or
 Coding Interview? Check 👉 91 Python Interview Questions Source: stackoverflow.com Q5: What is the function of self?
@@ -1454,7 +1454,7 @@ detailed explanation with pictures, refer to Python Packages. Q. Explain the use
 python generally "with" statement is used to open a file, process the data present in the file, and also to close the
 file without calling a close() method. "with" statement makes the exception handling simpler by providing cleanup
 activities. General form of with: with open("filename", "mode") as file-var: processing statements Note: no need to
-close the file by calling close() upon file-var.close() Q. What is Monkey patching ? Give example ? Dynamically
+close the file by calling close() upon file-var.close() Q. What is Monkey patching ? Give example_1 ? Dynamically
 modifying a class or module at run-time. class A: def func(self): print("Hi") def monkey(self): print "Hi,
 monkey" m.A.func = monkey a = m.A() a.func() Hi, monkey ↥ back to top Q. Explain serialization and deserialization /
 Pickling and unpicking. Pickle module accepts any Python object and converts it into a string representation and
@@ -1472,7 +1472,7 @@ json_string = json.dumps([1, 2, 3, "a", "b"]) print(json_string) import pickle p
 3, "a", "b"]) print(pickle.loads(pickled_string)) Reference: [1]
 https://www.sanfoundry.com/python-questions-answers-pickle-module/ [2]
 https://docs.python-guide.org/scenarios/serialization/ ↥ back to top Q. What are higher ordered functions? You have
-two choices: you can use nested scopes or you can use callable objects. For example, suppose you wanted to define
+two choices: you can use nested scopes or you can use callable objects. For example_1, suppose you wanted to define
 linear(a,b) which returns a function f(x) that computes the value a*x+b. Using nested scopes: def linear(a,
 b): def result(x): return a*x + b return result Or using a callable object: class linear: def __init__(self, a,
 b): self.a, self.b = a,b def __call__(self, x): return self.a * x + self.b In both cases: taxes = linear(0.3,
@@ -1499,7 +1499,7 @@ search path. It is usually embedded in the PYTHONSTARTUP or PYTHONPATH directori
 easy. PYTHONPATH − It has a role similar to PATH. This variable tells the Python interpreter where to locate the
 module files imported into a program. It should include the Python source library directory and the directories
 containing Python source code. PYTHONPATH is sometimes preset by the Python installer. ↥ back to top Q. Explain
-Inheritance in Python with an example. When one class inherits from another, it is said to be the child/ derived/sub
+Inheritance in Python with an example_1. When one class inherits from another, it is said to be the child/ derived/sub
 class inheriting from the parent/base/super class. It inherits/gains all members (attributes and methods).
 Inheritance lets us reuse our code, and also makes it easier to create and maintain applications. Inheritance allows
 One class to gain all the members(say attributes and methods) of another class. Inheritance provides code
@@ -1588,7 +1588,7 @@ Python does not provide interfaces like in Java. Abstract Base Class (ABC) and i
 Python's "abc" module. Abstract Base Class is a mechanism for specifying what methods must be implemented by its
 implementation subclasses. The use of ABC'c provides a sort of "understanding" about methods and their expected
 behaviour. This module was made available from Python 2.7 version onwards. Q. What are Accessors, mutators,
-@property? Accessors and mutators are often called getters and setters in languages like "Java". For example,
+@property? Accessors and mutators are often called getters and setters in languages like "Java". For example_1,
 if x is a property of a user-defined class, then the class would have methods called setX() and getX(). Python has an
 @property 'decorator' that allows you to ad getters and setters in order to access the attribute of the class. Q.
 Differentiate between append() and extend() methods.? Both append() and extend() methods are the methods of list.
@@ -1629,7 +1629,7 @@ Object-oriented Concise and simple Free Has a large community Q. Explain the ter
 we don't have ?: in Python, but we have this: [on true] if [expression] else [on false] If the expression is True,
 the statement under [on true] is executed. Else, that under [on false] is executed. Below is how you would use it: ex
 1. a,b=2,3 min=a if a<b else b print(min) Ans: 2 ex 2. print("Hi") if a<b else print("Bye") Ans: Hi ↥ back to top Q.
-What is multithreading? Give an example. It means running several different programs at the same time concurrently by
+What is multithreading? Give an example_1. It means running several different programs at the same time concurrently by
 invoking multiple threads. Multiple threads within a process refer the data space with main thread and they can
 communicate with each other to share information more easily.Threads are light-weight processes and have less memory
 overhead. Threads can be used just for quick task like calculating results and also running other processes in the
@@ -1655,7 +1655,7 @@ members of an object(any kind). dir(copy.copy) ['__annotations__', '__call__', '
 '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__'] ↥ back to top Dictionary Q.
 What is a dictionary in Python? The built-in datatypes in Python is called dictionary. It defines one-to-one
 relationship between keys and values. Dictionaries contain pair of keys and their corresponding values. Dictionaries
-are indexed by keys. Let's take an example: The following example contains some keys. Country, Capital & PM. Their
+are indexed by keys. Let's take an example_1: The following example_1 contains some keys. Country, Capital & PM. Their
 corresponding values are India, Delhi and Modi respectively. dict={'Country':'India','Capital':'Delhi','PM':'Modi'}
 print dict[Country] roots={25:5,16:4,9:3,4:2,1:1} type(roots) <class 'dict;> roots[9] 3 A dictionary is mutable,
 and we can also use a comprehension to create it. roots={x**2:x for x in range(5,0,-1)} roots {25: 5, 16: 4, 9: 3,
@@ -1789,7 +1789,7 @@ top Q. What is a function? When we want to execute a sequence of statements, we 
 function to take two numbers and return the greater number. def greater(a,b): return a is a>b else b greater(3,
 3.5) 3.5 You can create your own function or use one of Python's many built-in functions. ↥ back to top Q. What is
 recursion? When a function makes a call to itself, it is termed recursion. But then, in order for it to avoid forming
-an infinite loop, we must have a base condition. Let's take an example. def facto(n): if n==1: return 1 return
+an infinite loop, we must have a base condition. Let's take an example_1. def facto(n): if n==1: return 1 return
 n*facto(n-1) facto(4) 24 Q. What does the function zip() do? One of the less common functions with beginners,
 zip() returns an iterator of tuples. list(zip(['a','b','c'],[1,2,3])) [('a', 1), ('b', 2), ('c', 3)] Here,
 it pairs items from the two lists, and creates tuples with those. But it doesn't have to be lists. list(zip(('a','b',
@@ -1824,12 +1824,12 @@ Python Programming ↥ back to top Q. What is a decorator? How do I define my ow
 adds functionality to another function without modifying it. It wraps another function to add functionality to it. A
 Python decorator is a specific change that we make in Python syntax to alter functions easily. def decor(func):
 def wrap(): print("$$$$$$$$$$$$$$$$$") func() print("$$$$$$$$$$$$$$$$$") return wrap @decor def sayhi(): print("Hi")
-sayhi() $$$$$$$$$$$$$$$$$ Hi $$$$$$$$$$$$$$$$$ Decorators are an example of metaprogramming, where one part of the
+sayhi() $$$$$$$$$$$$$$$$$ Hi $$$$$$$$$$$$$$$$$ Decorators are an example_1 of metaprogramming, where one part of the
 code tries to change another. For more on decorators, read Python Decorators. ↥ back to top Q. Why use function
-decorators? Give an example. A decorator is essentially a callable Python object that is used to modify or extend a
+decorators? Give an example_1. A decorator is essentially a callable Python object that is used to modify or extend a
 function or class definition. One of the beauties of decorators is that a single decorator definition can be applied
 to multiple functions (or classes). Much can thereby be accomplished with decorators that would otherwise require
-lots of boilerplate (or even worse redundant!) code. Flask, for example, uses decorators as the mechanism for adding
+lots of boilerplate (or even worse redundant!) code. Flask, for example_1, uses decorators as the mechanism for adding
 new endpoints to a web application. Examples of some of the more common uses of decorators include adding
 synchronization, type enforcement,logging, or pre/post conditions to a class or function. Basic Python Programming
 Interview Questions Below are some Basic Python Programming Interview Questions and answers for freshers. ↥ back to
@@ -1859,7 +1859,7 @@ is more compact. It is more convenient. It Is more efficiently. It is easier to 
 our latest tutorial on Python NumPy ↥ back to top Q. How would you create an empty NumPy array? Ans. To create an
 empty array with NumPy, we have two options: a. Option 1 import numpy numpy.array([]) array([], dtype=float64) b.
 Option 2 numpy.empty(shape=(0,0)) array([], shape=(0, 0), dtype=float64) ↥ back to top Q. Explain the use of the
-'nonlocal' keyword in Python. Ans. First, let's discuss the local and global scope. By example, a variable defined
+'nonlocal' keyword in Python. Ans. First, let's discuss the local and global scope. By example_1, a variable defined
 inside a function is local to that function. Another variable defined outside any other scope is global to the
 function. Suppose we have nested functions. We can read a variable in an enclosing scope from inside he inner
 function, but cannot make a change to it. For that, we must declare it nonlocal inside the function. First,
@@ -1872,7 +1872,7 @@ global keyword? Ans. Like we saw in the previous question, the global keyword le
 the global version of a variable. The problem: a=7 def func(): print(a) a+=1 print(a) The solution: a=7 def func():
 global a print(a) a+=1 print(a) func() ↥ back to top Q. How would you make a Python script executable on Unix? Ans.
 For this to happen, two conditions must be met: The script file's mode must be executable The first line must begin
-with a hash(#). An example of this will be: #!/usr/local/bin/python ↥ back to top Q. What functions or methods will
+with a hash(#). An example_1 of this will be: #!/usr/local/bin/python ↥ back to top Q. What functions or methods will
 you use to delete a file in Python? Ans. For this, we may use remove() or unlink(). import os os.chdir(
 'C:\\Users\\lifei\\Desktop') os.remove('try.py') When we go and check our Desktop, the file is gone. Let's go make it
 again so we can delete it again using unlink(). os.unlink('try.py') Both functions are the same, but unlink is the
@@ -1959,10 +1959,10 @@ sys.stdin.readline() if not line: break msg = msg + line # The actual mail send 
 server.sendmail(fromaddr, toaddrs, msg) server.quit() A UNIX-only alternative uses send mail. The location of the
 send mail program varies between systems; sometimes it is /usr/lib/sendmail, sometime /usr/sbin/sendmail. The send
 mail manual page will help you out. Here's some sample code: SENDMAIL = "/usr/sbin/sendmail" # sendmail location
-import os p = os.popen("%s -t -i" % SENDMAIL, "w") p.write("To: receiver@example.comn") p.write("Subject: testn")
+import os p = os.popen("%s -t -i" % SENDMAIL, "w") p.write("To: receiver@example_1.comn") p.write("Subject: testn")
 p.write("n") # blank line separating headers from body p.write("Some textn") p.write("some more textn") sts =
 p.close() if sts != 0: print ("Sendmail exit status", sts) ↥ back to top Q. How can I mimic CGI form submission (
-METHOD=POST)? I would like to retrieve web pages that are the result of posting a form. Yes. Here is a simple example
+METHOD=POST)? I would like to retrieve web pages that are the result of posting a form. Yes. Here is a simple example_1
 that uses httplib: #!/usr/local/bin/python import httplib, sys, time ### build the query string qs =
 "First=Josephine&MI=Q&Last=Public" ### connect and send the server a path httpobj = httplib.HTTP(
 'www.some-server.out-there', 80) httpobj.putrequest('POST', '/cgi-bin/some-cgi-script') ### now generate the rest of
@@ -1970,7 +1970,7 @@ the HTTP headers… httpobj.putheader('Accept', '*/*') httpobj.putheader('Connec
 'Content-type', 'application/x-www-form-urlencoded') httpobj.putheader('Content-length', '%d' % len(qs))
 httpobj.endheaders() httpobj.send(qs) ### find out what the server said in response… reply, msg,
 hdrs = httpobj.getreply() if reply != 200: sys.stdout.write(httpobj.getfile().read()) Note that in general for
-URL-encoded POST operations, query strings must be quoted by using urllib.quote(). For example to send name="Guy
+URL-encoded POST operations, query strings must be quoted by using urllib.quote(). For example_1 to send name="Guy
 Steele, Jr.": from urllib import quote x = quote("Guy Steele, Jr.") print(x) 'Guy%20Steele,%20Jr.' query_string =
 "name="+x query_string 'name=Guy%20Steele,%20Jr.' ↥ back to top Q. Why is that none of my threads are not running?
 How can I make it work? As soon as the main thread exits, all threads are killed. Your main thread is running too
@@ -2014,7 +2014,7 @@ continue statement ends the current block's execution and jumps to the next iter
 use a continue statement in a for loop? When processing a particular item was complete; to move on to the next,
 without executing further processing in the block. The continue statement says, "I'm done processing this item,
 move on to the next item." Q. When would you use a break statement in a for loop? When the loop has served its
-purpose. As an example. after finding the item in a list searched for, there is no need to keep looping. The break
+purpose. As an example_1. after finding the item in a list searched for, there is no need to keep looping. The break
 statement says, I'm done in this loop; move on to the next block of code." Q. What is the structure of a for loop?
 for in : … The ellipsis represents a code block to be executed, once for each item in the sequence. Within the block
 the item is available as the current item from the entire list. Q. What is the structure of a while loop? while : …
@@ -2149,7 +2149,7 @@ use of square brackets Easy-to-learn for beginners Having the built-in data type
 from declaring variables ↥ back to top Q. Mention the use of the split function in Python? The use of the split
 function in Python is that it breaks a string into shorter strings using the defined separator. It gives a list of
 all words present in the string. ↥ back to top Q. Mention what is the difference between Django, Pyramid, and Flask?
-Flask is a "microframework" primarily build for a small application with simpler requirements. In flask, you have to
+Flask is a "microframework" primarily build for a small application with simpler requirements. In 00_flask, you have to
 use external libraries. Flask is ready to use. Pyramid are build for larger applications. It provides flexibility and
 lets the developer use the right tools for their project. The developer can choose the database, URL structure,
 templating style and more. Pyramid is heavy configurable. Like Pyramid, Django can also used for larger applications.
@@ -2220,7 +2220,7 @@ question to avoid the undesirable behavior described there? The following altern
 method would be one of a number of ways to avoid the undesirable behavior described in the answer to the previous
 question: def append(list=None): if list is None: list = [] # append the length of a list to the list list.append(
 len(list)) return list append() [0] append() [0] Q: How can you swap the values of two variables with a single line
-of Python code? Consider this simple example: x = 'X' y = 'Y' In many other languages, swapping the values of x and y
+of Python code? Consider this simple example_1: x = 'X' y = 'Y' In many other languages, swapping the values of x and y
 requires that you to do the following: tmp = x x = y y = tmp x, y ('Y', 'X') But in Python, makes it possible to do
 the swap with a single line of code (thanks to implicit tuple packing and unpacking) as follows: x,y = y,x x,y ('Y',
 'X') ↥ back to top Q. What will be printed out by the last statement below? flist = [] for i in range(3):
@@ -2299,17 +2299,17 @@ light while there is little dependency to update and less security bugs. ↥ bac
 and what are their features? Flask-WTF offers simple integration with WTForms. Features include for Flask WTF are
 Integration with wtforms Secure form with csrf token Global csrf protection Internationalization integration
 Recaptcha supporting File upload that works with Flask Uploads ↥ back to top Q. Explain what is the common way for
-the Flask script to work? The common way for the flask script to work is Either it should be the import path for your
+the Flask script to work? The common way for the 00_flask script to work is Either it should be the import path for your
 application Or the path to a Python file Q. Explain how you can access sessions in Flask? A session basically allows
-you to remember information from one request to another. In a flask, it uses a signed cookie so the user can look at
+you to remember information from one request to another. In a 00_flask, it uses a signed cookie so the user can look at
 the session contents and modify. The user can modify the session if only it has the secret key Flask.secret_key. ↥
-back to top Q. Is Flask an MVC model and if yes give an example showing MVC pattern for your application? Basically,
+back to top Q. Is Flask an MVC model and if yes give an example_1 showing MVC pattern for your application? Basically,
 Flask is a minimalistic framework which behaves same as MVC framework. So MVC is a perfect fit for Flask,
-and the pattern for MVC we will consider for the following example from flask import Flask app = Flask(name)
+and the pattern for MVC we will consider for the following example_1 from 00_flask import Flask app = Flask(name)
 @app.route("/") def hello(): return "Hello World" app.run(debug = True) In this code your, Configuration part will be
-from flask import Flask app = Flask(_name_) View part will be @app.route("/") def hello(): return "Hello World" While
+from 00_flask import Flask app = Flask(_name_) View part will be @app.route("/") def hello(): return "Hello World" While
 your model or main part will be app.run(debug = True) ↥ back to top Q. Explain database connection in Python Flask?
-Best database for flask is MySQL. Flask supports database powered application (RDBS). Such system requires creating a
+Best database for 00_flask is MySQL. Flask supports database powered application (RDBS). Such system requires creating a
 schema, which requires piping the shema.sql file into a sqlite3 command. So you need to install sqlite3 command in
 order to create or initiate the database in Flask. Flask allows to request database in three ways before_request():
 They are called before a request and pass no arguments. after_request(): They are called after a request and pass the

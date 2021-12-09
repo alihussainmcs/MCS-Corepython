@@ -25,7 +25,7 @@ print("Ali object :", ali)  # 0_sir_notes.__str__()
 """
 - str() is used for creating output for end user while repr() is mainly used for debugging and development.
 - repr’s goal is to be unambiguous and str’s is to be readable.
-  For example, if we suspect a float has a small rounding error, repr will show us while str may not.
+  For example_1, if we suspect a float has a small rounding error, repr will show us while str may not.
 - repr() compute the “official” string representation of an object
   (a representation that has all information about the object) and str() is used to compute the “informal” string
   representation of an object (a representation that is useful for printing the object).
