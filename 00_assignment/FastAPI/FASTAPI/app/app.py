@@ -1,5 +1,5 @@
 # Importing the FastApi class
-from fastapi import FastAPI
+from _26_fastapi import FastAPI
 
 # Creating an app object
 app = FastAPI()
