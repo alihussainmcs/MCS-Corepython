@@ -1,0 +1,15 @@
+hi, my text file is ready 
+hello, this is python txt fileyou can write in this file  This is by far the best answer here and deserves to be on top. One 
+                could even write '.'*n to make it more clear. No joining, no zipping, no loops, no list comprehension; 
+                just find the next two characters next to each other, which is exactly how a human brain thinks about 
+                it. If Monty Python were still alive, he'd love this method! – 
+SO_fix_the_vote_sorting_bug
+ Dec 12 '18 at 1:27
+1
+This is the fastest method for reasonably long strings too: gitlab.com/snippets/1908857 – 
+Ralph Bolton
+ Oct 30 '19 at 16:03
+6
+This won't work if the string contains newlines. This needs flags=re.S. – 
+Arian-Fey
+ Nov 14 '19 at 17:17

@@ -1,0 +1,46 @@
+ Niklaus Wirth, a Swiss computer scientist, wrote a book in 1976 titled Algorithms + Data Structures = 
+Programs.
+
+40+ years later, that equation still holds true. That’s why software engineering candidates have to demonstrate their 
+understanding of data structures along with their applications.
+
+Almost all problems require the candidate to demonstrate a deep understanding of data structures. It doesn’t matter 
+whether you have just graduated (from a university or coding bootcamp), or you have decades of experience.
+
+Sometimes interview questions explicitly mention a data structure, for example, “given a binary tree.” Other times 
+it’s implicit, like “we want to track the number of books associated with each author.”
+
+Learning data structures is essential even if you’re just trying to get better at your current job. Let’s start with 
+understanding the basics.
+
+What is a Data Structure?
+Simply put, a data structure is a container that stores data in a specific layout. This “layout” allows a data 
+structure to be efficient in some operations and inefficient in others. Your goal is to understand data structures 
+so that you can pick the data structure that’s most optimal for the problem at hand.
+
+Why do we need Data Structures?
+As data structures are used to store data in an organized form, and since data is the most crucial entity in computer 
+science, the true worth of data structures is clear.
+
+No matter what problem are you solving, in one way or another you have to deal with data — whether it’s an employee’s 
+salary, stock prices, a grocery list, or even a simple telephone directory.
+
+Based on different scenarios, data needs to be stored in a specific format. We have a handful of data structures that 
+cover our need to store data in different formats.
+
+Commonly used Data Structures
+Let’s first list the most commonly used data structures, and then we’ll cover them one by one:
+
+Arrays
+Stacks
+Queues
+Linked Lists
+Trees
+Graphs
+Tries (they are effectively trees, but it’s still good to call them out separately).
+Hash Tables
+Arrays
+An array is the simplest and most widely used data structure. Other data structures like stacks and queues are derived
+from arrays.
+
+Here’s an image of a simple array of size 4, containing elements (1, 2, 3 and 4).
