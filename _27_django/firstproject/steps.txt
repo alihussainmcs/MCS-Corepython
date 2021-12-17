@@ -1,0 +1,46 @@
+1.for change directory
+cd _27_django
+
+2.for creating project in django
+django-admin startproject firstproject
+
+3.for cd _27_django/firstproject
+cd firstproject
+
+4.for run the fole
+python manage.py runserver
+
+5.for create a django app
+django-admin startapp firstapp
+
+6.then open views.py in app folder an d write down the code
+from django.http import HttpResponse
+# Create your views here.
+def index(request):
+    return HttpResponse("Hello")
+
+7.then create urls.py file in app folder and copy the code of urls.py from project folder and paste the code here
+from django.urls import path
+from .views import *
+
+urlpatterns = [
+
+    path('', index),
+]
+
+
+8.then come to urls.py in project folder and make changes there
+from django.contrib import admin
+from django.urls import path, include
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('', include('firstapp.urls')),
+]
+
+
+9.then run
+python manage.py runserver
+
+for go to back directory
+cd..
