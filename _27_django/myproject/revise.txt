@@ -31,4 +31,4 @@ myproject --> name of prj
                 index.html
 
                 return render(response, 'templates/index.html'
-    manage.py
+    1  manage.py
