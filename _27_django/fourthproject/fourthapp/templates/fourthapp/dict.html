@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dictionary</title>
+</head>
+<body>
+{% for page_list in page_lists %}
+<p>you are in page {{page_list}}</p>
+
+{% endfor %}
+
+{% if page_nums %}
+<p> page number is available </p>
+{% else %}
+<p> page number is not available </p>
+{% endif%}
+</body>
+</html>
