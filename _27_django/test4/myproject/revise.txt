@@ -1,0 +1,34 @@
+django-admin startproject myproject
+cd myproject
+django-admim startapp myapp
+python manage.py runserver __> 8000
+
+myproject --> name of prj
+    mypoject --> module
+        setting.py  --> INSTALLED APPS add apps --> myapp.apps.MyappConfig
+        urls.py  --> path(admin/, )  path('myapp/', include('myapp.urls'))
+        wsgi.py
+        asgi.py
+        __init__.py
+    myapp
+        app.py
+        urls.py --> path('home/', views.name,name = 'name')
+        models.py ---> whatever we need for database
+        admin.py --> models, if you models those models we can change in admin user
+        test.py --> unit cases
+        views.py --> class based view fuc based view -->
+
+                create a function that is callex as view
+                create a html file
+                create  a route in urls.py
+        return render(response, 'myapp/index.html'
+        templates
+            myapp
+                index.html
+    moreapp
+        templates
+            moreapp
+                index.html
+
+                return render(response, 'templates/index.html'
+    manage.py
