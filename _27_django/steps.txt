@@ -44,3 +44,13 @@ python manage.py runserver
 
 for go to back directory
 cd..
+
+
+
+makefile
+Dockerfile
+.yaml
+alembic
+API
+request
+json
