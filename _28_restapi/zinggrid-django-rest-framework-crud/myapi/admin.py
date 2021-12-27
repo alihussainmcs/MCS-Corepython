@@ -3,4 +3,4 @@ from .models import Hero, Todo
 
 # Register your models here.
 admin.site.register(Hero)
-admin.site.register(Todo)
+# admin.site.register(Todo)

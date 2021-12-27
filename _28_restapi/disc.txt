@@ -1,0 +1,24 @@
+Install Steps
+I have followed this medium guide to get the project going, but if you already understand python and Django you can
+        skip this.
+
+Migrate Database models
+It turns out that Django comes with a few models already built in. We need to migrate those built in models to our
+        database.
+
+python manage.py migrate
+If you have added models of your own you need migrate those models with
+
+python manage.py makemigrations
+Create Super User
+python manage.py createsuperuser
+
+  Username (leave blank to use 'alihussain'):
+  Email address: alihussain5499@gmail.com
+  Password:
+  Password (again):
+  Superuser created successfully.
+Create Some Records
+We need to add some records to our hero table. We can do that by starting the server and adding them.
+
+python manage.py runserver
