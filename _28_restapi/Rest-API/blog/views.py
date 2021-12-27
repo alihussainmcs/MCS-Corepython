@@ -1,6 +1,4 @@
-from rest_framework.generics import (
-    ListCreateAPIView, RetrieveUpdateDestroyAPIView, get_object_or_404
-)
+from rest_framework.generics import (ListCreateAPIView, RetrieveUpdateDestroyAPIView)
 
 from .models import Blog
 from .serializers import BlogSerializer

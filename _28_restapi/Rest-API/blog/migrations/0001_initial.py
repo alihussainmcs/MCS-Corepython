@@ -27,7 +27,8 @@ class Migration(migrations.Migration):
                 ('title', models.CharField(max_length=120)),
                 ('description', models.TextField()),
                 ('body', models.TextField()),
-                ('author', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='posts', to='blog.Author')),
+                ('author', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='posts',
+                                             to='blog.Author')),
             ],
         ),
     ]
