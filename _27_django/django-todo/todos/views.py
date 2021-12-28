@@ -8,7 +8,7 @@ from django.http import HttpResponseRedirect
 # return render(request, template_name)
 # first we need route
 # views
-# templates
+# testApp
 #
 # return render(request, 'inex.html', context)
 class IndexView(ListView):

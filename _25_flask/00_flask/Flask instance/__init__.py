@@ -27,7 +27,7 @@ web frame to be built on it. The Flask framework uses Werkzeg as one of its base
 jinja2
 jinja2 is a popular template engine for Python.A web template system combines a template with a specific
 data source to render a dynamic web page.
-This allows you to pass Python variables into HTML templates.
+This allows you to pass Python variables into HTML testApp.
 
 PostgreSQL:
 PostgreSQL is an open source relational database system which, as its name suggests,
