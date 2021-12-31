@@ -80,3 +80,22 @@ e-d-c-b-a-b-c-d-e
 
 """
 
+
+def print_rangoli(size):
+    import string
+    width = 4 * size - 3
+    alpha = string.ascii_lowercase
+    for i in list(range(size))[::-1] + list(range(1, size)):
+        print('-'.join(alpha[size-1:i:-1] + alpha[i:size]).center(width, '-'))
+
+
+"""
+def print_rangoli(size):
+    myStr = 'abcdefghijklmnopqrstuvwxyz'[0:size]
+
+    for i in range(size - 1, -size, -1):
+        x = abs(i)
+        if x >= 0:
+            line = myStr[size:x:-1] + myStr[x:size]
+            print("--" * x + '-'.join(line) + "--" * x)
+"""
