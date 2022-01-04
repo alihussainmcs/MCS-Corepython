@@ -27,7 +27,7 @@ print("Tuple to list :", list(tuple_1))
 print('tuple to set ', set(tuple_1))
 print()
 
-set_1 = {1, 'python', 1+1j, True}
+set_1 = {1, 'python', 1 + 1j, True}
 print('Given set :', set_1)
 print('set to list :', list(set_1))
 print('set to tuple :', tuple(set_1))
@@ -40,6 +40,8 @@ print("--------2 Algorithm              ----------")
 print("--------3 Using Functions        ----------")
 # data = [1, 2, 3, 4, 5]
 data = {1, 2, 3, 4, 'python'}
+
+
 # data = {1, 'a', False}
 
 
@@ -67,6 +69,35 @@ list_set_tuple_vise_versa(data)
 
 # 4 OOPS
 print("--------4 Object Oriented        ----------")
+
+
+class ListSetTuple:
+    def __init__(self, line_1):
+        self.line_1 = line_1
+
+    def list_set_tuple(self):
+        if type(self.line_1) is list:
+            print("Given list :", self.line_1)
+            print('list to tuple :', tuple(self.line_1))
+            print('list to set :', set(self.line_1))
+
+        elif type(self.line_1) is tuple:
+            print("Given tuple :", self.line_1)
+            print("Tuple to list :", list(self.line_1))
+            print('tuple to set ', set(self.line_1))
+
+        elif type(self.line_1) is set:
+            print('Given set :', self.line_1)
+            print('set to list :', list(self.line_1))
+            print('set to tuple :', tuple(self.line_1))
+
+        else:
+            print("Given input is not list , tuple or set !")
+
+
+lst = ListSetTuple([1, 2, 3, 4, 5])
+lst.list_set_tuple()
+
 
 # 5 Exception handling
 print("--------5 Exception handling     ----------")
