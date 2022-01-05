@@ -1,4 +1,4 @@
-# P09. REQ :  find the repeated items of a tuple
+# P10. REQ :  check whether an element exists within a tuple
 """
 1. CRUD       -->  Retrieval
 2. STATE      -->  String
@@ -20,7 +20,10 @@ tup = 2, 4, 5, 6, 2, 3, 4, 4, 7
 print('Given Tuple :', tup)
 # return the number of times it appears in the tuple.
 count = tup.count(4)
-print('4 count in tuple :', count)
+print('4 in tuple :', 4 in tup)
+
+print('1 in tuple :', 1 in tup)
+
 # 3 Using Functions
 print("--------3 Using Functions        ----------")
 
