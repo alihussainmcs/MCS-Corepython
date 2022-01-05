@@ -1,0 +1,454 @@
+git--> github, gitlab, bitbucket
+github --> pull request
+gitlab --> merge request
+
+
+whenever you create repo
+--> git branch
+--> 	main
+		develop
+# CI/CD
+master  -    -      -   	- 		 -		
+	file.py			file.py
+	second_file.py	second_file.py
+					third_modified.py
+					
+					merge
+develop - ----------------------------
+		file.txt			file.py				file.py
+		second_file.py		second_file.txt		second_file.py
+							third.py			third_modified.py
+
+feature_branch
+production pre production uat staging develop 
+facebook.com	preprod.facebook.com uat.facebook.com staging.facebook.com  dev.facebook.com localhost:5000/
+facebook --> main --> all features -->  facebook
+			develop --> facebook  ---> facebook + filters + reels  0.2---> we will test every feature in dev environment 
+					merge request review
+			insta_integration_01 --> facebook + filters i will test this locally
+			insta_integration_02 --> facebook + reels   I have tested locally
+			
+once any feature is failing --> WE WILL GO BACK TO LAST VERSION
+			develop  --> facebook  --> 0.1 
+			
+
+master --> git branc			
+			
+master --> -
+develop --> myfile.py  --> master
+
+master -				-				-
+develop -----------
+
+
+
+kanal@LAPTOP-IBN130JN MINGW64 ~/Documents/Class/Projects/FAST_API_HARSHA_K_TO_APP (master)
+$ git branch
+* master
+
+kanal@LAPTOP-IBN130JN MINGW64 ~/Documents/Class/Projects/FAST_API_HARSHA_K_TO_APP (master)
+$ git branch -b develop
+error: unknown switch `b'
+usage: git branch [<options>] [-r | -a] [--merged] [--no-merged]
+   or: git branch [<options>] [-l] [-f] <branch-name> [<start-point>]
+   or: git branch [<options>] [-r] (-d | -D) <branch-name>...
+   or: git branch [<options>] (-m | -M) [<old-branch>] <new-branch>
+   or: git branch [<options>] (-c | -C) [<old-branch>] <new-branch>
+   or: git branch [<options>] [-r | -a] [--points-at]
+   or: git branch [<options>] [-r | -a] [--format]
+
+Generic options
+    -v, --verbose         show hash and subject, give twice for upstream branch
+    -q, --quiet           suppress informational messages
+    -t, --track           set up tracking mode (see git-pull(1))
+    -u, --set-upstream-to <upstream>
+                          change the upstream info
+    --unset-upstream      unset the upstream info
+    --color[=<when>]      use colored output
+    -r, --remotes         act on remote-tracking branches
+    --contains <commit>   print only branches that contain the commit
+    --no-contains <commit>
+                          print only branches that don't contain the commit
+    --abbrev[=<n>]        use <n> digits to display object names
+
+Specific git-branch actions:
+    -a, --all             list both remote-tracking and local branches
+    -d, --delete          delete fully merged branch
+    -D                    delete branch (even if not merged)
+    -m, --move            move/rename a branch and its reflog
+    -M                    move/rename a branch, even if target exists
+    -c, --copy            copy a branch and its reflog
+    -C                    copy a branch, even if target exists
+    -l, --list            list branch names
+    --show-current        show current branch name
+    --create-reflog       create the branch's reflog
+    --edit-description    edit the description for the branch
+    -f, --force           force creation, move/rename, deletion
+    --merged <commit>     print only branches that are merged
+    --no-merged <commit>  print only branches that are not merged
+    --column[=<style>]    list branches in columns
+    --sort <key>          field name to sort on
+    --points-at <object>  print only branches of the object
+    -i, --ignore-case     sorting and filtering are case insensitive
+    --format <format>     format to use for the output
+
+
+kanal@LAPTOP-IBN130JN MINGW64 ~/Documents/Class/Projects/FAST_API_HARSHA_K_TO_APP (master)
+$ git checkout -b develop
+Switched to a new branch 'develop'
+
+kanal@LAPTOP-IBN130JN MINGW64 ~/Documents/Class/Projects/FAST_API_HARSHA_K_TO_APP (develop)
+$ ls
+FAST_API_TO_APP.zip  Procfile  requirements.txt  test/    tezst.py
+Pipfile              my_prj/   run.py            test.py  todo_app/
+
+kanal@LAPTOP-IBN130JN MINGW64 ~/Documents/Class/Projects/FAST_API_HARSHA_K_TO_APP (develop)
+$ touch mytext.py
+
+kanal@LAPTOP-IBN130JN MINGW64 ~/Documents/Class/Projects/FAST_API_HARSHA_K_TO_APP (develop)
+$ ls
+FAST_API_TO_APP.zip  my_prj/           run.py   tezst.py
+Pipfile              mytext.py         test/    todo_app/
+Procfile             requirements.txt  test.py
+
+kanal@LAPTOP-IBN130JN MINGW64 ~/Documents/Class/Projects/FAST_API_HARSHA_K_TO_APP (develop)
+$ git status
+On branch develop
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   requirements.txt
+        modified:   run.py
+        modified:   todo_app/__init__.py
+        modified:   todo_app/__pycache__/__init__.cpython-38.pyc
+        modified:   todo_app/__pycache__/database.cpython-38.pyc
+        modified:   todo_app/__pycache__/dependencies.cpython-38.pyc
+        modified:   todo_app/__pycache__/models.cpython-38.pyc
+        modified:   todo_app/__pycache__/schemas.cpython-38.pyc
+        modified:   todo_app/__pycache__/utils.cpython-38.pyc
+        modified:   todo_app/api/__pycache__/task.cpython-38.pyc
+        modified:   todo_app/api/task.py
+        modified:   todo_app/database.py
+        modified:   todo_app/dependencies.py
+        modified:   todo_app/models.py
+        modified:   todo_app/schemas.py
+        modified:   todo_app/utils.py
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .idea/
+        FAST_API_TO_APP.zip
+        mytext.py
+        test.py
+        test/
+        tezst.py
+        todo_app/__pycache__/tezst.cpython-38.pyc
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+kanal@LAPTOP-IBN130JN MINGW64 ~/Documents/Class/Projects/FAST_API_HARSHA_K_TO_APP (develop)
+$ git add mytext.py
+
+kanal@LAPTOP-IBN130JN MINGW64 ~/Documents/Class/Projects/FAST_API_HARSHA_K_TO_APP (develop)
+$ ls
+FAST_API_TO_APP.zip  my_prj/           run.py   tezst.py
+Pipfile              mytext.py         test/    todo_app/
+Procfile             requirements.txt  test.py
+
+kanal@LAPTOP-IBN130JN MINGW64 ~/Documents/Class/Projects/FAST_API_HARSHA_K_TO_APP (develop)
+$ git commit -m 'for testing'
+[develop 96d9d65] for testing
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 mytext.py
+
+kanal@LAPTOP-IBN130JN MINGW64 ~/Documents/Class/Projects/FAST_API_HARSHA_K_TO_APP (develop)
+$ git push origin develop
+Enumerating objects: 41, done.
+Counting objects: 100% (41/41), done.
+Delta compression using up to 6 threads
+Compressing objects: 100% (39/39), done.
+Writing objects: 100% (41/41), 9.03 KiB | 1.50 MiB/s, done.
+Total 41 (delta 9), reused 20 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (9/9), done.
+remote:
+remote: Create a pull request for 'develop' on GitHub by visiting:
+remote:      https://github.com/KharshavReddy/FAST_API_HARSHA_K_TO_APP/pull/new/develop
+remote:
+To https://github.com/KharshavReddy/FAST_API_HARSHA_K_TO_APP.git
+ * [new branch]      develop -> develop
+
+kanal@LAPTOP-IBN130JN MINGW64 ~/Documents/Class/Projects/FAST_API_HARSHA_K_TO_APP (develop)
+$ ls
+FAST_API_TO_APP.zip  my_prj/           run.py   tezst.py
+Pipfile              mytext.py         test/    todo_app/
+Procfile             requirements.txt  test.py
+
+kanal@LAPTOP-IBN130JN MINGW64 ~/Documents/Class/Projects/FAST_API_HARSHA_K_TO_APP (develop)
+$ git checkout master
+Switched to branch 'master'
+M       requirements.txt
+M       run.py
+M       todo_app/__init__.py
+M       todo_app/__pycache__/__init__.cpython-38.pyc
+M       todo_app/__pycache__/database.cpython-38.pyc
+M       todo_app/__pycache__/dependencies.cpython-38.pyc
+M       todo_app/__pycache__/models.cpython-38.pyc
+M       todo_app/__pycache__/schemas.cpython-38.pyc
+M       todo_app/__pycache__/utils.cpython-38.pyc
+M       todo_app/api/__pycache__/task.cpython-38.pyc
+M       todo_app/api/task.py
+M       todo_app/database.py
+M       todo_app/dependencies.py
+M       todo_app/models.py
+M       todo_app/schemas.py
+M       todo_app/utils.py
+Your branch is up to date with 'origin/master'.
+
+kanal@LAPTOP-IBN130JN MINGW64 ~/Documents/Class/Projects/FAST_API_HARSHA_K_TO_APP (master)
+$ ls
+FAST_API_TO_APP.zip  Procfile  requirements.txt  test/    tezst.py
+Pipfile              my_prj/   run.py            test.py  todo_app/
+
+kanal@LAPTOP-IBN130JN MINGW64 ~/Documents/Class/Projects/FAST_API_HARSHA_K_TO_APP (master)
+$ ^C
+
+kanal@LAPTOP-IBN130JN MINGW64 ~/Documents/Class/Projects/FAST_API_HARSHA_K_TO_APP (master)
+$ git checkout develop
+bash: $'\302\203git': command not found
+
+kanal@LAPTOP-IBN130JN MINGW64 ~/Documents/Class/Projects/FAST_API_HARSHA_K_TO_APP (master)
+$ git checkout develop
+Switched to branch 'develop'
+M       requirements.txt
+M       run.py
+M       todo_app/__init__.py
+M       todo_app/__pycache__/__init__.cpython-38.pyc
+M       todo_app/__pycache__/database.cpython-38.pyc
+M       todo_app/__pycache__/dependencies.cpython-38.pyc
+M       todo_app/__pycache__/models.cpython-38.pyc
+M       todo_app/__pycache__/schemas.cpython-38.pyc
+M       todo_app/__pycache__/utils.cpython-38.pyc
+M       todo_app/api/__pycache__/task.cpython-38.pyc
+M       todo_app/api/task.py
+M       todo_app/database.py
+M       todo_app/dependencies.py
+M       todo_app/models.py
+M       todo_app/schemas.py
+M       todo_app/utils.py
+
+kanal@LAPTOP-IBN130JN MINGW64 ~/Documents/Class/Projects/FAST_API_HARSHA_K_TO_APP (develop)
+$ git pull origin develop
+From https://github.com/KharshavReddy/FAST_API_HARSHA_K_TO_APP
+ * branch            develop    -> FETCH_HEAD
+Already up to date.
+
+kanal@LAPTOP-IBN130JN MINGW64 ~/Documents/Class/Projects/FAST_API_HARSHA_K_TO_APP (develop)
+$ git checkout master
+Switched to branch 'master'
+M       requirements.txt
+M       run.py
+M       todo_app/__init__.py
+M       todo_app/__pycache__/__init__.cpython-38.pyc
+M       todo_app/__pycache__/database.cpython-38.pyc
+M       todo_app/__pycache__/dependencies.cpython-38.pyc
+M       todo_app/__pycache__/models.cpython-38.pyc
+M       todo_app/__pycache__/schemas.cpython-38.pyc
+M       todo_app/__pycache__/utils.cpython-38.pyc
+M       todo_app/api/__pycache__/task.cpython-38.pyc
+M       todo_app/api/task.py
+M       todo_app/database.py
+M       todo_app/dependencies.py
+M       todo_app/models.py
+M       todo_app/schemas.py
+M       todo_app/utils.py
+Your branch is up to date with 'origin/master'.
+
+kanal@LAPTOP-IBN130JN MINGW64 ~/Documents/Class/Projects/FAST_API_HARSHA_K_TO_APP (master)
+$ git rebase develop
+error: cannot rebase: You have unstaged changes.
+error: Please commit or stash them.
+
+kanal@LAPTOP-IBN130JN MINGW64 ~/Documents/Class/Projects/FAST_API_HARSHA_K_TO_APP (master)
+$ git stash
+Saved working directory and index state WIP on master: b3d2fd2 new
+
+kanal@LAPTOP-IBN130JN MINGW64 ~/Documents/Class/Projects/FAST_API_HARSHA_K_TO_APP (master)
+$ git rebase develop
+Successfully rebased and updated refs/heads/master.
+
+kanal@LAPTOP-IBN130JN MINGW64 ~/Documents/Class/Projects/FAST_API_HARSHA_K_TO_APP (master)
+$ ls
+FAST_API_TO_APP.zip  my_prj/           run.py   tezst.py
+Pipfile              mytext.py         test/    todo_app/
+Procfile             requirements.txt  test.py
+
+kanal@LAPTOP-IBN130JN MINGW64 ~/Documents/Class/Projects/FAST_API_HARSHA_K_TO_APP (master)
+$ git rebase develop
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------   My Practice  ------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ali hussain@Alian MINGW64 ~/django (main)
+$ git branch
+* main
+
+ali hussain@Alian MINGW64 ~/django (main)
+$ cl
+bash: cl: command not found
+
+ali hussain@Alian MINGW64 ~/django (main)
+$ ls
+Django-Restful-API-CRUD/  djangoTutorial/  myproject/        test4/
+__init__.py               firstproject/    secondproject/    thirdproject/
+__pycache__/              fourthproject/   steps.txt         tutorial/
+django-todo/              modelProject/    templateProject/
+
+ali hussain@Alian MINGW64 ~/django (main)
+$ git init
+Reinitialized existing Git repository in C:/Users/ali hussain/django/.git/
+
+ali hussain@Alian MINGW64 ~/django (main)
+$ git add .
+warning: LF will be replaced by CRLF in Django-Restful-API-CRUD/employeeapi/admin.py.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in Django-Restful-API-CRUD/employeeapi/apps.py.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in Django-Restful-API-CRUD/employeeapi/migrations/0001_initial.py.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in Django-Restful-API-CRUD/employeeapi/models.py.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in Django-Restful-API-CRUD/employeeapi/serializers.py.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in Django-Restful-API-CRUD/employeeapi/tests.py.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in Django-Restful-API-CRUD/employeeapi/views.py.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in Django-Restful-API-CRUD/employeeapi/viewsets.py.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in Django-Restful-API-CRUD/manage.py.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in Django-Restful-API-CRUD/restfulapicrud/router.py.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in Django-Restful-API-CRUD/restfulapicrud/settings.py.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in Django-Restful-API-CRUD/restfulapicrud/urls.py.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in Django-Restful-API-CRUD/restfulapicrud/wsgi.py.
+The file will have its original line endings in your working directory
+
+ali hussain@Alian MINGW64 ~/django (main)
+$ git commit -m "First commit"
+On branch main
+nothing to commit, working tree clean
+
+ali hussain@Alian MINGW64 ~/django (main)
+$ git branch
+* main
+
+ali hussain@Alian MINGW64 ~/django (main)
+$ git checkout -b develop
+Switched to a new branch 'develop'
+
+ali hussain@Alian MINGW64 ~/django (develop)
+$ ls
+Django-Restful-API-CRUD/  djangoTutorial/  myproject/        test4/
+__init__.py               firstproject/    secondproject/    thirdproject/
+__pycache__/              fourthproject/   steps.txt         tutorial/
+django-todo/              modelProject/    templateProject/
+
+ali hussain@Alian MINGW64 ~/django (develop)
+$ touch mytext.py
+
+ali hussain@Alian MINGW64 ~/django (develop)
+$ ls
+Django-Restful-API-CRUD/  djangoTutorial/  myproject/      templateProject/
+__init__.py               firstproject/    mytext.py       test4/
+__pycache__/              fourthproject/   secondproject/  thirdproject/
+django-todo/              modelProject/    steps.txt       tutorial/
+
+ali hussain@Alian MINGW64 ~/django (develop)
+$ git status
+On branch develop
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        mytext.py
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+ali hussain@Alian MINGW64 ~/django (develop)
+$ git add mytext.py
+
+ali hussain@Alian MINGW64 ~/django (develop)
+$ git commit -m "First commit"
+[develop 3561d10] First commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 mytext.py
+
+ali hussain@Alian MINGW64 ~/django (develop)
+$ git push origin develop
+Enumerating objects: 435, done.
+Counting objects: 100% (435/435), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (427/427), done.
+Writing objects: 100% (435/435), 938.26 KiB | 6.85 MiB/s, done.
+Total 435 (delta 183), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (183/183), done.
+remote:
+remote: Create a pull request for 'develop' on GitHub by visiting:
+remote:      https://github.com/alihussainmcs/demo_mcs/pull/new/develop
+remote:
+To https://github.com/alihussainmcs/demo_mcs.git
+ * [new branch]      develop -> develop
+
+ali hussain@Alian MINGW64 ~/django (develop)
+$ ls
+Django-Restful-API-CRUD/  djangoTutorial/  myproject/      templateProject/
+__init__.py               firstproject/    mytext.py       test4/
+__pycache__/              fourthproject/   secondproject/  thirdproject/
+django-todo/              modelProject/    steps.txt       tutorial/
+
+ali hussain@Alian MINGW64 ~/django (develop)
+$ git checkout main
+Switched to branch 'main'
+
+ali hussain@Alian MINGW64 ~/django (main)
+$ ls
+Django-Restful-API-CRUD/  djangoTutorial/  myproject/        test4/
+__init__.py               firstproject/    secondproject/    thirdproject/
+__pycache__/              fourthproject/   steps.txt         tutorial/
+django-todo/              modelProject/    templateProject/
+
+ali hussain@Alian MINGW64 ~/django (main)
+$ git checkout develop
+Switched to branch 'develop'
+
+ali hussain@Alian MINGW64 ~/django (develop)
+$ git pull origin develop
+From https://github.com/alihussainmcs/demo_mcs
+ * branch            develop    -> FETCH_HEAD
+Already up to date.
+
+ali hussain@Alian MINGW64 ~/django (develop)
+$ git checkout main
+Switched to branch 'main'
+
+ali hussain@Alian MINGW64 ~/django (main)
+$ git rebase develop
+Successfully rebased and updated refs/heads/main.
+
+ali hussain@Alian MINGW64 ~/django (main)
+$ ls
+Django-Restful-API-CRUD/  djangoTutorial/  myproject/      templateProject/
+__init__.py               firstproject/    mytext.py       test4/
+__pycache__/              fourthproject/   secondproject/  thirdproject/
+django-todo/              modelProject/    steps.txt       tutorial/
+
+ali hussain@Alian MINGW64 ~/django (main)
+$ git rebase develop
+Current branch main is up to date.
+
+ali hussain@Alian MINGW64 ~/django (main)
+$
+
