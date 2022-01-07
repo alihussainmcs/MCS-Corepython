@@ -1,4 +1,4 @@
-# P08. REQ : Sum all the items in a dictionary
+# P17. REQ : Find the highest 3 values in a dictionary.
 """
 1. CRUD       -->  Update
 2. STATE      -->  Dictionary
@@ -15,28 +15,31 @@ print("--------1 Builtin Functions      ----------")
 
 # 2. Algorithm
 print("--------2 Algorithm              ----------")
+# Python program to demonstrate
+# finding 3 highest values in a Dictionary
+
+from collections import Counter
+
+# Initial Dictionary
+my_dict = {'A': 67, 'B': 23, 'C': 45, 'D': 56, 'E': 12, 'F': 69}
+
+k = Counter(my_dict)
+
+# Finding 3 highest values
+high = k.most_common(3)
+
+print("Initial Dictionary:")
+print(my_dict, "\n")
+
+
+print("Dictionary with 3 highest values:")
+print("Keys: Values")
+
+for i in high:
+	print(i[0]," :",i[1]," ")
 
 # 3 Using Functions
 print("--------3 Using Functions        ----------")
-
-
-# all items in a Dictionary
-
-
-# Function to print sum
-def returnSum(my_dict):
-    list_1 = []
-    for i in my_dict:
-        list_1.append(my_dict[i])
-    final = sum(list_1)
-
-    return final
-
-
-# Driver Function
-dict_1 = {'a': 100, 'b': 200, 'c': 300}
-print('Dictionary :', dict_1)
-print("Sum :", returnSum(dict_1))
 
 # 4 OOPS
 print("--------4 Object Oriented        ----------")

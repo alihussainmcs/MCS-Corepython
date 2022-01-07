@@ -1,4 +1,4 @@
-# P08. REQ : Sum all the items in a dictionary
+# P32. REQ : Replace dictionary values with their sum.
 """
 1. CRUD       -->  Update
 2. STATE      -->  Dictionary
@@ -16,27 +16,24 @@ print("--------1 Builtin Functions      ----------")
 # 2. Algorithm
 print("--------2 Algorithm              ----------")
 
+
+def sum_math_v_vi(list_of_dicts):
+    for d in list_of_dicts:
+        n1 = d.pop('V')
+        n2 = d.pop('VI')
+        d['V+VI'] = n1 + n2
+    return list_of_dicts
+
+
+student_details = [
+    {'id': 1, 'subject': 'math', 'V': 70, 'VI': 82},
+    {'id': 2, 'subject': 'math', 'V': 73, 'VI': 74},
+    {'id': 3, 'subject': 'math', 'V': 75, 'VI': 86}
+]
+print(sum_math_v_vi(student_details))
+
 # 3 Using Functions
 print("--------3 Using Functions        ----------")
-
-
-# all items in a Dictionary
-
-
-# Function to print sum
-def returnSum(my_dict):
-    list_1 = []
-    for i in my_dict:
-        list_1.append(my_dict[i])
-    final = sum(list_1)
-
-    return final
-
-
-# Driver Function
-dict_1 = {'a': 100, 'b': 200, 'c': 300}
-print('Dictionary :', dict_1)
-print("Sum :", returnSum(dict_1))
 
 # 4 OOPS
 print("--------4 Object Oriented        ----------")
