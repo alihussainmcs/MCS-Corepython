@@ -1,4 +1,4 @@
-# P08. REQ : Sum all the items in a dictionary
+# P18. REQ : Combine values in python list of dictionaries.
 """
 1. CRUD       -->  Update
 2. STATE      -->  Dictionary
@@ -15,28 +15,15 @@ print("--------1 Builtin Functions      ----------")
 
 # 2. Algorithm
 print("--------2 Algorithm              ----------")
+from collections import Counter
+item_list = [{'item': 'item1', 'amount': 400}, {'item': 'item2', 'amount': 300}, {'item': 'item1', 'amount': 750}]
+result = Counter()
+for d in item_list:
+    result[d['item']] += d['amount']
+print(result) 
 
 # 3 Using Functions
 print("--------3 Using Functions        ----------")
-
-
-# all items in a Dictionary
-
-
-# Function to print sum
-def returnSum(my_dict):
-    list_1 = []
-    for i in my_dict:
-        list_1.append(my_dict[i])
-    final = sum(list_1)
-
-    return final
-
-
-# Driver Function
-dict_1 = {'a': 100, 'b': 200, 'c': 300}
-print('Dictionary :', dict_1)
-print("Sum :", returnSum(dict_1))
 
 # 4 OOPS
 print("--------4 Object Oriented        ----------")

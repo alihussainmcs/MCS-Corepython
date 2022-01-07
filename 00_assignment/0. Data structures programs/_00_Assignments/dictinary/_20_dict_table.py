@@ -1,4 +1,4 @@
-# P08. REQ : Sum all the items in a dictionary
+# P20. REQ : Print a dictionary in table format.
 """
 1. CRUD       -->  Update
 2. STATE      -->  Dictionary
@@ -15,28 +15,12 @@ print("--------1 Builtin Functions      ----------")
 
 # 2. Algorithm
 print("--------2 Algorithm              ----------")
+my_dict = {'C1': [1, 2, 3], 'C2': [4, 5, 6], 'C3': [7, 8, 9]}
+for row in zip(*([key] + value for key, value in sorted(my_dict.items()))):
+    print(*row)
 
 # 3 Using Functions
 print("--------3 Using Functions        ----------")
-
-
-# all items in a Dictionary
-
-
-# Function to print sum
-def returnSum(my_dict):
-    list_1 = []
-    for i in my_dict:
-        list_1.append(my_dict[i])
-    final = sum(list_1)
-
-    return final
-
-
-# Driver Function
-dict_1 = {'a': 100, 'b': 200, 'c': 300}
-print('Dictionary :', dict_1)
-print("Sum :", returnSum(dict_1))
 
 # 4 OOPS
 print("--------4 Object Oriented        ----------")

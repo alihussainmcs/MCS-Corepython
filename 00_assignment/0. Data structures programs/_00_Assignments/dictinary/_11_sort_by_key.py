@@ -1,4 +1,4 @@
-# P08. REQ : Sum all the items in a dictionary
+# P11. REQ : Sort a dictionary by key
 """
 1. CRUD       -->  Update
 2. STATE      -->  Dictionary
@@ -16,27 +16,28 @@ print("--------1 Builtin Functions      ----------")
 # 2. Algorithm
 print("--------2 Algorithm              ----------")
 
+d = {1: 2, 3: 4, 4: 3, 2: 1, 0: 0}
+print('Original dictionary : ', d)
+print('Sorted dictionary by keys :')
+for key in sorted(d):
+    print(key, d[key])
+
+print('                 Second way                    ')
+a = {1: 2, 2: 1, 4: 3, 3: 4, 6: 5, 5: 6}
+print('Original dictionary : ', a)
+
+# this will print a sorted list of the keys
+print(sorted(a.keys()))
+# this will print the sorted list with items.
+print(sorted(a.items()))
 # 3 Using Functions
 print("--------3 Using Functions        ----------")
 
+# Creates a sorted dictionary (sorted by key)
+from collections import OrderedDict
 
-# all items in a Dictionary
-
-
-# Function to print sum
-def returnSum(my_dict):
-    list_1 = []
-    for i in my_dict:
-        list_1.append(my_dict[i])
-    final = sum(list_1)
-
-    return final
-
-
-# Driver Function
-dict_1 = {'a': 100, 'b': 200, 'c': 300}
-print('Dictionary :', dict_1)
-print("Sum :", returnSum(dict_1))
+di = {1: 2, 3: 4, 4: 3, 2: 1, 0: 0}
+print(OrderedDict(sorted(di.items())))
 
 # 4 OOPS
 print("--------4 Object Oriented        ----------")

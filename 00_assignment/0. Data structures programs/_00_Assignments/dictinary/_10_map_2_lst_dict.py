@@ -16,7 +16,6 @@ print("--------1 Builtin Functions      ----------")
 # 2. Algorithm
 print("--------2 Algorithm              ----------")
 
-
 keys = ['red', 'green', 'blue']
 
 values = ['#FF0000', '#008000', '#0000FF']
