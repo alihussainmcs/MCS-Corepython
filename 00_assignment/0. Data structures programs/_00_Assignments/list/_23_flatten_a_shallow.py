@@ -1,4 +1,4 @@
-# P13. REQ : Write 3D array
+# P23. REQ : Flatten a shallow
 """
 1. CRUD       -->  Retrieval
 2. STATE      -->  list
@@ -6,15 +6,22 @@
 """
 
 # 0. Mathematics
+"""
+
+"""
 
 # 1.Builtin functions
 print("--------1 Builtin Functions      ----------")
 
 # 2. Algorithm
 print("--------2 Algorithm              ----------")
-symbol = [[['@' for col in range(2)] for co in range(2)] for row in range(3)]
+import itertools
 
-print(symbol)
+original_list = [[2, 4, 3], [1, 5, 6], [9], [7, 9, 0]]
+print('Original List : ', original_list)
+new_merged_list = list(itertools.chain(*original_list))
+print('Flatten a shallow :', new_merged_list)
+
 # 3 Using Functions
 print("--------3 Using Functions        ----------")
 

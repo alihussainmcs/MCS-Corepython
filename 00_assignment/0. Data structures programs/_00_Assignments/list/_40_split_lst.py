@@ -1,4 +1,4 @@
-# P13. REQ : Write 3D array
+# P40. REQ :  Split a list based on first character of word
 """
 1. CRUD       -->  Retrieval
 2. STATE      -->  list
@@ -12,11 +12,19 @@ print("--------1 Builtin Functions      ----------")
 
 # 2. Algorithm
 print("--------2 Algorithm              ----------")
-symbol = [[['@' for col in range(2)] for co in range(2)] for row in range(3)]
 
-print(symbol)
 # 3 Using Functions
 print("--------3 Using Functions        ----------")
+from itertools import groupby
+from operator import itemgetter
+
+word_list = ['be', 'have', 'do', 'say', 'get', 'make', 'go', 'know', 'take', 'see', 'come', 'think',
+             'look', 'want', 'give', 'use', 'find', 'tell', 'ask', 'work', 'seem', 'feel', 'leave', 'call']
+
+for letter, words in groupby(sorted(word_list), key=itemgetter(0)):
+    print(letter)
+    for word in words:
+        print(word)
 
 # 4 OOPS
 print("--------4 Object Oriented        ----------")

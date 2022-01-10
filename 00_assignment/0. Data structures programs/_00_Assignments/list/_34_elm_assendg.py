@@ -1,4 +1,4 @@
-# P13. REQ : Write 3D array
+# P34. REQ : Printing elements in ascending order
 """
 1. CRUD       -->  Retrieval
 2. STATE      -->  list
@@ -6,15 +6,22 @@
 """
 
 # 0. Mathematics
+"""
+
+"""
 
 # 1.Builtin functions
 print("--------1 Builtin Functions      ----------")
 
 # 2. Algorithm
 print("--------2 Algorithm              ----------")
-symbol = [[['@' for col in range(2)] for co in range(2)] for row in range(3)]
+numbers = [1, 3, 4, 2]
+print('List :', numbers)
+# Sorting list of Integers in ascending
+numbers.sort()
 
-print(symbol)
+print('List in ascending order :', numbers)
+
 # 3 Using Functions
 print("--------3 Using Functions        ----------")
 

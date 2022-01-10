@@ -1,4 +1,4 @@
-# P13. REQ : Write 3D array
+# P36. REQ : Variable unique identification number
 """
 1. CRUD       -->  Retrieval
 2. STATE      -->  list
@@ -6,15 +6,20 @@
 """
 
 # 0. Mathematics
+"""
+
+"""
 
 # 1.Builtin functions
 print("--------1 Builtin Functions      ----------")
 
 # 2. Algorithm
 print("--------2 Algorithm              ----------")
-symbol = [[['@' for col in range(2)] for co in range(2)] for row in range(3)]
+x = [1, 12, 100, 40, 5, 62]
+print('List :', x)
+for i in x:
+    print('%i :' % i, format(id(i)))
 
-print(symbol)
 # 3 Using Functions
 print("--------3 Using Functions        ----------")
 

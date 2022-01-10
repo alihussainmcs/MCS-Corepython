@@ -1,4 +1,4 @@
-# P13. REQ : Write 3D array
+# P32. REQ : Check a list contains sublist
 """
 1. CRUD       -->  Retrieval
 2. STATE      -->  list
@@ -6,15 +6,38 @@
 """
 
 # 0. Mathematics
+"""
+
+"""
 
 # 1.Builtin functions
 print("--------1 Builtin Functions      ----------")
 
 # 2. Algorithm
 print("--------2 Algorithm              ----------")
-symbol = [[['@' for col in range(2)] for co in range(2)] for row in range(3)]
+# to check if list is subset of other
+# using all()
 
-print(symbol)
+# initializing list
+test_list = [9, 4, 5, 8, 10]
+sub_list = [10, 5, 4]
+
+# printing original lists
+print("Original list : " + str(test_list))
+print("Original sub list : " + str(sub_list))
+
+# using all() to
+# check subset of list
+flag = 0
+if all(x in test_list for x in sub_list):
+	flag = 1
+
+# printing result
+if flag:
+	print("Yes, list is subset of other.")
+else:
+	print("No, list is not subset of other.")
+
 # 3 Using Functions
 print("--------3 Using Functions        ----------")
 

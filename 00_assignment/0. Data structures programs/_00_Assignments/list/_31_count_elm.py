@@ -1,4 +1,4 @@
-# P13. REQ : Write 3D array
+# P31. REQ : Counting number elements within a specified ranges
 """
 1. CRUD       -->  Retrieval
 2. STATE      -->  list
@@ -6,17 +6,33 @@
 """
 
 # 0. Mathematics
+"""
+
+"""
 
 # 1.Builtin functions
 print("--------1 Builtin Functions      ----------")
 
 # 2. Algorithm
 print("--------2 Algorithm              ----------")
-symbol = [[['@' for col in range(2)] for co in range(2)] for row in range(3)]
 
-print(symbol)
 # 3 Using Functions
 print("--------3 Using Functions        ----------")
+
+
+def count_range_in_list(li, min1, max1):
+    ctr = 0
+    for x in li:
+        if min1 <= x <= max1:
+            ctr += 1
+    return ctr
+
+
+list1 = [10, 20, 30, 40, 40, 40, 70, 80, 99]
+print(count_range_in_list(list1, 40, 100))
+
+list2 = ['a', 'b', 'c', 'd', 'e', 'f']
+print(count_range_in_list(list2, 'a', 'e'))
 
 # 4 OOPS
 print("--------4 Object Oriented        ----------")

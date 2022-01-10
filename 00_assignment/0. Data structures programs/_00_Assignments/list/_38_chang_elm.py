@@ -1,4 +1,4 @@
-# P13. REQ : Write 3D array
+# P38. REQ :  Change the position of every nth value with (n+1)th value
 """
 1. CRUD       -->  Retrieval
 2. STATE      -->  list
@@ -12,11 +12,19 @@ print("--------1 Builtin Functions      ----------")
 
 # 2. Algorithm
 print("--------2 Algorithm              ----------")
-symbol = [[['@' for col in range(2)] for co in range(2)] for row in range(3)]
 
-print(symbol)
 # 3 Using Functions
 print("--------3 Using Functions        ----------")
+from itertools import zip_longest, chain, tee
+
+
+def replace2copy(lst):
+    tee(iter(lst), 2)
+    return list(chain.from_iterable(zip_longest(lst[1::2], lst[::2])))
+
+
+n = [0, 1, 2, 3, 4, 5]
+print(replace2copy(n))
 
 # 4 OOPS
 print("--------4 Object Oriented        ----------")

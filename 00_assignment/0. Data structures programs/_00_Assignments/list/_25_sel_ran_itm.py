@@ -1,4 +1,4 @@
-# P13. REQ : Write 3D array
+# P25. REQ : Select an item randomly
 """
 1. CRUD       -->  Retrieval
 2. STATE      -->  list
@@ -6,15 +6,24 @@
 """
 
 # 0. Mathematics
+"""
+
+"""
 
 # 1.Builtin functions
 print("--------1 Builtin Functions      ----------")
 
 # 2. Algorithm
 print("--------2 Algorithm              ----------")
-symbol = [[['@' for col in range(2)] for co in range(2)] for row in range(3)]
 
-print(symbol)
+import random
+
+color_list = ['Red', 'Blue', 'Green', 'White', 'Black']
+print('List 1 :', color_list)
+
+print('One Random item selection :', random.choice(color_list))
+
+
 # 3 Using Functions
 print("--------3 Using Functions        ----------")
 

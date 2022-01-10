@@ -6,9 +6,6 @@
 """
 
 # 0. Mathematics
-"""
-
-"""
 
 # 1.Builtin functions
 print("--------1 Builtin Functions      ----------")
@@ -39,6 +36,7 @@ def remove(list1, pos):
 list_1 = [10, 20, 30, 40, 50]
 pos_1 = 2
 remove(list_1, pos_1)
+
 
 # 4 OOPS
 print("--------4 Object Oriented        ----------")

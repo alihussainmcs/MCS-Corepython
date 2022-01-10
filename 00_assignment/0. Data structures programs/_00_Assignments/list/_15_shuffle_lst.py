@@ -1,4 +1,4 @@
-# P13. REQ : Write 3D array
+# P15. REQ : Shuffle list and print
 """
 1. CRUD       -->  Retrieval
 2. STATE      -->  list
@@ -6,15 +6,23 @@
 """
 
 # 0. Mathematics
+"""
+
+"""
 
 # 1.Builtin functions
 print("--------1 Builtin Functions      ----------")
 
 # 2. Algorithm
 print("--------2 Algorithm              ----------")
-symbol = [[['@' for col in range(2)] for co in range(2)] for row in range(3)]
+# list of numbers
+from random import shuffle
+list1 = [10, 21, 4, 45, 66, 93]
+print('Original List :', list1)
 
-print(symbol)
+shuffle(list1)
+print('Shuffle List :', list1)
+
 # 3 Using Functions
 print("--------3 Using Functions        ----------")
 
