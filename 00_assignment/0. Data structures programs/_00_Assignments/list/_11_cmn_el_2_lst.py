@@ -6,9 +6,6 @@
 """
 
 # 0. Mathematics
-"""
-
-"""
 
 # 1.Builtin functions
 print("--------1 Builtin Functions      ----------")

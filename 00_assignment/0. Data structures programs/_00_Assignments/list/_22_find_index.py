@@ -1,4 +1,4 @@
-# P13. REQ : Write 3D array
+# P22. REQ : Finding index of an item in specified list
 """
 1. CRUD       -->  Retrieval
 2. STATE      -->  list
@@ -6,15 +6,19 @@
 """
 
 # 0. Mathematics
+"""
+
+"""
 
 # 1.Builtin functions
 print("--------1 Builtin Functions      ----------")
+num = [10, 30, 4, -6]
+print(num.index(30))
 
 # 2. Algorithm
 print("--------2 Algorithm              ----------")
-symbol = [[['@' for col in range(2)] for co in range(2)] for row in range(3)]
 
-print(symbol)
+
 # 3 Using Functions
 print("--------3 Using Functions        ----------")
 

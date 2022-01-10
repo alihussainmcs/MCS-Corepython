@@ -1,4 +1,4 @@
-# P13. REQ : Write 3D array
+# P16. REQ : First,Last elements whose square value is between 1 and 30
 """
 1. CRUD       -->  Retrieval
 2. STATE      -->  list
@@ -6,15 +6,30 @@
 """
 
 # 0. Mathematics
+"""
+
+"""
 
 # 1.Builtin functions
 print("--------1 Builtin Functions      ----------")
 
 # 2. Algorithm
 print("--------2 Algorithm              ----------")
-symbol = [[['@' for col in range(2)] for co in range(2)] for row in range(3)]
+lst = []
+for i in range(1, 9):
+    lst.append(i ** 2)
 
-print(symbol)
+print('List : ', lst)  # [1, 4, 9, 16, 25, 36, 49, 64]
+
+req = []
+for i in lst:
+    if i <= 30:
+        req.append(i)
+
+print('Square number between 1-30 :', req)
+print('1st square number between 1-30:', req[0])
+print('last square number between 1-30:', req[-1])
+
 # 3 Using Functions
 print("--------3 Using Functions        ----------")
 

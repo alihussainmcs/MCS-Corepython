@@ -1,4 +1,4 @@
-# P13. REQ : Write 3D array
+# P35. REQ : Create a list by concatenating a given list which range goes from 1 to n
 """
 1. CRUD       -->  Retrieval
 2. STATE      -->  list
@@ -6,15 +6,21 @@
 """
 
 # 0. Mathematics
+"""
+
+"""
 
 # 1.Builtin functions
 print("--------1 Builtin Functions      ----------")
 
 # 2. Algorithm
 print("--------2 Algorithm              ----------")
-symbol = [[['@' for col in range(2)] for co in range(2)] for row in range(3)]
+my_list = ['p', 'q']
+n = 4
+new_list = ['{}{}'.format(x, y) for y in range(1, n+1) for x in my_list]
+print(new_list)
 
-print(symbol)
+
 # 3 Using Functions
 print("--------3 Using Functions        ----------")
 

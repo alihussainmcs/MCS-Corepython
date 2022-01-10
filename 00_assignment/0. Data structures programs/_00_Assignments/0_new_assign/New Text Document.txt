@@ -1,0 +1,302 @@
+1)
+You are given an integer array containing the IDs of a product. Write a program to calculate the number of repetitions of the given ID in the array and return the count.
+
+For examples, refer to the sample cases given below.
+
+Sample Cases:
+
+
+Function Description
+
+Complete the getCount function in the editor below. It has the following parameter(s):
+
+Constraints
+
+•1 < n < 10^5
+
+•1 < arr[i] < 10^5
+
+•1 < id < 10^5
+
+
+
+Input Format For Custom Testing:
+
+The first line contains an integer, n, denoting the number of elements in arr.
+
+Each line i of the n subsequent lines (where 0 < i < n) contains an integer describing the ids in the array.
+
+The next line contains an integer, id, denoting the id to be found.
+
+
+
+Note
+
+•The program should be executed at least once
+
+•The program can be executed any number of times
+
+•The execution yielding the highest score is taken into consideration for the final scoring
+
+•Use 'Run Custom Input' and/or 'Run Code' to debug the code by getting the output
+
+•To submit the code you need to turn off the debug mode i.e., the 'Custom Input'.
+
+•Languages are version-independent if it is not explicitly specified.
+
+
+
+
+
+def getCount():   
+  l=[]   
+  size=int(input())   
+  for i in range(size):       
+    c=int(input())       
+    l.append(c)   
+  ID=int(input())   
+return l.count(ID)   
+print(getCount())
+
+
+
+
+
+2)
+Count number of unique ways to paint a N x 3 grid
+Given an integer N, the task is to paint a grid of size N x 3 using colors Red, Yellow, or Green while making such that no pair of adjacent cells has the same color. 
+Print the number of distinct ways in which it is possible
+
+Examples:
+
+
+
+Input: N = 1
+Output: 12
+Explanation: 
+Following 12 possible ways to paint the grid exists:
+
+Red, Yellow, Red
+Yellow, Red, Yellow
+Green, Red, Yellow
+Red, Yellow, Green
+Yellow, Red, Green
+Green, Red, Green
+Red, Green, Red
+Yellow, Green, Red
+Green, Yellow, Red
+Red, Green, Yellow
+Yellow, Green, Yellow
+Green, Yellow, Green
+Input: N = 2
+Output: 102
+
+
+
+
+Recommended: Please try your approach on {IDE} first, before moving on to the solution.
+Approach: Follow the steps below to solve the problem:
+
+Ways to color a row can be split into the following two categories:
+The leftmost and rightmost cells are of the same color.
+The leftmost and rightmost cells are of different colors.
+Considering the first case:
+Six possible ways exist to paint the row such that the leftmost and rightmost colors are of the same.
+For every color occupying both the leftmost and rightmost cell, there exists two different colors with which the middle row can be colored.
+Considering the second case:
+Six possible ways exist to paint the leftmost and rightmost colors are different.
+Three choices for the left cell, two choices for the middle, and fill the rightmost cell with the only remaining color. Therefore, the total number of possibilities is 3*2*1 = 6.
+Now, for the subsequent cells, look at the following example:
+If the previous row is painted as Red Green Red, then there are the following five valid ways to color the current row:
+{Green Red Green}
+{Green Red  Yellow}
+{Green Yellow Green}
+{Yellow Red Green}
+{Yellow Red Yellow}
+From the above observation, it is clear that three possibilities have ends with the same color, and two possibilities have ends with different colors.
+If the previous row is colored Red Green Yellow, the following four possibilities of coloring the current row exists:
+{Green Red Green}
+{Green Yellow Red}
+{Green Yellow Green}
+{Yellow Red Green}
+From the above observation, it is clear that possibilities have ends the same color, and two possibilities have ends with different colors.
+Therefore, based on the above observations, the following recurrence relation can be defined for the number of ways to paint the N rows:
+Count of ways to color current row having ends of same color SN+1 = 3 * SN + 2DN
+
+Count of ways to color current row having ends of different colors DN+1 = 2 * SN + 2DN
+
+Total number of ways to paint all N rows is equal to the sum of SN and DN.
+
+Below is the implementation of the above approach:
+
+
+# Python3 program for the above approach
+ 
+# Function to count the number
+# of ways to paint  N * 3 grid
+# based on given conditions
+ 
+ 
+def waysToPaint(n):
+ 
+    # Count of ways to pain a
+    # row with same colored ends
+    same = 6
+ 
+    # Count of ways to pain a row
+    # with different colored ends
+    diff = 6
+ 
+    # Traverse up to (N - 1)th row
+    for _ in range(n - 1):
+ 
+        # Calculate the count of ways
+        # to paint the current row
+ 
+        # For same colored ends
+        sameTmp = 3 * same + 2 * diff
+ 
+        # For different colored ends
+        diffTmp = 2 * same + 2 * diff
+ 
+        same = sameTmp
+        diff = diffTmp
+ 
+    # Print the total number of ways
+    print(same + diff)
+ 
+ 
+# Driver Code
+ 
+N = 2
+waysToPaint(N)
+
+
+
+
+
+3)
+Given a string s, return the number of different non-empty palindromic subsequences in s. Since the answer may be very large, return it modulo 109 + 7.
+
+A subsequence of a string is obtained by deleting zero or more characters from the string.
+
+A sequence is palindromic if it is equal to the sequence reversed.
+
+Two sequences a1, a2, ... and b1, b2, ... are different if there is some i for which ai != bi.
+
+ 
+
+Example 1:
+
+Input: s = "bccb"
+Output: 6
+Explanation: The 6 different non-empty palindromic subsequences are 'b', 'c', 'bb', 'cc', 'bcb', 'bccb'.
+Note that 'bcb' is counted only once, even though it occurs twice.
+Example 2:
+
+Input: s = "abcdabcdabcdabcdabcdabcdabcdabcddcbadcbadcbadcbadcbadcbadcbadcba"
+Output: 104860361
+Explanation: There are 3104860382 different non-empty palindromic subsequences, which is 104860361 modulo 109 + 7.
+ 
+
+Constraints:
+
+1 <= s.length <= 1000
+s[i] is either 'a', 'b', 'c', or 'd'.
+
+
+So the forumla goes like this-
+->if string is abc means end points are not same then just calculate for ab+bc-c,so
+dp[i][j]=dp[i][j-1]+dp[i+1][j]-dp[i+1][j-1]
+If end points are same,below cases follow-
+->if string is like aba means end points are same and no a in between dp[i][j]=2dp[i+1][j-1]+2,coz inner part palindromes will be repeated with outer boundaries and finally a,aa for rest of 2
+->if string is like ababa,when you have 1 a in between same case as above,just dp[i][j]=2dp[i+1][j-1]+1,1 is less here coz had there been some other char like b in between for aba we would have got aba,aa,b and a.And here for aaa we get a,aa,aaa.
+->FInally if there are more than 1 a's in middle,we have dp[i][j]=2*dp[i+1][j-1]-dp[x][y],where x and y can be understood from following example-
+abababa,here x and y will be indexes of inner string of aba,i.e. b.So x and y will be 3,3
+So the reason we subtract middle string is coz inner string of inner a's overlaps with outer string of outer a's 1 time,this can be understood with intuition and taking examples.
+Anyway this is hard to understand as well as explain,plz upvote if you like :)
+
+class Solution:
+    def countPalindromicSubsequences(self, s: str) -> int:
+        n=len(s)
+        mod=10**9+7
+        dp=[[0]*n for _ in range(n)]
+        for i in range(n):
+            dp[i][i]=1
+            if i+1<n:
+                dp[i][i+1]=2
+        for g in range(2,n):
+            for i in range(n):
+                j=i+g
+                if j>=n:
+                    break
+                if s[i]!=s[j]:
+                    dp[i][j]=dp[i+1][j]+dp[i][j-1]-dp[i+1][j-1]
+                elif s[i:j+1].count(s[i])==2:
+                    dp[i][j]=2*dp[i+1][j-1]+2
+                elif s[i:j+1].count(s[i])==3:
+                    dp[i][j]=2*dp[i+1][j-1]+1
+                else:
+                    s1=s[i+1:j]
+                    x=i+s1.index(s[i])+2
+                    y=j-s1[::-1].index(s[i])-2
+                    dp[i][j]=2*dp[i+1][j-1]-dp[x][y]
+                dp[i][j]%=mod
+        return dp[0][n-1]
+                    
+                    
+
+
+or 
+
+
+A little different from other DP approaches. Just recursion with memoization. Not sure about time complexity, but it scored in the (s)lowest 15%.
+
+class Solution(object):
+    def countPalindromicSubsequences(self, S):
+        memo = {}
+        def recurs(subs):    
+            if subs not in memo:
+                count = 0
+                for c in set(subs):
+                    left, right = subs.find(c), subs.rfind(c)
+                    count += 1 if left==right else 2+recurs(subs[left+1:right])
+                memo[subs] = count 
+            return memo[subs]
+        return recurs(S) % 1000000007  
+
+or
+
+ def countPalindromicSubsequences(self, S):
+        """
+        :type S: str
+        :rtype: int
+        """
+        def cache(start, end):            # This function serves to save the result
+            if end <= start + 2:          # simple cases can be computed directly
+                return end - start
+            
+            if (start, end) not in check: # if not saved, compute and save before returning
+                check[(start, end)] = DFS(start, end)
+                
+            return check[(start, end)]
+        
+        def DFS(start, end):     #returns the number of distinct palindromes in S[start:end]
+            count = 0
+            segment = S[start:end]
+            
+            for x in 'abcd':
+                try:
+                    i = segment.index(x) + start  # the starting index in S
+                    j = segment.rindex(x) + start # the ending index in S
+                except:
+                    continue
+                    
+                count += cache(i+1, j) + 2 if i != j else 1
+
+            return count % 1000000007
+                
+        check = {}
+        return cache(0, len(S))
+
+

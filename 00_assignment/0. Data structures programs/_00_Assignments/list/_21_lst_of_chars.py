@@ -1,4 +1,4 @@
-# P13. REQ : Write 3D array
+# P21. REQ : List of characters into string
 """
 1. CRUD       -->  Retrieval
 2. STATE      -->  list
@@ -6,17 +6,28 @@
 """
 
 # 0. Mathematics
+"""
+
+"""
 
 # 1.Builtin functions
 print("--------1 Builtin Functions      ----------")
 
 # 2. Algorithm
 print("--------2 Algorithm              ----------")
-symbol = [[['@' for col in range(2)] for co in range(2)] for row in range(3)]
 
-print(symbol)
 # 3 Using Functions
 print("--------3 Using Functions        ----------")
+
+
+def convert(s):
+    str1 = ""
+    return str1.join(s)
+
+
+s1 = ['a', 'b', 'c', 'd']
+print('List :', s1)
+print(convert(s1))
 
 # 4 OOPS
 print("--------4 Object Oriented        ----------")

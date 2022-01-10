@@ -1,4 +1,4 @@
-# P13. REQ : Write 3D array
+# P26. REQ : Check circularly identical in two lists
 """
 1. CRUD       -->  Retrieval
 2. STATE      -->  list
@@ -6,15 +6,29 @@
 """
 
 # 0. Mathematics
+"""
+
+"""
 
 # 1.Builtin functions
 print("--------1 Builtin Functions      ----------")
 
 # 2. Algorithm
 print("--------2 Algorithm              ----------")
-symbol = [[['@' for col in range(2)] for co in range(2)] for row in range(3)]
 
-print(symbol)
+list1 = [10, 10, 0, 0, 10]
+list2 = [10, 10, 10, 0, 0]
+list3 = [1, 10, 10, 0, 0]
+print('List 1 :', list1)
+print('List 2 :', list2)
+print('List 3 :', list3)
+
+print('Compare list1 and list2')
+print(' '.join(map(str, list2)) in ' '.join(map(str, list1 * 2)))
+print('Compare list1 and list3')
+print(' '.join(map(str, list3)) in ' '.join(map(str, list1 * 2)))
+
+
 # 3 Using Functions
 print("--------3 Using Functions        ----------")
 

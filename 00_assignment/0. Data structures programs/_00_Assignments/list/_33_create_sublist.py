@@ -1,4 +1,4 @@
-# P13. REQ : Write 3D array
+# P33. REQ : Generate all sublists
 """
 1. CRUD       -->  Retrieval
 2. STATE      -->  list
@@ -6,17 +6,35 @@
 """
 
 # 0. Mathematics
+"""
+
+"""
 
 # 1.Builtin functions
 print("--------1 Builtin Functions      ----------")
 
 # 2. Algorithm
 print("--------2 Algorithm              ----------")
-symbol = [[['@' for col in range(2)] for co in range(2)] for row in range(3)]
 
-print(symbol)
 # 3 Using Functions
 print("--------3 Using Functions        ----------")
+
+
+# Python program to print all
+# sublist from a given list
+
+# function to generate all the sub lists
+def sub_lists(l):
+    lists = [[]]
+    for i in range(len(l) + 1):
+        for j in range(i):
+            lists.append(l[j: i])
+    return lists
+
+
+# driver code
+l1 = [1, 2, 3]
+print(sub_lists(l1))
 
 # 4 OOPS
 print("--------4 Object Oriented        ----------")

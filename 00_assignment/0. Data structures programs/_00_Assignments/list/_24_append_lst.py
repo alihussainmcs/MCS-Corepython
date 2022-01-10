@@ -1,4 +1,4 @@
-# P13. REQ : Write 3D array
+# P24. REQ : Append a list to second list
 """
 1. CRUD       -->  Retrieval
 2. STATE      -->  list
@@ -6,15 +6,24 @@
 """
 
 # 0. Mathematics
+"""
+
+"""
 
 # 1.Builtin functions
 print("--------1 Builtin Functions      ----------")
 
 # 2. Algorithm
 print("--------2 Algorithm              ----------")
-symbol = [[['@' for col in range(2)] for co in range(2)] for row in range(3)]
+list1 = [1, 2, 3, 0]
+list2 = ['Red', 'Green', 'Black']
 
-print(symbol)
+print('List 1 :', list1)
+print('List 2 :', list2)
+
+list1.append(list2)
+print('List1 append List2 :', list1)
+
 # 3 Using Functions
 print("--------3 Using Functions        ----------")
 

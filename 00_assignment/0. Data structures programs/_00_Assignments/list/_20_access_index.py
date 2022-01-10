@@ -1,4 +1,4 @@
-# P13. REQ : Write 3D array
+# P20. REQ : To access index of list
 """
 1. CRUD       -->  Retrieval
 2. STATE      -->  list
@@ -6,17 +6,35 @@
 """
 
 # 0. Mathematics
+"""
+
+"""
 
 # 1.Builtin functions
 print("--------1 Builtin Functions      ----------")
 
 # 2. Algorithm
 print("--------2 Algorithm              ----------")
-symbol = [[['@' for col in range(2)] for co in range(2)] for row in range(3)]
 
-print(symbol)
 # 3 Using Functions
 print("--------3 Using Functions        ----------")
+
+# Python3 code to demonstrate
+# to get index and value
+# using naive method
+
+# initializing list
+test_list = [1, 4, 5, 6, 7]
+
+# Printing list
+print("Original list is : " + str(test_list))
+
+# using naive method to
+# get index and value
+print("List index-value are : ")
+for i in range(len(test_list)):
+    print(i, end=" ")
+    print(test_list[i])
 
 # 4 OOPS
 print("--------4 Object Oriented        ----------")

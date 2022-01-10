@@ -1,4 +1,4 @@
-# P13. REQ : Write 3D array
+# P18. REQ : All permutations of list elements
 """
 1. CRUD       -->  Retrieval
 2. STATE      -->  list
@@ -6,15 +6,20 @@
 """
 
 # 0. Mathematics
+"""
+
+"""
 
 # 1.Builtin functions
 print("--------1 Builtin Functions      ----------")
 
 # 2. Algorithm
 print("--------2 Algorithm              ----------")
-symbol = [[['@' for col in range(2)] for co in range(2)] for row in range(3)]
+import itertools
+lst = [1, 2, 3]
+print('Original list :', lst)
+print('Permutations of list elements', list(itertools.permutations(lst)))
 
-print(symbol)
 # 3 Using Functions
 print("--------3 Using Functions        ----------")
 

@@ -1,4 +1,4 @@
-# P13. REQ : Write 3D array
+# P14. REQ : Remove even elements and print list
 """
 1. CRUD       -->  Retrieval
 2. STATE      -->  list
@@ -6,15 +6,27 @@
 """
 
 # 0. Mathematics
+"""
+
+"""
 
 # 1.Builtin functions
 print("--------1 Builtin Functions      ----------")
 
 # 2. Algorithm
 print("--------2 Algorithm              ----------")
-symbol = [[['@' for col in range(2)] for co in range(2)] for row in range(3)]
+# list of numbers
+list1 = [10, 21, 4, 45, 66, 93]
+print('Original List :', list1)
+odd_list = []
+# iterating each number in list
+for num in list1:
 
-print(symbol)
+	# checking condition
+	if num % 2 != 0:
+		odd_list.append(num)
+
+print('List after removing even numbers from list1 :', odd_list)
 # 3 Using Functions
 print("--------3 Using Functions        ----------")
 
