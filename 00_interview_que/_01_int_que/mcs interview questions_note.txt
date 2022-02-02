@@ -1,0 +1,624 @@
+1.memory management in python?
+
+memory is managed by the Python manager which determines where to put the application data in 
+the memory. So, we must have the knowledge of Python memory manager to write efficient code 
+and maintainable code.
+
+Let's assume memory looks like an empty book, and we want to write anything on the book's page.
+Then, we write data any data the manager find the free space in the book and provide it to the 
+application. The procedure of providing memory to objects is called allocation.
+
+On the other side, when data is no longer use, it can be deleted by the Python memory manager.
+
+1.1.Python Memory Allocation:
+
+Memory allocation is an essential part of the memory management for a developer. This process 
+basically allots free space in the computer's virtual memory, and there are two types of virtual 
+memory works while executing programs.
+
+	Static Memory Allocation
+	Dynamic Memory Allocation
+
+1.2.Static Memory Allocation -
+
+Static memory allocation happens at to compile time. For example - In C/C++, we declare a static
+array with the fixed sizes. Memory is allocated at the time of compilation. However, we cannot 
+use the memory again in the further program.
+
+static int a=10;  
+
+1.2.1.Stack Allocation:
+
+The Stack data structure is used to store the static memory. It is only needed inside the 
+particular function or method call. The function is added in program's call stack whenever we
+call it. Variable assignment inside the function is temporarily stored in the function call 
+stack; the function returns the value, and the call stack moves to the text task. The compiler 
+handles all these processes, so we don't need to worry about it.
+
+Call stack (stack data structure) holds the program's operational data such as subroutines or 
+function call in the order they are to be called. These functions are popped up from the stack 
+when we called.
+
+1.2.2.Dynamic Memory Allocation:
+
+Unlike static memory allocation, Dynamic memory allocates the memory at the runtime to the 
+program. For example - In C/C++, there is a predefined size of the integer of float data type 
+but there is no predefine size of the data types. Memory is allocated to the objects at the run 
+time. We use the Heap for implement dynamic memory management. We can use the memory throughout 
+the program.
+
+
+int *a;  
+p = new int;  
+
+As we know, everything in Python is an object means dynamic memory allocation inspires the
+Python memory management. Python memory manager automatically vanishes when the object is no 
+longer in use.
+
+1.2.3.Heap Memory Allocation:
+
+Heap data structure is used for dynamic memory which is not related to naming counterparts. 
+It is type of memory that uses outside the program at the global space. One of the best advantages
+of heap memory is to it freed up the memory space if the object is no longer in use or the node
+is deleted.
+
+-------------------------------------------------------------------------------------------------
+
+2. instance methods and class methods ?
+
+A class method is a method that’s shared among all objects. To call a class method, put the 
+class as the first argument.
+
+Class methods can be called from instances and from the class itself. All of these use
+the same method. The method can use the classes variables and methods.
+
+To turn a method into a classmethod, add @classmethod before the method definition. 
+As parameter the method always takes the class.
+
+A class method is a method which is bound to the class and not the object of the class. 
+They have the access to the state of the class as it takes a class parameter that points to 
+the class and not the object instance. It can modify a class state that would apply across 
+all the instances of the class.
+
+#example:
+
+class Fruit:
+    name = 'Fruits'
+
+    @classmethod
+    def printName(cls):
+        print('The name is:', cls.name)
+
+Fruit.printName()
+
+2.1.instance methods:
+
+Instance methods are the most common type of methods in Python classes. These are so called 
+because they can access unique data of their instance. If you have two objects each created 
+from a car class, then they each may have different properties. They may have different colors, 
+engine sizes, seats, and so on.
+
+#example:
+
+# Python program to demonstrate
+# classes
+
+
+class Person:
+	
+	# init method or constructor
+	def __init__(self, name):
+		self.name = name
+	
+	# Sample Method
+	def say_hi(self):
+		print('Hello, my name is', self.name)
+	
+p = Person('Nikhil')
+p.say_hi()
+
+2.2.What is instance method and class method in Python?
+
+Instance method performs a set of actions on the data/value provided by the instance variables
+If we use instance variables inside a method, such methods are called instance methods. Class 
+method is method that is called on the class itself, not on a specific object instance.
+
+-------------------------------------------------------------------------------------------------
+
+3.instance variable can access class variable?
+
+They are not defined inside any methods of a class. Because a class variable is shared by 
+instances of a class, the Python class owns the variable. As a result, all instances of the 
+class will be able to access that variable. Class variables are shared by all instances that 
+access the class.
+
+
+Class methods can access class variables and class methods directly. Class methods cannot access
+instance variables or instance methods directly—they must use an object reference. Also, class
+methods cannot use the keyword as there is no instance for this to refer to.
+
+Class Variables — Declared inside the class definition (but outside any of the instance methods).
+They are not tied to any particular object of the class, hence shared across all the objects of 
+the class. Modifying a class variable affects all objects instance at the same time.
+
+Instance Variable — Declared inside the constructor method of class (the __init__ method). 
+They are tied to the particular object instance of the class, hence the contents of an instance 
+variable are completely independent of one object instance to the other.
+
+#example:
+
+
+class Car:
+    wheels = 4    # <- Class variable
+    def __init__(self, name):
+        self.name = name    # <- Instance variable
+jag = Car('jaguar')
+fer = Car('ferrari')
+print(jag.name, fer.name)
+print(jag.wheels, fer.wheels)
+print(Car.wheels)
+
+--------------------------------------------------------------------------------------------------
+4.circular import?
+
+Circular importing is a form of circular dependency that is created with the import statement in 
+Python. ... When Python imports a module, it checks the module registry to see if the module was 
+already imported. If the module was already registered, Python uses that existing object from 
+cache.The module registry is a table of modules that have been initialized and indexed by module name.
+
+When two or more modules rely on each other, this is referred to as a circular dependency. This 
+is due to the fact that each module is defined in terms of the others. Python cyclic imports.
+
+In simplest terms, a circular import occurs when module A tries to import and use an object from 
+module B, while module B tries to import and use an object from module A. We'll run the code from
+run.py, which just imports a.py. As you can see, we get an exception as soon as b.py tries to 
+import a.py
+
+-----------------------------------------------------------------------------------------------
+5.Avoid circular import?
+
+Just change your test file to another name such as aaa.py , other than request.py . Do not use 
+names that are already used by other libs.
+
+This works because you can import file b without Python executing any of the import statements in
+file b , and thus you elude any circular imports.
+
+
+#How do you stop a circular import in Python?
+
+You can, however, use the imported module inside functions and code blocks that don't get run on 
+import. Generally, in most valid cases of circular dependencies, it's possible to refactor or 
+reorganize the code to prevent these errors and move module references inside a code block.
+
+------------------------------------------------------------------------------------------------------
+
+6.__init__.py uses?
+
+The __init__.py files are required to make Python treat directories containing the file as 
+packages. This prevents directories with a common name, such as string , unintentionally hiding
+valid modules that occur later on the module search path.
+
+a special behaviour for the __init__.py file, which is used to gather all package-wide definitions.
+ 
+The __init__.py file lets the Python interpreter know that a directory contains code for a Python
+module. ... The file essentially the constructor of your package or directory without it being 
+called such. It sets up how packages or functions will be imported into your other files
+
+--------------------------------------------------------------------------------------------------
+
+7.what is method resolution order?
+
+The Python Method Resolution Order defines the class search path used by Python to search for the
+right method to use in classes having multi-inheritance. It as Involved since Python 2.2 to 2.3.
+The algorithm change is also referred as old classes and new classes MRO algorithm.
+
+
+MRO is a concept used in inheritance. It is the order in which a method is searched for in a 
+classes hierarchy and is especially useful in Python because Python supports multiple inheritance.
+Since B was mentioned first in the class declaration, it will be searched for first while 
+resolving a method
+
+Method Resolution Order(MRO) it denotes the way a programming language resolves a method or 
+attribute. Python supports classes inheriting from other classes. The class being inherited is 
+called the Parent or Superclass, while the class that inherits is called the Child or Subclass.
+
+#example:
+# Python program showing
+# how MRO works
+
+class A:
+	def rk(self):
+		print(" In class A")
+class B(A):
+	def rk(self):
+		print(" In class B")
+
+r = B()
+r.rk()
+
+
+--------------------------------------------------------------------------------------------------
+
+7.how import works in python?
+
+When a module is imported, Python runs all the code in the module file. When a package is
+imported, Python runs all the code in the package's __init__.py file, if such a file exists.
+All the objects defined in the module or the package's __init__.py file are made available
+to the importer.
+
+When the import is used, it searches for the module initially in the local scope by calling
+ __import__() function. The value returned by the function is then reflected in the output of
+the initial code. 
+
+
+#example:
+
+import math
+print(math.pi)
+
+Import in python is similar to #include header_file in C/C++. Python modules can get access to
+code from another module by importing the file/function using import. The import statement is the
+most common way of invoking the import machinery, but it is not the only way.
+
+#working:
+
+The directory from where the input script was run or the current directory if the interpreter is
+being run interactively.
+
+The list of directories contained in the PYTHONPATH environment variable, if it is set. ...
+An installation-dependent list of directories configured at the time Python is installed.
+
+--------------------------------------------------------------------------------------------------
+
+8. mongodb with django?
+
+There are three ways to connect Django to MongoDB: PyMongo: PyMongo is the standard driver 
+through which MongoDB can interact with Django. It is the official and preferred way of using
+MongoDB with Python. PyMongo provides functionality to perform all the database actions like
+search, delete, update, and insert.
+
+Use MongoDB as a backend database for your Django project, without changing the Django ORM. 
+Use Django Admin to add and modify documents in MongoDB. 
+
+#Connect Django Project to MongoDB
+
+Step 1: Setup Virtual Environment virtualenv myenv myenv\Scripts\activate.
+Step 2: Install Django pip install django.
+Step 3: Install Django pip install django.
+Step 4: Start Django Project django-admin startproject geeks_project.
+
+------------------------------------------------------------------------------------------------
+
+9.authentication in flask and django?
+
+When you're developing applications for the public, it's important to protect your users'
+credentials and information. This means you need to know about code structure and how to 
+implement various security measures.
+
+#flask:
+
+Allowing users to log in to your app is one of the most common features you will add to your web
+applications. You can add authentication to your Flask app with the Flask-Login package. ... 
+Use the built-in Flask utility for hashing passwords. Add protected pages to the app for logged-in users only.
+
+#django:
+
+The Django authentication system handles both authentication and authorization. Briefly, 
+authentication verifies a user is who they claim to be, and authorization determines what an
+authenticated user is allowed to do. Here the term authentication is used to refer to both tasks.
+The auth system consists of: Users.
+
+Django comes with a user authentication system. It handles user accounts, groups, permissions and
+cookie-based user sessions.
+
+#example:
+
+How do I authenticate username and password in Django?
+
+from django. contrib. auth import authenticate user = authenticate(username='john', 
+password='secret') if user is not None: if user. is_active: print "You provided a correct
+username and password!" else: print "Your account has been disabled!" else: print "Your username
+and password were incorrect.
+
+#How many types of authentication are there in Django?
+
+Django provides two functions in django. contrib. auth: authenticate() and login(). 
+To authenticate a given username and password, use authenticate()
+
+
+-------------------------------------------------------------------------------------------------
+11.authentication vs authorization?
+
+authentication is the process of verifying who someone is, whereas authorization is the process
+of verifying what specific applications, files, and data a user has access to.
+
+Authentication is used to verify that users really are who they represent themselves to be.
+
+#authentication:
+
+	1.Authentication verifies who the user is.
+	
+	2.Authentication works through passwords, one-time pins, biometric information, and other 
+	information provided or entered by the user.
+	
+	3.Authentication is the first step of a good identity and access management process.
+	
+	4.Authentication is visible to and partially changeable by the user.
+	
+	5.Example: By verifying their identity, employees can gain access to an HR application that
+	includes their personal pay information, vacation time, and 401K data.
+	
+	
+	
+
+#authorization:
+
+	1.Authorization determines what resources a user can access.
+	
+	2.Authorization works through settings that are implemented and maintained by the 
+	organization.
+	
+	3.Authorization always takes place after authentication.
+	
+	4.Authorization isn’t visible to or changeable by the user.
+	
+	5.Example: Once their level of access is authorized, employees and HR managers can access
+	different levels of data based on the permissions set by the organization.
+	
+	
+------------------------------------------------------------------------------------------------
+	
+12.exception handling in flask?
+
+Flask gives you to the ability to raise any HTTP exception registered by Werkzeug. However, the
+default HTTP exceptions return simple exception pages. You might want to show custom error pages
+to the user when an error occurs. This can be done by registering error handlers.
+
+When building a Flask application you will run into exceptions. If some part of your code breaks
+while handling a request (and you have no error handlers registered), a “500 Internal Server Error
+” (InternalServerError) will be returned by default. Similarly, “404 Not Found” (NotFound) error
+will occur if a request is sent to an unregistered route. If a route receives an un-allowed
+request method, a “405 Method Not Allowed” (MethodNotAllowed) will be raised. These are all
+subclasses of HTTPException and are provided by default in Flask.
+
+When Flask catches an exception while handling a request, it is first looked up by code. If no 
+handler is registered for the code, Flask looks up the error by its class hierarchy; the most
+specific handler is chosen. If no handler is registered, HTTPException subclasses show a generic
+message about their code, while other exceptions are converted to a generic “500 Internal Server
+Error”
+------------------------------------------------------------------------------------------------
+
+
+13.db connection in flask?
+
+
+You currently have a function for establishing a database connection with connect_db, but by
+itself, it is not particularly useful. Creating and closing database connections all the time is
+very inefficient, so you will need to keep it around for longer. Because database connections
+encapsulate a transaction, you will need to make sure that only one request at a time uses the
+connection. An elegant way to do this is by utilizing the application context.
+
+Flask provides two contexts: the application context and the request context. For the time being,
+all you have to know is that there are special variables that use these. For instance, the 
+request variable is the request object associated with the current request, whereas g is a 
+general purpose variable associated with the current application context. 
+
+#Setting up a Flask MySQL Database Connection:
+
+1. Connecting Flask Application with MySQL
+
+2. Setting up MySQL connection cursor
+
+3. Coding a Flask application
+
+4. Implementing the Code
+
+	1.Now start the server and navigate to “/form”
+	2.Enter the information and press the Submit button.
+	3.Let’s take a look at it in the phpMyAdmin web interface now.
+	
+	
+------------------------------------------------------------------------------------------------
+
+14. difference between get() vs filter() in django?
+
+The Difference between Django’s filter() and get() methods are: get throws an error if there’s no
+object matching the query. filter will return an empty queryset…
+
+Basically use get() when you want to get a single unique object, and filter() when you want to
+get all objects that match your lookup parameters.
+
+mymodel=model.objects.get(name='pol')
+
+mymodel=model.objects.filter(name='pol')
+
+which means filter() is slightly expensive operation if the model class has a large number of 
+objects, whereas get() is direct approach.
+
+If you use filter(), you typically do this whenever you expect 
+more than just one object that matches your criteria. 
+If no item was found matching your criteria, filter() 
+returns am empty queryset without throwing an error.
+
+If you use get(), you expect one (and only one) item that 
+matches your criteria. Get throws an error if the item does 
+not exist or if multiple items exist that match your criteria. 
+You should therefore always use if in a try. except . block
+or with a shortcut function like get_object_or_404 in order to 
+handle the exceptions properly.
+
+--------------------------------------------------------------------------------------------------
+
+15.check authorization in django?
+
+Authorization is deciding whether a user is allowed to perform an action. The two concepts go 
+hand in hand: if a page on your website is restricted to logged-in users, then users have to 
+authenticate before they can be authorized to view the page. Django provides tools for both 
+authentication and authorization.
+
+
+How does authorization work in Django?
+
+The Django authentication system handles both authentication and authorization. Briefly, 
+authentication verifies a user is who they claim to be, and authorization determines what 
+an authenticated user is allowed to do. Here the term authentication is used to refer to 
+both tasks.
+
+------------------------------------------------------------------------------------------------
+
+16.token based in restapi?
+
+
+Users of the REST API can authenticate by providing a user ID and password to the REST API login
+resource with the HTTP POST method. An LTPA token is generated that enables the user to 
+authenticate future requests. This LTPA token has the prefix LtpaToken2 .The user can log out by
+using the HTTP DELETE method, and can query the login information of the current user with the
+HTTP GET method.
+
+------------------------------------------------------------------------------------------------
+17. what is serializers in django?
+
+Serializers in Django REST Framework are responsible for converting objects into data types 
+understandable by javascript and front-end frameworks. Serializers also provide deserialization 
+allowing parsed data to be converted back into complex types, after first validating the incoming
+data.
+
+#What is the use of Serializers?
+
+Serializers allow complex data such as query sets and model instances to be converted to native
+Python data types that can then be easily rendered into JSON, XML or other content types.
+
+#How do I import Serializers?
+
+This is particularly useful when working with ModelSerializers where you want to determine what 
+set of fields and validators are being automatically created for you. To do so, open the Django 
+shell, using python manage.py shell , then import the serializer class, instantiate it, and print
+the object representation…
+
+#How do I request a serializer?
+
+You cannot access the request. user directly. You need to access the request object, and then 
+fetch the user attribute. In my serializer, in validate() method, self.
+
+--------------------------------------------------------------------------------------------------
+
+18. decorators in django?
+
+Decorators are an easy way to clean up your code and separate the view authentication process 
+from the view functionality. Django has several useful built-in decorators such as @login_required
+@permission_required for user permissions and @require_http_methods for restricting request methods
+( GET|POST ).
+
+#How do you use decorators in Django?
+
+decorators import method_decorator class ProfileView(View): template_name = 'index. html' # Return
+profile of any role (client/employee/admin) @method_decorator(login_required()) 
+def get(self, request, *args, **kwargs): ... # Client sign up # No decorator is needed def 
+post(self, request): 
+
+#Where do I put Django decorators?
+
+Create the decorator module
+
+I like to put it inside the app folder. In case it's a decorator for general use, I put it in the
+same level as my settings.py and urls.py .
+
+---------------------------------------------------------------------------------------------------
+
+19.acid in django?
+
+In the context of transaction processing, the acronym ACID refers to the four key properties of a
+transaction: atomicity, consistency, isolation, and durability.
+
+Django provides a single API to control database transactions. Atomicity is the defining property
+of database transactions. atomic allows us to create a block of code within which the atomicity
+on the database is guaranteed. If the block of code is successfully completed, the changes are 
+committed to the database.
+
+#What are transactions in Django?
+
+A transaction is an atomic set of database queries. These functions take a using argument which 
+should be the name of a database. If it isn't provided, Django uses the “default” database. 
+Django will refuse to commit or to rollback when an atomic() block is active because that would
+break atomicity.
+
+-------------------------------------------------------------------------------------------------
+
+20. microservices in flask?
+
+Flask is super useful for building Microservices. You can utilize any number of its built-in 
+extensions to design and deploy Microservices at high velocity. It will help you to get your 
+offerings to market fast.
+
+The repository contains the following 4 projects:
+
+	1.user-service.
+	2.product-service.
+	3.order-service.
+	4.frontend.
+#Is Flask good for microservices?
+
+Flask is super useful for building Microservices. You can utilize any number of its built-in 
+extensions to design and deploy Microservices at high velocity.
+
+#Is Flask a microservice framework?
+
+You will utilize Python Flask to build an API. Python Flask is a micro framework for building 
+web applications.
+--------------------------------------------------------------------------------------------------------------------------
+21.deployment in projects?
+
+
+In general, deployment refers to moving an object to a place where some action can be performed 
+on it. In the case of software development, deployment means making an application ready for 
+delivery. ... First, the project manager creates a deployment plan. After that, the project 
+team reviews it, before deployment.
+ 
+Step 1: Create a new deployment project. Creating the deployment project is the first step. ...
+Step 2: Decide on a release naming scheme. ...
+Step 3: Decide who can view and edit the project. ...
+Step 4: Create a deployment environment. ...
+Step 5: Customize your deployment environment. ...
+Step 6: Start deploying!
+
+---------------------------------------------------------------------------------------------------
+22.max salary of each department in sql?
+
+SELECT DeptID, MAX(Salary) FROM EmpDetails GROUP BY DeptID
+
+
+select deptname, max(salary) from department, employee where 
+  department.deptno=employee.deptno group by deptname;
+
+--------------------------------------------------------------------------------------------------
+
+23. indexing in sql?
+
+What is SQL Indexing?
+
+AN SQL index is a quick lookup table for finding records users need to search frequently. An
+index is small, fast, and optimized for quick lookups. It is very useful for connecting the 
+relational tables and searching large tables.
+
+#example:
+
+Indexes are used to retrieve data from the database more quickly than otherwise. The users cannot
+see the indexes, they are just used to speed up searches/queries. Note: Updating a table with 
+indexes takes more time than updating a table without (because the indexes also need an update).
+
+#What is indexing in database with example?
+
+An index is a database structure that you can use to improve the performance of database activity.
+A database table can have one or more indexes associated with it. ... An index created on the
+EMP_ID field, for example, contains a sorted list of the employee ID values in the table.
+
+
+#How does indexing help in SQL?
+
+Indexes are special lookup tables that the database search engine can use to speed up data 
+retrieval. Simply put, an index is a pointer to data in a table. An index helps to speed up 
+SELECT queries and WHERE clauses, but it slows down data input, with the UPDATE and the INSERT 
+statements. ...
+
+-------------------------------------------------------------------------------------------------
+
