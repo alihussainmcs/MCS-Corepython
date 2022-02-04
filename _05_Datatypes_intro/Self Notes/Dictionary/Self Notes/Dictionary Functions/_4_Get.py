@@ -21,7 +21,7 @@ a = {
 b = a.get(2)
 print(b)
 
-person = {'name': 'karthick', 'age': 22}
+person = {'name': 'Ali', 'age': 22}
 
 print('Name: ', person.get('name'))
 
@@ -35,3 +35,17 @@ print('Salary: ', person.get('salary'))  # Here the value for salary is none
 # value is provided
 print('Salary: ', person.get('salary', 0.0))
 
+Employee = {"Name": "John", "Age": 29, "salary": 25000, "Company": "GOOGLE", 'Address': 'HP'}
+print(type(Employee))
+print("printing Employee data .... ")
+print(Employee)
+
+print('Employee.get("Name    ")', Employee.get('Name'))
+
+print('Employee.get("Age     ")', Employee.get('Age'))
+
+print('Employee.get("salary  ")', Employee.get('salary'))
+
+print('Employee.get("Company ")', Employee.get('Company'))
+
+print('Employee.get("Address ")', Employee.get('Address'))

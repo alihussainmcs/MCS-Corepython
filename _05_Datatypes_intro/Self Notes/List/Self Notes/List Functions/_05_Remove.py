@@ -13,8 +13,37 @@ print("Updated List:", numbers)
 
 num = [2, 3, 5, 7]
 
-num.remove(10)
+# num.remove(10) ValueError: list.remove(x): x not in list
+num.remove(7)
 
-print(num)  # Deleting the element does not exist it will throw the error
+print('List after remove 7 :', num)
 
+fruits = ['Mango', 'Banana', 'Grapes', 'Kiwi', 'Pineapple', 'apple']
 
+print('List :', fruits)
+
+fruits.remove('Mango')
+
+print('List after remove Mango :', fruits)
+
+fruits.remove('Banana')
+
+print('List after remove Banana :', fruits)
+
+# fruits.remove('') ValueError: list.remove(x): x not in list
+
+fruits.remove('Kiwi')
+
+print('List after remove Kiwi :', fruits)
+
+fruits.remove('apple')
+
+print('List after remove apple :', fruits)
+
+fruits.remove('Grapes')
+
+print('List after remove Grapes :', fruits)
+
+fruits.remove('Pineapple')
+
+print('List after remove Pineapple :', fruits)

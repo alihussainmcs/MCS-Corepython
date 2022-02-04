@@ -25,3 +25,23 @@ print(a is b)
 Here the output will be True because both are same
 
 """
+
+a = 10
+
+b = 10
+
+c = 20
+
+print('a :', a)
+
+print('b :', b)
+
+print('c :', c)
+
+print('a is b :', a is b)
+
+print('a is c :', a is c)
+
+print('a is not b :', a is not b)
+
+print('a is not c :', a is not c)

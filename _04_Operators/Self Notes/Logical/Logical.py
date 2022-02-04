@@ -44,3 +44,23 @@ Logical NOT:
 Logical NOT operator work with the single boolean value. If the boolean value is True it returns False and vice-versa.
 
 """
+
+a = True
+
+b = False
+
+c = True
+
+print('a :', a)
+
+print('b :', b)
+
+print('c :', c)
+
+print('a and b :', a and b)
+
+print('a and c :', a and c)
+
+print('a or b :', a or b)
+
+print('a or c :', b or c)

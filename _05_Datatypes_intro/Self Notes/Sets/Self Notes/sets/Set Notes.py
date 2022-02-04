@@ -1,11 +1,11 @@
-'''
+"""
 Sets:
 -----
 Sets are used to store multiple items in a single variable.
 Set in Python used to store collections of data.
-A set is a collection which is both unordered and unindexed.
+A set is a collection which is both unordered and un-indexed.
 Sets are written with curly brackets.
-Set items can appear in a different order every time you use them, and cannot be referred to by index or key.'''
+Set items can appear in a different order every time you use them, and cannot be referred to by index or key."""
 
 '''Creating a Set:
 ---------------
@@ -14,7 +14,8 @@ z = {"apple", "banana", "cherry"}
 print("The Items Present in the Sets are:", z)
 
 
-'''Sets methods:
+'''
+Sets methods:
 -------------
 -->add()	Adds an element to the set
 

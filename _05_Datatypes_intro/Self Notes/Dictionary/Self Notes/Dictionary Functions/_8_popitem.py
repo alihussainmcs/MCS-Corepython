@@ -14,3 +14,52 @@ print("Updated entries:", marks)
 
 # The popitem() method raises a KeyError error if the dictionary is empty
 
+Employee = {"Name": "John", "Age": 29, "salary": 25000, "Company": "GOOGLE", 'Address': 'HP'}
+
+print(type(Employee))
+
+print("printing Employee data .... ")
+
+print(Employee)
+
+print('popitem is :', Employee.popitem())
+
+print('Dictionary after popitem :', Employee)
+
+print('popitem is :', Employee.popitem())
+
+print('Dictionary after popitem :', Employee)
+
+print('popitem is :', Employee.popitem())
+
+print('Dictionary after popitem :', Employee)
+
+d = {}
+
+print('Dictionary :', d)
+
+print('type :', type(d))
+
+d[0] = 'zero'
+
+d[1] = 'one'
+
+d[2] = 'two'
+
+d[3] = 'three'
+
+d[4] = 'four'
+
+print('Dictionary :', d)
+
+print('popitem is :', d.popitem())
+
+print('Dictionary after popitem :', d)
+
+print('popitem is :', d.popitem())
+
+print('Dictionary after popitem :', d)
+
+print('popitem is :', d.popitem())
+
+print('Dictionary after popitem :', d)

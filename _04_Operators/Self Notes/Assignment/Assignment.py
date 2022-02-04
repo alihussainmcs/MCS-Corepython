@@ -21,3 +21,15 @@ b=a*2
 print(a)--------->10
 print(b)---------->20
 """
+print(' Example of assignment operator ' + '=' + '...................')
+a = 'alien'
+
+eid = 101
+
+fl = 10.6
+
+comp = 10+20j
+
+t = True
+
+f = False

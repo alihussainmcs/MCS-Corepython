@@ -71,3 +71,12 @@ String variables can be declared either by using single or double quotes:
 For ex:
 x = "John"
 """
+
+a = 10
+A = 20
+
+print('a + A :', a+A)  # a + A : 30
+
+print(type(a))  # <class 'int'>
+
+print(type(A))  # <class 'int'>

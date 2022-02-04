@@ -30,3 +30,15 @@ print("ground" not in x)
 --> Returns True because a sequence with the value ground is not in the List.
 
 """
+
+a = ['1', 1, True]
+
+b = [False, 0, '']
+
+c = [True, '1', 1, False, 0, '']
+
+print('a :', a)
+
+print('b :', b)
+
+print('c :', c)

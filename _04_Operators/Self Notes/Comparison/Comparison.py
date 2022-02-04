@@ -56,3 +56,25 @@ When you execute the above program it produces the following result:
 7 - b is either greater than or equal to b
 
 """
+
+a = 10
+
+b = 20
+
+c = 10
+
+print('a :', a)
+
+print('b :', b)
+
+print('c :', c)
+
+print('a == b :', a == b)
+
+print('a == c :', a == c)
+
+print('id(a) :', id(a))
+
+print('id(b) :', id(b))
+
+print('id(c) :', id(c))

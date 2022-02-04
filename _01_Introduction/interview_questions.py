@@ -90,10 +90,16 @@ name argument or with a file as standard input, it reads and executes a script f
 15) How do you run a Python script?
 A) Run a Python script under Windows with the Command Prompt. Note that you must use the full path of
 the Python interpreter. If you want to simply type python.exe C:\Users\Username\Desktop\my_python_script.py you must
-add python.exe to your PATH environmental variable. Python Interview Questions And Answers For Beginners 16) How many
-modes are there in Python? A) Python has two basic modes: script and interactive. 17) What is a Script mode? A) The
-normal mode is the script mode where the scripted and finished .py files are run in the Python interpreter. 18) What
-is the interactive mode? A) Interactive mode is a command line shell which gives immediate feedback for each
+add python.exe to your PATH environmental variable. Python Interview Questions And Answers For Beginners
+
+16) How many modes are there in Python?
+A) Python has two basic modes: script and interactive.
+
+17) What is a Script mode?
+ A) The normal mode is the script mode where the scripted and finished .py files are run in the Python interpreter.
+
+18) What is the interactive mode?
+A) Interactive mode is a command line shell which gives immediate feedback for each
 statement, while running previously fed statements in active memory. 19) What is the use of Pycharm? A) PyCharm is an
 Integrated Development Environment (IDE) used in computer programming, specifically for the Python language. It
 provides code analysis, a graphical debugger, an integrated unit tester, integration with version control systems (

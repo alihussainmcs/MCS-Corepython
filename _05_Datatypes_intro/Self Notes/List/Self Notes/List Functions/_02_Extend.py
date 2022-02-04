@@ -26,10 +26,27 @@ languages2 = {"Hindi", "Malayalam"}
 languages3 = ("French", "Telugu")
 
 languages1.extend(languages2)  # adding set to the list
+
 languages1.extend(languages3)  # adding tuple to the list
 
 print("Updated Languages List:", languages1)
 
+fruits = ["apple", "banana", "cherry", "mango"]
 
+print('List :', fruits)
 
+list1 = ['lion', 'tiger', 'leopard']
 
+li1 = ['a', 'b', 'c', 'd', 'e']
+
+fruits.extend(list1)
+
+print("extended fruits List:", fruits)
+
+list1.extend(li1)
+
+print("extended List:", list1)
+
+li1.extend(li1)
+
+print("extended List:", li1)
