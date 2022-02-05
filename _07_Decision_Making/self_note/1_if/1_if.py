@@ -16,8 +16,42 @@ if 10 + True:
 if 10 + False:
     print("True")
 
-if 10-20:
+if 10 - 20:
     print("True")
 
 if 10 % 20:
     print("True")
+
+print('---------------------------------------------------------------------------------')
+a = 33
+b = 200
+if b > a:
+    print("b is greater than a")
+
+if a > b:
+    print('True')
+
+if a > b: print("a is greater than b")
+
+if b > a: print("b is greater than a")
+
+c = True
+
+if c:
+    print('Bool value c')
+
+d = 10
+
+if d:
+    print('Integer d')
+
+e = ''
+
+if e:
+    print('True e')
+
+
+e1 = ' '
+
+if e1:
+    print('True e1')

@@ -1,7 +1,7 @@
-'''
+"""
 String Functions:
 -----------------
-'''
+"""
 
 # 1. capitalize() :: Returns a string where the first character is upper case.
 
@@ -14,11 +14,11 @@ print("Normal string  :", msg)
 print("String after capitalize:",  msg.capitalize())
 
 
-'''returns a string with the first letter capitalized and all other characters lowercased'''
+'''returns a string with the first letter capitalized and all other characters lowercase'''
 
 print(".....Case 2.....")
 
-msg1 = "sequence of CHaracters"
+msg1 = "sequence of Characters"
 print("Normal string  :", msg1)
 print("String after capitalize:",  msg1.capitalize())
 
@@ -30,4 +30,3 @@ msg3 = "+ operator is used in the arithmetic operation"
 
 print("Normal string:   ", msg3)  # both the outputs are same here because the sentence starts with an operator
 print("String after capitalize:   ", msg3.capitalize())
-

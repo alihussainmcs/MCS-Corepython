@@ -1,11 +1,11 @@
-'''
+"""
 STRINGS:
 -------
 String is a collection of alphabets, words or other characters.
 It is one of the primitive data structures and are the building blocks for data manipulation.
 Python has a built-in string class named str .
 Python strings are "immutable" which means they cannot be changed after they are created.
-'''
+"""
 '''
 Assign String to a Variable:
 ---------------------------
@@ -13,9 +13,12 @@ Assigning a string to a variable is done with the variable name followed by an e
 
 Example:
 --------
+'''
+
 a = "Hello"
 print(a)
 
+'''
 Positive String Indexing:
 ---------------
 Strings are ordered sequences of character data.
@@ -25,12 +28,12 @@ Index Value normally starts from 0 and spaces between the words are also conside
 
 Example:'''
 
-str = "Welcome to python programming"
+str0 = "Welcome to python programming"
 
 print(".......Positive Indexing.......")
 
-print("The First Character is:  " + str[0])   # prints the first character.
-print("The Last Character is:  " + str[28])   # prints the last character.
+print("The First Character is:  " + str0[0])  # prints the first character.
+print("The Last Character is:  " + str0[28])  # prints the last character.
 
 '''
 Negative String Indexing:
@@ -58,9 +61,6 @@ print("Get the characters from position 2 to position 5:  " + str2[2:9])
 print("Get the characters from the start to position 4:  " + str2[:4])
 print("Get the characters from position 2 to the end:  " + str2[2:])
 
-msg=""
+msg = "Python Developer "
 
-
-
-
-
+print('Length of msg :', len(msg))

@@ -142,7 +142,7 @@ while n < 11:
         print(n)
     n += 1
 
-# Print odd numbers betweeen 10 to 20
+# Print odd numbers between 10 to 20
 
 n = 10
 while n < 21:
@@ -227,7 +227,7 @@ Print numbers f
 # 1 - 5
 n = 1
 while n < 6:
-    print("Numbers betweeen 1 to 5 is :", n)
+    print("Numbers between 1 to 5 is :", n)
     n += 1
 
 # 2 - 10
@@ -240,13 +240,13 @@ while n < 11:
 # 3 - 15
 n = 3
 while n < 16:
-    print("Nembers between 3 to 15 is :", n)
+    print("Numbers between 3 to 15 is :", n)
     n += 1
 
 # 4 - 20
 n = 4
 while n < 21:
-    print("Nember between 4 and 20 is : ", n)
+    print("Number between 4 and 20 is : ", n)
     n += 1
 
 # 5 - 25

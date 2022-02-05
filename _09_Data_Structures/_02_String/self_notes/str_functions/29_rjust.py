@@ -10,6 +10,8 @@ x = txt.rjust(20)
 
 print(x, "is my favorite fruit.")
 
+print()
+
 # Using the letter "O" as the padding character:
 
 txt = "banana"

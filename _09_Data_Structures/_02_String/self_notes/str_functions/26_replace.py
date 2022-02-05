@@ -4,7 +4,7 @@ Replaces all occurrences of old in string with new or at most max occurrences if
 
 """
 print("String replace() function practice ")
-msg = 'pipinstall'
+msg = 'pip install'
 stg = """console"""
 
 print('Given string :', '\n', msg, '\n', stg)

@@ -10,10 +10,18 @@ x = txt.islower()
 
 print(x)
 
+print()
+
 a = "Hello world!"
 b = "hello 123"
-c = "mynameisPeter"
+c = "aliHussain"
 
 print(a.islower())
+
+print()
+
 print(b.islower())
+
+print()
+
 print(c.islower())

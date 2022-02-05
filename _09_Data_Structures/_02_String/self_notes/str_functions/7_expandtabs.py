@@ -9,10 +9,24 @@ x = txt.expandtabs(12)
 
 print(x)
 
+print()
+
 txt = "H\te\tl\tl\to"
 
 print(txt)
+
+print()
+
 print(txt.expandtabs())
+
+print()
+
 print(txt.expandtabs(2))
+
+print()
+
 print(txt.expandtabs(4))
+
+print()
+
 print(txt.expandtabs(10))

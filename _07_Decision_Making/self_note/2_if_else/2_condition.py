@@ -30,3 +30,20 @@ if not ans:
     print("False")
 else:
     print("True")
+
+print("--------------------------------------------------------------------------------")
+
+a = ' '
+
+if a:
+    print('True')
+else:
+    print('False')
+
+
+b = ''
+
+if b:
+    print('True')
+else:
+    print('False')

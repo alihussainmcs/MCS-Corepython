@@ -22,14 +22,31 @@ if ' ':
 
 print("..........................False.................................")
 
-if False:
-    print("Value can not print ")
+if True:
+    print("Value can print ")
 print("End of program")
 
-if '':
-    print("Value can not print ")
+
+if ' ':
+    print("Value can print ")
 print("End of program")
+
+print()
 
 if None:
     print("Value can not print ")
 print("End of program")
+
+
+i = 10
+
+if i > 15:
+    print("10 is less than 15")
+print("I am Not in if")
+
+print()
+
+j = 20
+
+if j > 15:
+    print("15 is less than 20")

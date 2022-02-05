@@ -1,4 +1,4 @@
-'''
+"""
 Tuple:
 ------
 Tuples are used to store multiple items in a single variable.
@@ -30,7 +30,7 @@ print(x)-------------------------->("apple", "kiwi", "cherry")
 Tuple Methods:
 --------------
 -->count()	Returns the number of times a specified value occurs in a tuple.
--->index()	Searches the tuple for a specified value and returns the position of where it was found.'''
+-->index()	Searches the tuple for a specified value and returns the position of where it was found."""
 
 
 # Tuple Packing:
@@ -57,4 +57,3 @@ print("The Values Are")
 print(i)
 print(j)
 print(k)
-

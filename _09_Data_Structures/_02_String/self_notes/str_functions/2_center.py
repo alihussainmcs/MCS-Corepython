@@ -5,12 +5,19 @@ print("center() : returns center padded string with mentioned length")
 
 
 str1 = 'hello world'
+
 str2 = 'hello world welcome'
+
 print("Normal string                                                :", str1)
-print("Length after padding : ", len(str1.center(28, '$')))
+
+print("Length of padding : ", len(str1.center(28, '$')))
+
 print("String after center function with width 28 & fillchar as $   :", str1.center(28, '^'))
+
 print("String after center function with width 28 & fillchar as $   :", str2.center(28, '^'))
+
 print("String after center function with width 24                   :", str1.center(24))
+
 print("-------------------------------------------------------------------------------------")
 
 from collections import defaultdict
@@ -22,8 +29,11 @@ d["a"] = '1'
 d["b"] = '2'
 
 print(d["a"])
+
 print(d["b"])
+
 print(d["c"])
+
 print(d['id'])
 
 msg_3 = ' i am the moon '

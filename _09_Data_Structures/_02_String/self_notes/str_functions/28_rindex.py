@@ -10,6 +10,8 @@ x = txt.rindex("casa")
 
 print(x)
 
+print()
+
 # Where in the text is the last occurrence of the letter "e"?:
 
 txt = "Hello, welcome to my world."

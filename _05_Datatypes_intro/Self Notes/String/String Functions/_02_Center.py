@@ -1,4 +1,4 @@
-              # 2. Returns a string which is padded with the specified character
+# 2. Returns a string which is padded with the specified character
 
 print("------------- 2. center() -----------------")
 print("******************")
@@ -18,6 +18,4 @@ print("-------------center(length, character)-------------")
 
 str2 = "Programming"
 print("Normal String:", str2)
-print("With padding Character:", str2.center(25,"*"))  # '*' acts as a padding character
-
-
+print("With padding Character:", str2.center(25, "*"))  # '*' acts as a padding character

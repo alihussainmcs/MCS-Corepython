@@ -20,4 +20,3 @@ if True    --> True
 if not None -> True
 if -5   -->  True
 '''
-

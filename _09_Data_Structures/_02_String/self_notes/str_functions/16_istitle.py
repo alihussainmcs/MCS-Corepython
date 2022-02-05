@@ -1,6 +1,6 @@
 """
 istitle()
-Returns true if string is properly "titlecased" and false otherwise.
+Returns true if string is properly "title cased" and false otherwise.
 
 """
 
@@ -14,8 +14,8 @@ a = "HELLO, AND WELCOME TO MY WORLD"
 b = "Hello"
 c = "22 Names"
 d = "This Is %'!?"
-e = "2 Abc 6536625 jksvkhjef"
-f = "2 Abc 6536625 Jksvkhjef"
+e = "2 Abc 6536625 ali"
+f = "2 Abc 6536625 Ali"
 
 print(a.istitle())
 print(b.istitle())

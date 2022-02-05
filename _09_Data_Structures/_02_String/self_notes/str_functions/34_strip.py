@@ -9,17 +9,22 @@ x = txt.strip()
 
 print("of all fruits", x, "is my favorite")
 
+print()
+
 txt = ",,,,,rrttgg.....banana....rrr"
 
 x = txt.strip(",.grt")
 
 print(x)
 
-txt='   yaman   '
+print()
+
+txt = '   yaman   '
 x = txt.strip()
 
 print(x)
 
+print()
 
 txt = "reerrererer,,,,,,.....banana...hhhhggggg"
 

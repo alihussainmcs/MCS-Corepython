@@ -16,4 +16,4 @@ print("Addition   : ", x+20)
 # REQ: Print value 101 in console
 y = 101
 print("The value of y is :", y)
-print("Substraction : ", y-99)
+print("Subtraction : ", y-99)

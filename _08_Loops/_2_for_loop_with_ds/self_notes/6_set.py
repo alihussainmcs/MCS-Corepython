@@ -13,6 +13,8 @@ set_2 = {10, 21, 33, 46, 57, 96}
 
 print("Set_2 is ", set_2)
 
+print()
+
 print("Element in set_2 are :")
 
 for i in set_2:

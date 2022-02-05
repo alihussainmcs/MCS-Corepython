@@ -10,9 +10,15 @@ x = txt.isdigit()
 
 print(x)
 
-a = "\u0030" #unicode for 0
-b = "\u00B2" #unicode for ²
+a = "\u0030"  # unicode for 0
+b = "\u00B2"  # unicode for ²
 c = 'amara'
 print(a.isdigit())
+
+print()
+
 print(b.isdigit())
+
+print()
+
 print(c.isdigit())

@@ -6,6 +6,7 @@ for <var> in <sequence>:
 print("..................For loop with String.......................")
 
 msg = 'This is my message to you'
+
 print("msg :", msg)
 for i in msg:
     print('character in msg is ', i)

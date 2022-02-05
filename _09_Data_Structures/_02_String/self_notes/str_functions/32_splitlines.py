@@ -7,9 +7,15 @@ Splits string at all (or num) NEWLINEs and returns a list of each line with NEWL
 
 txt = "Thank you for the music\nWelcome to the jungle"
 
+print(txt)
+
+print()
+
 x = txt.splitlines()
 
 print(x)
+
+print()
 
 txt = "Thank you for the music\nWelcome to the jungle"
 

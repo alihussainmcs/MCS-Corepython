@@ -1,5 +1,5 @@
 """
-Datatypes
+Data types
 numbers  : int float
 boolean  : True False
 """
@@ -23,16 +23,15 @@ print(str1)
 ch = 'A'  # "A"
 print(ch)
 
-ch  = '1'  # "1"
+ch = '1'  # "1"
 print(ch, type(ch))
-print("Addition :", int(ch)+2)
+print("Addition :", int(ch) + 2)
 
 ch = '1.5'
-print("Addition : ", float(ch)+2.7)
+print("Addition : ", float(ch) + 2.7)
 
 ch = '*'
-print(ch,type(ch))
-
+print(ch, type(ch))
 
 # Litres ML
 # KM M  CM MM
@@ -44,10 +43,9 @@ y = "20"
 print(x, y, type(x), type(y))
 
 if type(x) == type(y):
-    print("Addition :", x+y)
+    print("Addition :", x + y)
 else:
     print("Addition is not possible")
-
 
 '''
 Data Structures:  
@@ -56,18 +54,13 @@ Set
 Matrix 
 Sequence and Series
 '''
-x = 10
 print("------------String for loop------------")
 for char in 'Hello World':  # A 65 a 97
     print(char)
 
 print("------------CRUD Operations------------")
 # CRUD Operations
-x = 10     # CREATE    Write operation
-print(x)   # RETRIEVE  Read operation
-x = 20     # UPDATE
-del x      # DELETE
-
-
-
-
+x = 10  # CREATE    Write operation
+print(x)  # RETRIEVE  Read operation
+x = 20  # UPDATE
+del x  # DELETE

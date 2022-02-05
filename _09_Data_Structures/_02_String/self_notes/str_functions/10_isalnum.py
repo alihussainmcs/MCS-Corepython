@@ -4,7 +4,7 @@ print('isalnum()')
 
 print('Returns true if string has at least 1 character and all characters are alphanumeric and false otherwise.')
 
-alfa_num = '12334kjhgff8777'
+alfa_num = '12334alia8777'
 
 print(" string ", alfa_num)
 

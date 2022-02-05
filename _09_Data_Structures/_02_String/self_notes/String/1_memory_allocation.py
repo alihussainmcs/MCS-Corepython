@@ -1,7 +1,7 @@
-
-
 x = 10
 print(x, type(x), id(x))
+
+print()
 
 msg = 'Hello World'
 '''
@@ -11,11 +11,20 @@ msg = 'Hello World'
 213213213
 '''
 print(msg)
+
+print()
+
 print("4th index :", msg[4])
+
+print()
+
 print("10th index :", msg[10])
+
+print()
+
 print("10th index :", msg[-1])
 
-
+print()
 
 
 '''
@@ -28,22 +37,42 @@ H e l l o   W o r l d
 '''
 
 x = 10
-print("Value of x: ",x)
+print("Value of x: ", x)
+
+print()
+
 x = 20
-print("Value of x: ",x)
+print("Value of x: ", x)
+
+print()
+
 
 msg = 'Hello World'
 print("Message1 is : ", msg)
 
+print()
+
+
 msg = 'Python'
 print("Message1 is : ", msg)
 
+print()
 
 
 x = 10
 x = x + 20
 
 msg = 'hello'
-print('Message2 : ',msg)
+print('Message2 : ', msg)
+print()
+
+print(id(msg))
+
+print()
+
 msg = msg + 'world'
-print('Message2 : ',msg)
+print('Message2 : ', msg)
+print()
+
+print(id(msg))
+print()

@@ -8,13 +8,21 @@ starts with substring str; returns true if so and false otherwise.
 
 txt = "Hello, welcome to my world."
 
+print('String :', txt)
+
 x = txt.startswith("Hello")
 print(x)
 
+print()
+
 txt = "Hello, welcome to my world."
+
+print('String :', txt)
 
 x = txt.startswith("wel", 7, 20)
 print(x)
+
+print()
 
 x = txt.startswith("wor", 7, 20)
 print(x)

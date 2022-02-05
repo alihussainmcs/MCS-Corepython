@@ -1,10 +1,9 @@
-'''
+"""
 program showing all string methods
 All string methods returns new values but do not change the original string
 input : string
-'''
-import base64
-import string
+"""
+
 '''
 # REQ: Get student exam result based on Marks 
 -------------
@@ -17,11 +16,11 @@ BEHAVIOR : Get student exam result
 str1 = 'hello world'
 # BEHAVIOR
 print("String with capital behavior : ", str1.capitalize())
-100
+
 print(10)
 x = 20
 print(x)
-print(x*x)
+print(x * x)
 # String Functions/Methods
 
 # 1. capitalize() :: Returns a string where the first character is upper case.
@@ -31,10 +30,10 @@ print("capitalize() : capitalizes first letter of given input string")
 
 str1 = 'hello world'
 print("Normal string           :", str1)
-str1.capitalize() # No action here
-print("String after capitalize :", str1.capitalize())   # print(10)
+str1.capitalize()  # No action here
+print("String after capitalize :", str1.capitalize())  # print(10)
 # str1 = str1.capitalize()                  # x = 10
-print("String after capitalize :", str1)    # print(x)
+print("String after capitalize :", str1)  # print(x)
 
 '''3 Ways'''
 print("----Way 1--------")
@@ -48,9 +47,9 @@ print("String     : ", str1)
 print("----Way 2--------")
 str1 = 'hello world'
 print("String     : ", str1)
-str2 = str1.capitalize()         # x = 10
+str2 = str1.capitalize()  # x = 10
 print("String     : ", str1)
-print("String     : ", str2)     # print(x)
+print("String     : ", str2)  # print(x)
 
 # 3 : Current string should get modified
 print("----Way 3--------")
@@ -60,7 +59,6 @@ str1 = str1.capitalize()
 print("String     : ", str1)
 
 print("-------------------------------------------------------------------------------------")
-
 
 # 2. center() : Returns a space-padded string with the original string centered to a total of width columns.
 print("------------- 2. center() -----------------")
@@ -74,7 +72,6 @@ print("String after center function with width 28 & fillchar as $   :", str1.cen
 print("String after center function with width 24                   :", str1.center(24))
 print("-------------------------------------------------------------------------------------")
 
-
 # 3. count() : Counts how many times str occurs in string or in a substring of string.
 str1 = 'hello world'
 print("------------- 3. count() -----------------")
@@ -85,7 +82,6 @@ print("Normal string                           :", str1)
 print("Number of e's in the total string are   :", str1.count('e', 0, len(str1)))
 print("Number of x's in the total string are   :", str1.count('x', 0, len(str1)))
 print("-------------------------------------------------------------------------------------")
-
 
 # 4. decode() : Decodes the string using the codec registered for encoding.
 str1 = 'hello world'
@@ -370,7 +366,7 @@ print("-------------------------------------------------------------------------
 
 
 # 31. split() : separates with spaces into lists
-str1 = "hellow world"
+str1 = "hello world"
 str5 = "    The dress looks fab  "
 print("------------- 31. split() -----------------")
 print('split() : separates with spaces into lists ')
@@ -429,7 +425,7 @@ str2 = "Hannibal\tLecter"
 print("------------- 35. swapcase() -----------------")
 print('swapcase() : swaps case')
 print("Original String is                            :", str2)
-print("Swaping the case of Hannibal\tLecter        :", str2.swapcase())
+print("Swapping the case of Hannibal\tLecter        :", str2.swapcase())
 print("-------------------------------------------------------------------------------------")
 
 
@@ -467,7 +463,8 @@ print("String in upper case is     :", str1.upper())
 print("-------------------------------------------------------------------------------------")
 
 
-# 39. zfill(width) : Returns original string leftpadded with zeros to a total of width characters; intended for numbers, zfill() retains any sign given (less one zero).
+# 39. zfill(width) : Returns original string leftpadded with zeros to a total of width characters; intended for numbers, 
+zfill() retains any sign given (less one zero).
 print("------------- 39. zfill() -----------------")
 print('zfill() : adds 0 at start to make up the length')
 str1 = 'hello world'
@@ -491,7 +488,6 @@ print("-------------------------------------------------------------------------
 
 '''
 
-
 # Difference between isdecimal /isdigit /isnumeric:
 """
 +-------------+-----------+-------------+----------------------------------+
@@ -504,18 +500,15 @@ print("-------------------------------------------------------------------------
 +-------------+-----------+-------------+----------------------------------+
 """
 
-
 '''
 program showing all string methods
 All string methods returns new values but do not change the original string
 input : string
 '''
-import base64
-import string
 
 # str1 = str(input('Enter string'))
-# Different string initlization examples
-str1 = "chesapeake ripper"
+# Different string initialization examples
+str4 = "chesapeake ripper"
 substr1 = "ake"
 str2 = "Hannibal\tLecter"
 str3 = "Aug231994"
@@ -541,7 +534,6 @@ str1.capitalize()
 print("String after capitalize :", str1.capitalize())
 print("-----------------------------------------------")
 
-
 # 2. upper() :: Returns a string where the first character is upper case.
 
 print("------------- 1. capitalize() -----------------")
@@ -552,7 +544,6 @@ print("Normal string           :", str1)
 str1.capitalize()
 print("String after capitalize :", str1.capitalize())
 print("-----------------------------------------------")
-
 
 # str1 = str1.encode('base64', 'strict')
 print('center() : returns center padded string with mentioned length')
@@ -660,7 +651,7 @@ print('splitlines() : splits at line breaks & returns lists ')
 print(str6.splitlines())
 print(str7.splitlines())
 print(str7.splitlines(True))
-print(str7.splitlines(2))
+print(str7.splitlines())
 print("-------------------------------------------------------------------")
 print('startswith() : returns true if list starts with given char')
 print(str1.startswith("pe", 1, 12))
@@ -671,7 +662,7 @@ print("-------------------------------------------------------------------")
 print('swapcase() : swaps case')
 print(str2.swapcase())
 print("-------------------------------------------------------------------")
-print('title() : returns titlecase')
+print('title() : returns title case')
 print(str6.title())
 print(str5.title())
 print("-------------------------------------------------------------------")

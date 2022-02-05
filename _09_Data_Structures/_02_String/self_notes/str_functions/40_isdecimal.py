@@ -17,4 +17,22 @@ b = "\u0047"  # unicode for G
 
 print(a.isdecimal())
 
+print()
+
 print(b.isdecimal())
+
+
+s = "28212"
+print(s.isdecimal())
+
+print()
+
+# contains alphabets
+s = "32ladk3"
+print(s.isdecimal())
+
+print()
+
+# contains alphabets and spaces
+s = "Mo3 nicaG el l22er"
+print(s.isdecimal())

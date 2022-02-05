@@ -12,17 +12,23 @@ x = txt.split()
 print(x)
 
 
+print()
+
 txt = "hello, my name is Peter, I am 26 years old"
 
 x = txt.split(", ")
 
 print(x)
 
+print()
+
 txt = "apple#banana#cherry#orange"
 
 x = txt.split("#")
 
 print(x)
+
+print()
 
 txt = "apple#banana#cherry#orange"
 

@@ -10,6 +10,8 @@ x = txt.isspace()
 
 print(x)
 
+print()
+
 txt = "   s   "
 
 x = txt.isspace()

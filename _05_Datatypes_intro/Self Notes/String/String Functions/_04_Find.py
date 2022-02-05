@@ -37,7 +37,3 @@ print('The index value of good is:', str1.find('good'))
 print("The python present in the string or not:", "python" in str1)
 
 # Used to check whether the word is present in string or not.
-
-
-
-

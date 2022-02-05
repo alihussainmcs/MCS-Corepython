@@ -14,7 +14,6 @@ advanced concepts : Sequence,Series  1 to 100 -- n(n+1)/2
                   : Sets {1,2,3} U {2,3,4}
                   : Matrix []
 
-
 '''
 
 # 1. Find sum of numbers from 1 to 100

@@ -4,7 +4,7 @@ Returns the length of the string
 
 """
 print("String length function len() practice ")
-msg = 'my name is pipinstall'
+msg = 'my name is pip install'
 print('Given string :', msg)
 print("The length of the given string is :", len(msg))
 

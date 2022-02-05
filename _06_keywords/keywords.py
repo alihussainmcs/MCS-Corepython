@@ -36,7 +36,7 @@ Python keywords are special reserved words that have specific meanings and purpo
 but those specific purposes. These keywords are always available—you’ll never have to import them into your code.
 
 Python keywords are different from Python’s built-in functions and types. The built-in functions and types are also
- always available, but they aren’t as restrictive as the keywords in their usage.
+ always available, but they are n’t as restrictive as the keywords in their usage.
 
 An example_1 of something you can’t do with Python keywords is assign something to them. If you try, then you’ll
 get a SyntaxError. You won’t get a SyntaxError if you try to assign something to a built-in function or type, but
@@ -46,14 +46,13 @@ get a SyntaxError. You won’t get a SyntaxError if you try to assign something 
 As of Python 3.8, there are thirty-five keywords in Python. Here they are with links to the relevant sections 
 throughout the rest of this article:
 
-False	await	else	import	pass
-None	break	except	in	raise
-True	class	finally	is	return
-and	continue	for	lambda	try
-as	def	from	nonlocal	while
-assert	del	global	not	with
-async	elif	if	or	yield
-You can use these links to jump to the keywords you’d like to read about, or you can continue reading for a guided tour.
+False	await	    else	    import	    pass
+None	break	    except	    in	        raise
+True	class	    finally	    is	        return
+and	    continue	for	        lambda	    try
+as	    def	        from	    nonlocal	while
+assert	del	        global	    not	        with
+async	elif	    if	        or	        yield
 
 Note: Two keywords have additional uses beyond their initial use cases. The else keyword is also used with loops as 
 well as with try and except. The as keyword is also used with the with keyword.
@@ -140,7 +139,8 @@ this documentation and tooling for you.
 
 Look for a SyntaxError
 Finally, another indicator that a word you’re using is actually a keyword is if you get a SyntaxError while trying 
-to assign to it, name a function with it, or do something else that isn’t allowed with it. This one is a little harder to spot, but it’s a way that Python will let you know you’re using a keyword incorrectly.
+to assign to it, name a function with it, or do something else that isn’t allowed with it. This one is a little harder 
+to spot, but it’s a way that Python will let you know you’re using a keyword incorrectly.
 
 Python Keywords and Their Usage
 The sections below organize the Python keywords into groups based on their usage. For example_1, the first group is 
@@ -149,14 +149,14 @@ groupings will help you better understand how keywords are used and provide a ni
 of Python keywords.
 
 There are a few terms used in the sections below that may be new to you. They’re defined here, and you should be
- aware of their meaning before proceeding:
+aware of their meaning before proceeding:
 
 Truthiness refers to the Boolean evaluation of a value. The truthiness of a value indicates whether the value is
- truthy or falsy.
+ truth or false.
 
 Truthy means any value that evaluates to true in the Boolean context. To determine if a value is truthy, pass 
 it as the argument to bool(). If it returns True, then the value is truthy. Examples of truthy values are
- non-empty strings, any numbers that aren’t 0, non-empty lists, and many more.
+ non-empty strings, any numbers that are n’t 0, non-empty lists, and many more.
 
 Falsy means any value that evaluates to false in the Boolean context. To determine if a value is falsy, pass it
  as the argument to bool(). If it returns False, then the value is falsy. Examples of falsy values are "", 
@@ -260,16 +260,16 @@ Operator Keywords: and, or, not, in, is
 Several Python keywords are used as operators. In other programming languages, these operators use symbols like 
 &, |, and !. The Python operators for these are all keywords:
 
-Math Operator	Other Languages	Python Keyword
-AND, ∧	&&	and
-OR, ∨	||	or
-NOT, ¬	!	not
-CONTAINS, ∈		in
-IDENTITY	===	is
+Math        Operator	Other Languages	    Python Keyword
+AND,        ∧	         &&	                and
+OR,         ∨	         ||	                or
+NOT,        ¬	         !	                not
+CONTAINS,   ∈		                        in
+IDENTITY	===	                            is
 Python code was designed for readability. That’s why many of the operators that use symbols in other programming 
 languages are keywords in Python.
 
-The and Keyword
+The 'and' Keyword
 The Python keyword and is used to determine if both the left and right operands are truthy or falsy. If both operands
  are truthy, then the result will be truthy. If one is falsy, then the result will be falsy:
 
@@ -343,31 +343,41 @@ A good example_1 of using the in keyword is checking for a specific letter in a 
 False
 >>> "C" in name
 True
-The in keyword works with all types of containers: lists, dicts, sets, strings, and anything else that defines __contains__() or can be iterated over.
+The in keyword works with all types of containers: lists, dicts, sets, strings, and anything else that defines 
+__contains__() or can be iterated over.
 
 The is Keyword
-Python’s is keyword is an identity check. This is different from the == operator, which checks for equality. Sometimes two things can be considered equal but not be the exact same object in memory. The is keyword determines whether two objects are exactly the same object:
+Python’s is keyword is an identity check. This is different from the == operator, which checks for equality. Sometimes 
+two things can be considered equal but not be the exact same object in memory. The is keyword determines whether two 
+objects are exactly the same object:
 
 <obj1> is <obj2>
 This will return True if <obj1> is the exact same object in memory as <obj2>, or else it will return False.
 
-Most of the time you’ll see is used to check if an object is None. Since None is a singleton, only one instance of None that can exist, so all None values are the exact same object in memory.
+Most of the time you’ll see is used to check if an object is None. Since None is a singleton, only one instance of 
+None that can exist, so all None values are the exact same object in memory.
 
-If these concepts are new to you, then you can get a more in-depth explanation by checking out Python ‘!=’ Is Not ‘is not’: Comparing Objects in Python. For a deeper dive into how is works, check out Operators and Expressions in Python.
+If these concepts are new to you, then you can get a more in-depth explanation by checking out Python ‘!=’ Is Not ‘is 
+not’: Comparing Objects in Python. For a deeper dive into how is works, check out Operators and Expressions in Python.
 
 
  Remove ads
 Control Flow Keywords: if, elif, else
-Three Python keywords are used for control flow: if, elif, and else. These Python keywords allow you to use conditional logic and execute code given certain conditions. These keywords are very common—they’ll be used in almost every program you see or write in Python.
+Three Python keywords are used for control flow: if, elif, and else. These Python keywords allow you to use conditional 
+logic and execute code given certain conditions. These keywords are very common—they’ll be used in almost every program 
+you see or write in Python.
 
 The if Keyword
-The if keyword is used to start a conditional statement. An if statement allows you to write a block of code that gets executed only if the expression after if is truthy.
+The if keyword is used to start a conditional statement. An if statement allows you to write a block of code that gets 
+executed only if the expression after if is truthy.
 
-The syntax for an if statement starts with the keyword if at the beginning of the line, followed by a valid expression that will be evaluated for its truthiness value:
+The syntax for an if statement starts with the keyword if at the beginning of the line, followed by a valid expression 
+that will be evaluated for its truthiness value:
 
 if <expr>:
     <statements>
-The if statement is a crucial component of most programs. For more information about the if statement, check out Conditional Statements in Python.
+The if statement is a crucial component of most programs. For more information about the if statement, check out 
+Conditional Statements in Python.
 
 Another use of the if keyword is as part of Python’s ternary operator:
 
@@ -378,14 +388,16 @@ if <expr2>:
     <var> = <expr1>
 else:
     <var> = <expr3>
-If your expressions are uncomplicated statements, then using the ternary expression provides a nice way to simplify your code a bit. Once the conditions get a little complex, it’s often better to rely on the standard if statement.
+If your expressions are uncomplicated statements, then using the ternary expression provides a nice way to simplify 
+your code a bit. Once the conditions get a little complex, it’s often better to rely on the standard if statement.
 
 The elif Keyword
 The elif statement looks and functions like the if statement, with two major differences:
 
 Using elif is only valid after an if statement or another elif.
 You can use as many elif statements as you need.
-In other programming languages, elif is either else if (two separate words) or elseif (both words mashed together). When you see elif in Python, think else if:
+In other programming languages, elif is either else if (two separate words) or elseif (both words mashed together). 
+When you see elif in Python, think else if:
 
 if <expr1>:
     <statements>
@@ -393,7 +405,9 @@ elif <expr2>:
     <statements>
 elif <expr3>:
     <statements>
-Python doesn’t have a switch statement. One way to get the same functionality that other programming languages provide with switch statements is by using if and elif. For other ways of reproducing the switch statement in Python, check out Emulating switch/case Statements in Python.
+Python doesn’t have a switch statement. One way to get the same functionality that other programming languages provide 
+with switch statements is by using if and elif. For other ways of reproducing the switch statement in Python, check out 
+Emulating switch/case Statements in Python.
 
 The else Keyword The else statement, in conjunction with the Python keywords if and elif, denotes a block of code 
 that should be executed only if the other conditional blocks, if and elif, are all falsy: 
@@ -423,9 +437,11 @@ A common example_1 is looping over the numbers one through five and printing the
 3
 4
 5
-In other programming languages, the syntax for a for loop will look a little different. You’ll often need to specify the variable, the condition for continuing, and the way to increment that variable (for (int i = 0; i < 5; i++)).
+In other programming languages, the syntax for a for loop will look a little different. You’ll often need to specify the 
+variable, the condition for continuing, and the way to increment that variable (for (int i = 0; i < 5; i++)).
 
-In Python, the for loop is like a for-each loop in other programming languages. Given the object to iterate over, it assigns the value of each iteration to the variable:
+In Python, the for loop is like a for-each loop in other programming languages. Given the object to iterate over, it 
+assigns the value of each iteration to the variable:
 
 >>> people = ["Kevin", "Creed", "Jim"]
 >>> for person in people:
@@ -434,31 +450,40 @@ In Python, the for loop is like a for-each loop in other programming languages. 
 Kevin was in The Office.
 Creed was in The Office.
 Jim was in The Office.
-In this example_1, you start with the list (container) of people’s names. The for loop starts with the for keyword at the beginning of the line, followed by the variable to assign each element of the list to, then the in keyword, and finally the container (people).
+In this example_1, you start with the list (container) of people’s names. The for loop starts with the for keyword at 
+the beginning of the line, followed by the variable to assign each element of the list to, then the in keyword, and 
+finally the container (people).
 
-Python’s for loop is another major ingredient in any Python program. To learn more about for loops, check out Python “for” Loops (Definite Iteration).
+Python’s for loop is another major ingredient in any Python program. To learn more about for loops, check out Python 
+“for” Loops (Definite Iteration).
 
 The while Keyword
-Python’s while loop uses the keyword while and works like a while loop in other programming languages. As long as the condition that follows the while keyword is truthy, the block following the while statement will continue to be executed over and over again:
+Python’s while loop uses the keyword while and works like a while loop in other programming languages. As long as the 
+condition that follows the while keyword is truthy, the block following the while statement will continue to be executed 
+over and over again:
 
 while <expr>:
     <statements>
-Note: For the infinite loop example_1 below, be prepared to use Ctrl+C to stop the process if you decide to try it on your own machine.
+Note: For the infinite loop example_1 below, be prepared to use Ctrl+C to stop the process if you decide to try it on 
+your own machine.
 
-The easiest way to specify an infinite loop in Python is to use the while keyword with an expression that is always truthy:
+The easiest way to specify an infinite loop in Python is to use the while keyword with an expression that is always 
+truthy:
 
 >>> while True:
 ...     print("working...")
 ...
-For more examples of infinite loops in action, check out Socket Programming in Python (Guide). To learn more about while loops, check out Python “while” Loops (Indefinite Iteration).
+For more examples of infinite loops in action, check out Socket Programming in Python (Guide). To learn more about while 
+loops, check out Python “while” Loops (Indefinite Iteration).
 
 The break Keyword
-If you need to exit a loop early, then you can use the break keyword. This keyword will work in both for and while loops:
+If you need to exit a loop early,then you can use the break keyword. This keyword will work in both for and while loops:
 
 for <element> in <container>:
     if <expr>:
         break
-An example_1 of using the break keyword would be if you were summing the integers in a list of numbers and wanted to quit when the total went above a given value:
+An example_1 of using the break keyword would be if you were summing the integers in a list of numbers and wanted to 
+quit when the total went above a given value:
 
 >>> nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 >>> sum = 0
@@ -469,18 +494,24 @@ An example_1 of using the break keyword would be if you were summing the integer
 ...
 >>> sum
 15
-Both the Python keywords break and continue can be useful tools when working with loops. For a deeper discussion of their uses, check out Python “while” Loops (Indefinite Iteration).
+Both the Python keywords break and continue can be useful tools when working with loops. For a deeper discussion of 
+their uses, check out Python “while” Loops (Indefinite Iteration).
 
 The continue Keyword
-Python also has a continue keyword for when you want to skip to the next loop iteration. Like in most other programming languages, the continue keyword allows you to stop executing the current loop iteration and move on to the next iteration:
+Python also has a continue keyword for when you want to skip to the next loop iteration. Like in most other programming 
+languages, the continue keyword allows you to stop executing the current loop iteration and move on to the next 
+iteration:
 
 for <element> in <container>:
     if <expr>:
         continue
-The continue keyword also works in while loops. If the continue keyword is reached in a loop, then the current iteration is stopped, and the next iteration of the loop is started.
+The continue keyword also works in while loops. If the continue keyword is reached in a loop, then the current iteration 
+is stopped, and the next iteration of the loop is started.
 
 The else Keyword Used With Loops
-In addition to using the else keyword with conditional if statements, you can also use it as part of a loop. When used with a loop, the else keyword specifies code that should be run if the loop exits normally, meaning break was not called to exit the loop early.
+In addition to using the else keyword with conditional if statements, you can also use it as part of a loop. When used 
+with a loop, the else keyword specifies code that should be run if the loop exits normally, meaning break was not called 
+to exit the loop early.
 
 The syntax for using else with a for loop looks like the following:
 
@@ -494,9 +525,11 @@ while <expr>:
     <statements>
 else:
     <statements>
-The Python standard documentation has a section on using break and else with a for loop that you should really check out. It uses a great example_1 to illustrate the usefulness of the else block.
+The Python standard documentation has a section on using break and else with a for loop that you should really check 
+out. It uses a great example_1 to illustrate the usefulness of the else block.
 
-The task it shows is looping over the numbers two through nine to find the prime numbers. One way you could do this is with a standard for loop with a flag variable:
+The task it shows is looping over the numbers two through nine to find the prime numbers. One way you could do this is 
+with a standard for loop with a flag variable:
 
 >>> for n in range(2, 10):
 ...     prime = True
@@ -516,9 +549,12 @@ The task it shows is looping over the numbers two through nine to find the prime
 7 is prime!
 8 is not prime
 9 is not prime
-You can use the prime flag to indicate how the loop was exited. If it exited normally, then the prime flag stays True. If it exited with break, then the prime flag will be set to False. Once outside the inner for loop, you can check the flag to determine if prime is True and, if so, print that the number is prime.
+You can use the prime flag to indicate how the loop was exited. If it exited normally, then the prime flag stays True. 
+If it exited with break, then the prime flag will be set to False. Once outside the inner for loop, you can check the 
+flag to determine if prime is True and, if so, print that the number is prime.
 
-The else block provides more straightforward syntax. If you find yourself having to set a flag in a loop, then consider the next example_1 as a way to potentially simplify your code:
+The else block provides more straightforward syntax. If you find yourself having to set a flag in a loop, then consider 
+the next example_1 as a way to potentially simplify your code:
 
 >>> for n in range(2, 10):
 ...     for x in range(2, n):
@@ -536,37 +572,49 @@ The else block provides more straightforward syntax. If you find yourself having
 7 is prime!
 8 is not prime
 9 is not prime
-The only thing that you need to do to use the else block in this example_1 is to remove the prime flag and replace the final if statement with the else block. This ends up producing the same result as the example_1 before, only with clearer code.
+The only thing that you need to do to use the else block in this example_1 is to remove the prime flag and replace the 
+final if statement with the else block. This ends up producing the same result as the example_1 before, only with 
+clearer code.
 
-Sometimes using an else keyword with a loop can seem a little strange, but once you understand that it allows you to avoid using flags in your loops, it can be a powerful tool.
+Sometimes using an else keyword with a loop can seem a little strange, but once you understand that it allows you to 
+avoid using flags in your loops, it can be a powerful tool.
 
 
  Remove ads
 Structure Keywords: def, class, with, as, pass, lambda
-In order to define functions and classes or use context managers, you’ll need to use one of the Python keywords in this section. They’re an essential part of the Python language, and understanding when to use them will help you become a better Python programmer.
+In order to define functions and classes or use context managers, you’ll need to use one of the Python keywords in this
+ section. They’re an essential part of the Python language, and understanding when to use them will help you become a 
+ better Python programmer.
 
 The def Keyword
-Python’s keyword def is used to define a function or method of a class. This is equivalent to function in JavaScript and PHP. The basic syntax for defining a function with def looks like this:
+Python’s keyword def is used to define a function or method of a class. This is equivalent to function in JavaScript 
+and PHP. The basic syntax for defining a function with def looks like this:
 
 def <function>(<params>):
     <body>
-Functions and methods can be very helpful structures in any Python program. To learn more about defining them and all their ins and outs, check out Defining Your Own Python Function.
+Functions and methods can be very helpful structures in any Python program. To learn more about defining them and all 
+their ins and outs, check out Defining Your Own Python Function.
 
 The class Keyword
-To define a class in Python, you use the class keyword. The general syntax for defining a class with class is as follows:
+To define a class in Python, you use the class keyword. The general syntax for defining a class with class is as 
+follows:
 
 class MyClass(<extends>):
     <body>
-Classes are powerful tools in object-oriented programming, and you should know about them and how to define them. To learn more, check out Object-Oriented Programming (OOP) in Python 3.
+Classes are powerful tools in object-oriented programming, and you should know about them and how to define them. To 
+learn more, check out Object-Oriented Programming (OOP) in Python 3.
 
 The with Keyword
-Context managers are a really helpful structure in Python. Each context manager executes specific code before and after the statements you specify. To use one, you use the with keyword:
+Context managers are a really helpful structure in Python. Each context manager executes specific code before and after 
+the statements you specify. To use one, you use the with keyword:
 
 with <context manager> as <var>:
     <statements>
-Using with gives you a way to define code to be executed within the context manager’s scope. The most basic example_1 of this is when you’re working with file I/O in Python.
+Using with gives you a way to define code to be executed within the context manager’s scope. The most basic example_1 
+of this is when you’re working with file I/O in Python.
 
-If you wanted to open a file, do something with that file, and then make sure that the file was closed correctly, then you would use a context manager. Consider this example_1 in which names.txt contains a list of names, one per line:
+If you wanted to open a file, do something with that file, and then make sure that the file was closed correctly, then 
+you would use a context manager. Consider this example_1 in which names.txt contains a list of names, one per line:
 
 >>> with open("names.txt") as input_file:
 ...    for name in input_file:
@@ -576,19 +624,27 @@ Jim
 Pam
 Cece
 Philip
-The file I/O context manager provided by open() and initiated with the with keyword opens the file for reading, assigns the open file pointer to input_file, then executes whatever code you specify in the with block. Then, after the block is executed, the file pointer closes. Even if your code in the with block raises an exception, the file pointer would still close.
+The file I/O context manager provided by open() and initiated with the with keyword opens the file for reading, assigns 
+the open file pointer to input_file, then executes whatever code you specify in the with block. Then, after the block is 
+executed, the file pointer closes. Even if your code in the with block raises an exception, the file pointer would 
+still close.
 
-For a great example_1 of using with and context managers, check out Python Timer Functions: Three Ways to Monitor Your Code.
+For a great example_1 of using with and context managers, check out Python Timer Functions: Three Ways to Monitor Your 
+Code.
 
 The as Keyword Used With with
-If you want access to the results of the expression or context manager passed to with, you’ll need to alias it using as. You may have also seen as used to alias imports and exceptions, and this is no different. The alias is available in the with block:
+If you want access to the results of the expression or context manager passed to with, you’ll need to alias it using as. 
+You may have also seen as used to alias imports and exceptions, and this is no different. The alias is available in the 
+with block:
 
 with <expr> as <alias>:
     <statements>
 Most of the time, you’ll see these two Python keywords, with and as, used together.
 
 The pass Keyword
-Since Python doesn’t have block indicators to specify the end of a block, the pass keyword is used to specify that the block is intentionally left blank. It’s the equivalent of a no-op, or no operation. Here are a few examples of using pass to specify that the block is blank:
+Since Python doesn’t have block indicators to specify the end of a block, the pass keyword is used to specify that the
+ block is intentionally left blank. It’s the equivalent of a no-op, or no operation. Here are a few examples of using 
+ pass to specify that the block is blank:
 
 def my_function():
     pass
@@ -601,7 +657,8 @@ if True:
 For more on pass, check out The pass Statement: How to Do Nothing in Python.
 
 The lambda Keyword
-The lambda keyword is used to define a function that doesn’t have a name and has only one statement, the results of which are returned. Functions defined with lambda are referred to as lambda functions:
+The lambda keyword is used to define a function that doesn’t have a name and has only one statement, the results of 
+which are returned. Functions defined with lambda are referred to as lambda functions:
 
 lambda <args>: <statement>
 A basic example_1 of a lambda function that computes the argument raised to the power of 10 would look like this:
@@ -611,7 +668,9 @@ This is equivalent to defining a function with def:
 
 def p10(x):
     return x**10
-One common use for a lambda function is specifying a different behavior for another function. For example_1, imagine you wanted to sort a list of strings by their integer values. The default behavior of sorted() would sort the strings alphabetically. But with sorted(), you can specify which key the list should be sorted on.
+One common use for a lambda function is specifying a different behavior for another function. For example_1, imagine you 
+wanted to sort a list of strings by their integer values. The default behavior of sorted() would sort the strings 
+alphabetically. But with sorted(), you can specify which key the list should be sorted on.
 
 A lambda function provides a nice way to do so:
 
@@ -621,7 +680,9 @@ A lambda function provides a nice way to do so:
 
 >>> sorted(ids, key=lambda x: int(x[2:]))
 ['id1', 'id2', 'id3', 'id10', 'id20', 'id30']
-This example_1 sorts the list based not on alphabetical order but on the numerical order of the last characters of the strings after converting them to integers. Without lambda, you would have had to define a function, give it a name, and then pass it to sorted(). lambda made this code cleaner.
+This example_1 sorts the list based not on alphabetical order but on the numerical order of the last characters of the 
+strings after converting them to integers. Without lambda, you would have had to define a function, give it a name, and 
+then pass it to sorted(). lambda made this code cleaner.
 
 For comparison, this is what the example_1 above would look like without using lambda:
 
@@ -638,10 +699,13 @@ For a lot more information about lambda, check out How to Use Python Lambda Func
 
  Remove ads
 Returning Keywords: return, yield
-There are two Python keywords used to specify what gets returned from functions or methods: return and yield. Understanding when and where to use return is vital to becoming a better Python programmer. The yield keyword is a more advanced feature of Python, but it can also be a useful tool to understand.
+There are two Python keywords used to specify what gets returned from functions or methods: return and yield. 
+Understanding when and where to use return is vital to becoming a better Python programmer. The yield keyword is a 
+more advanced feature of Python, but it can also be a useful tool to understand.
 
 The return Keyword
-Python’s return keyword is valid only as part of a function defined with def. When Python encounters this keyword, it will exit the function at that point and return the results of whatever comes after the return keyword:
+Python’s return keyword is valid only as part of a function defined with def. When Python encounters this keyword, it 
+will exit the function at that point and return the results of whatever comes after the return keyword:
 
 def <function>():
     return <expr>
@@ -664,21 +728,28 @@ Most of the time, however, you want to return the results of an expression or a 
 >>> r = plus_1(9)
 >>> print(r)
 10
-You can even use the return keyword multiple times in a function. This allows you to have multiple exit points in your function. A classic example_1 of when you would want to have multiple return statements is the following recursive solution to calculating factorial:
+You can even use the return keyword multiple times in a function. This allows you to have multiple exit points in your 
+function. A classic example_1 of when you would want to have multiple return statements is the following recursive 
+solution to calculating factorial:
 
 def factorial(n):
     if n == 1:
         return 1
     else:
         return n * factorial(n - 1)
-In the factorial function above, there are two cases in which you would want to return from the function. The first is the base case, when the number is 1, and the second is the regular case, when you want to multiply the current number by the next number’s factorial value.
+In the factorial function above, there are two cases in which you would want to return from the function. The first is 
+the base case, when the number is 1, and the second is the regular case, when you want to multiply the current number by 
+the next number’s factorial value.
 
 To learn more about the return keyword, check out Defining Your Own Python Function.
 
 The yield Keyword
-Python’s yield keyword is kind of like the return keyword in that it specifies what gets returned from a function. However, when a function has a yield statement, what gets returned is a generator. The generator can then be passed to Python’s built-in next() to get the next value returned from the function.
+Python’s yield keyword is kind of like the return keyword in that it specifies what gets returned from a function. 
+However, when a function has a yield statement, what gets returned is a generator. The generator can then be passed to 
+Python’s built-in next() to get the next value returned from the function.
 
-When you call a function with yield statements, Python executes the function until it reaches the first yield keyword and then returns a generator. These are known as generator functions:
+When you call a function with yield statements, Python executes the function until it reaches the first yield keyword 
+and then returns a generator. These are known as generator functions:
 
 def <function>():
     yield <expr>
@@ -705,45 +776,60 @@ The most straightforward example_1 of this would be a generator function that re
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 StopIteration
-Once the StopIteration exception is raised, the generator is done returning values. In order to go through the names again, you would need to call family() again and get a new generator. Most of the time, a generator function will be called as part of a for loop, which does the next() calls for you.
+Once the StopIteration exception is raised, the generator is done returning values. In order to go through the names 
+again, you would need to call family() again and get a new generator. Most of the time, a generator function will be 
+called as part of a for loop, which does the next() calls for you.
 
-For much more on the yield keyword and using generators and generator functions, check out How to Use Generators and yield in Python and Python Generators 101.
+For much more on the yield keyword and using generators and generator functions, check out How to Use Generators and 
+yield in Python and Python Generators 101.
 
 
  Remove ads
 Import Keywords: import, from, as
-For those tools that, unlike Python keywords and built-ins, are not already available to your Python program, you’ll need to import them into your program. There are many useful modules available in Python’s standard library that are only an import away. There are also many other useful libraries and tools available in PyPI that, once you’ve installed them into your environment, you’ll need to import into your programs.
+For those tools that, unlike Python keywords and built-ins, are not already available to your Python program, you’ll 
+need to import them into your program. There are many useful modules available in Python’s standard library that are 
+only an import away. There are also many other useful libraries and tools available in PyPI that, once you’ve installed 
+them into your environment, you’ll need to import into your programs.
 
-The following are brief descriptions of the three Python keywords used for importing modules into your program. For more information about these keywords, check out Python Modules and Packages – An Introduction and Python import: Advanced Techniques and Tips.
+The following are brief descriptions of the three Python keywords used for importing modules into your program. For more 
+information about these keywords, check out Python Modules and Packages – An Introduction and Python import: Advanced 
+Techniques and Tips.
 
 The import Keyword
-Python’s import keyword is used to import, or include, a module for use in your Python program. Basic usage syntax looks like this:
+Python’s import keyword is used to import, or include, a module for use in your Python program. Basic usage syntax looks 
+like this:
 
 import <module>
 After that statement runs, the <module> will be available to your program.
 
-For example_1, if you want to use the Counter class from the collections module in the standard library, then you can use the following code:
+For example_1, if you want to use the Counter class from the collections module in the standard library, then you can 
+use the following code:
 
 >>> import collections
 >>> collections.Counter()
 Counter()
-Importing collections in this way makes the whole collections module, including the Counter class, available to your program. By using the module name, you have access to all the tools available in that module. To get access to Counter, you reference it from the module: collections.Counter.
+Importing collections in this way makes the whole collections module, including the Counter class, available to your
+program. By using the module name, you have access to all the tools available in that module. To get access to Counter, 
+you reference it from the module: collections.Counter.
 
 The from Keyword
 The from keyword is used together with import to import something specific from a module:
 
 from <module> import <thing>
-This will import whatever <thing> is inside <module> to be used inside your program. These two Python keywords, from and import, are used together.
+This will import whatever <thing> is inside <module> to be used inside your program. These two Python keywords, from 
+and import, are used together.
 
 If you want to use Counter from the collections module in the standard library, then you can import it specifically:
 
 >>> from collections import Counter
 >>> Counter()
 Counter()
-Importing Counter like this makes the Counter class available, but nothing else from the collections module is available. Counter is now available without you having to reference it from the collections module.
+Importing Counter like this makes the Counter class available, but nothing else from the collections module is 
+available. Counter is now available without you having to reference it from the collections module.
 
 The as Keyword
-The as keyword is used to alias an imported module or tool. It’s used together with the Python keywords import and from to change the name of the thing being imported:
+The as keyword is used to alias an imported module or tool. It’s used together with the Python keywords import and from 
+to change the name of the thing being imported:
 
 import <module> as <alias>
 from <module> import <thing> as <alias>
@@ -762,26 +848,35 @@ and it allows you to shorten the name of the module being imported.
 
  Remove ads
 Exception-Handling Keywords: try, except, raise, finally, else, assert
-One of the most common aspects of any Python program is the raising and catching of exceptions. Because this is such a fundamental aspect of all Python code, there are several Python keywords available to help make this part of your code clear and concise.
+One of the most common aspects of any Python program is the raising and catching of exceptions. Because this is such a 
+fundamental aspect of all Python code, there are several Python keywords available to help make this part of your code 
+clear and concise.
 
-The sections below go over these Python keywords and their basic usage. For a more in-depth tutorial on these keywords, check out Python Exceptions: An Introduction.
+The sections below go over these Python keywords and their basic usage. For a more in-depth tutorial on these keywords,
+ check out Python Exceptions: An Introduction.
 
 The try Keyword
-Any exception-handling block begins with Python’s try keyword. This is the same in most other programming languages that have exception handling.
+Any exception-handling block begins with Python’s try keyword. This is the same in most other programming languages 
+that have exception handling.
 
-The code in the try block is code that might raise an exception. Several other Python keywords are associated with try and are used to define what should be done if different exceptions are raised or in different situations. These are except, else, and finally:
+The code in the try block is code that might raise an exception. Several other Python keywords are associated with try 
+and are used to define what should be done if different exceptions are raised or in different situations. These are 
+except, else, and finally:
 
 try:
     <statements>
 <except|else|finally>:
     <statements>
-A try block isn’t valid unless it has at least one of the other Python keywords used for exception handling as part of the overall try statement.
+A try block isn’t valid unless it has at least one of the other Python keywords used for exception handling as part of 
+the overall try statement.
 
-If you wanted to calculate and return the miles per gallon of gas (mpg) given the miles driven and the gallons of gas used, then you could write a function like the following:
+If you wanted to calculate and return the miles per gallon of gas (mpg) given the miles driven and the gallons of gas 
+used, then you could write a function like the following:
 
 def mpg(miles, gallons):
     return miles / gallons
-The first problem you might see is that your code could raise a ZeroDivisionError if the gallons parameter is passed in as 0. The try keyword allows you to modify the code above to handle that situation appropriately:
+The first problem you might see is that your code could raise a ZeroDivisionError if the gallons parameter is passed in 
+as 0. The try keyword allows you to modify the code above to handle that situation appropriately:
 
 def mpg(miles, gallons):
     try:
@@ -789,16 +884,21 @@ def mpg(miles, gallons):
     except ZeroDivisionError:
         mpg = None
     return mpg
-Now if gallons = 0, then mpg() won’t raise an exception and will return None instead. This might be better, or you might decide that you want to raise a different type of exception or handle this situation differently. You’ll see an expanded version of this example_1 below to illustrate the other keywords used for exception handling.
+Now if gallons = 0, then mpg() won’t raise an exception and will return None instead. This might be better, or you 
+might decide that you want to raise a different type of exception or handle this situation differently. You’ll see an 
+expanded version of this example_1 below to illustrate the other keywords used for exception handling.
 
 The except Keyword
-Python’s except keyword is used with try to define what to do when specific exceptions are raised. You can have one or more except blocks with a single try. The basic usage looks like this:
+Python’s except keyword is used with try to define what to do when specific exceptions are raised. You can have one or 
+more except blocks with a single try. The basic usage looks like this:
 
 try:
     <statements>
 except <exception>:
     <statements>
-Taking the mpg() example_1 from before, you could also do something specific in the event that someone passes types that won’t work with the / operator. Having defined mpg() in a previous example_1, now try to call it with strings instead of numbers:
+Taking the mpg() example_1 from before, you could also do something specific in the event that someone passes types that 
+won’t work with the / operator. Having defined mpg() in a previous example_1, now try to call it with strings instead 
+of numbers:
 
 >>> mpg("lots", "many")
 Traceback (most recent call last):
@@ -818,9 +918,11 @@ def mpg(miles, gallons):
     return mpg
 Here, you modify mpg() to raise the TypeError exception only after you’ve printed a helpful reminder to the screen.
 
-Notice that the except keyword can also be used in conjunction with the as keyword. This has the same effect as the other uses of as, giving the raised exception an alias so you can work with it in the except block.
+Notice that the except keyword can also be used in conjunction with the as keyword. This has the same effect as the 
+other uses of as, giving the raised exception an alias so you can work with it in the except block.
 
-Even though it’s syntactically allowed, try not to use except statements as implicit catchalls. It’s better practice to always explicitly catch something, even if it’s just Exception:
+Even though it’s syntactically allowed, try not to use except statements as implicit catchalls. It’s better practice to 
+always explicitly catch something, even if it’s just Exception:
 
 try:
     1 / 0
@@ -836,22 +938,28 @@ try:
     1 / 0
 except ZeroDivisionError:  # This is best
     pass
-If you really do want to catch a broad range of exceptions, then specify the parent Exception. This is more explicitly a catchall, and it won’t also catch exceptions you probably don’t want to catch, like RuntimeError or KeyboardInterrupt.
+If you really do want to catch a broad range of exceptions, then specify the parent Exception. This is more explicitly 
+a catchall, and it won’t also catch exceptions you probably don’t want to catch, like RuntimeError or KeyboardInterrupt.
 
 The raise Keyword
-The raise keyword raises an exception. If you find you need to raise an exception, then you can use raise followed by the exception to be raised:
+The raise keyword raises an exception. If you find you need to raise an exception, then you can use raise followed by 
+the exception to be raised:
 
 raise <exception>
-You used raise previously, in the mpg() example_1. When you catch the TypeError, you re-raise the exception after printing a message to the screen.
+You used raise previously, in the mpg() example_1. When you catch the TypeError, you re-raise the exception after 
+printing a message to the screen.
 
 The finally Keyword
-Python’s finally keyword is helpful for specifying code that should be run no matter what happens in the try, except, or else blocks. To use finally, use it as part of a try block and specify the statements that should be run no matter what:
+Python’s finally keyword is helpful for specifying code that should be run no matter what happens in the try, except, 
+or else blocks. To use finally, use it as part of a try block and specify the statements that should be run no 
+matter what:
 
 try:
     <statements>
 finally:
     <statements>
-Using the example_1 from before, it might be helpful to specify that, no matter what happens, you want to know what arguments the function was called with. You could modify mpg() to include a finally block that does just that:
+Using the example_1 from before, it might be helpful to specify that, no matter what happens, you want to know what 
+arguments the function was called with. You could modify mpg() to include a finally block that does just that:
 
 def mpg(miles, gallons):
     try:
@@ -881,7 +989,9 @@ TypeError: unsupported operand type(s) for /: 'str' and 'str'
 The finally keyword can be a very useful part of your exception-handling code.
 
 The else Keyword Used With try and except
-You’ve learned that the else keyword can be used with both the if keyword and loops in Python, but it has one more use. It can be combined with the try and except Python keywords. You can use else in this way only if you also use at least one except block:
+You’ve learned that the else keyword can be used with both the if keyword and loops in Python, but it has one more use. 
+It can be combined with the try and except Python keywords. You can use else in this way only if you also use at least 
+one except block:
 
 try:
     <statements>
@@ -889,9 +999,12 @@ except <exception>:
     <statements>
 else:
     <statements>
-In this context, the code in the else block is executed only if an exception was not raised in the try block. In other words, if the try block executed all the code successfully, then the else block code would be executed.
+In this context, the code in the else block is executed only if an exception was not raised in the try block. In other 
+words, if the try block executed all the code successfully, then the else block code would be executed.
 
-In the mpg() example_1, imagine you want to make sure that the mpg result is always returned as a float no matter what number combination is passed in. One of the ways you could do this is to use an else block. If the try block calculation of mpg is successful, then you convert the result to a float in the else block before returning:
+In the mpg() example_1, imagine you want to make sure that the mpg result is always returned as a float no matter what 
+number combination is passed in. One of the ways you could do this is to use an else block. If the try block calculation 
+of mpg is successful, then you convert the result to a float in the else block before returning:
 
 def mpg(miles, gallons):
     try:
@@ -911,48 +1024,64 @@ Now the results of a call to mpg(), if successful, will always be a float.
 For more on using the else block as part of a try and except block, check out Python Exceptions: An Introduction.
 
 The assert Keyword
-The assert keyword in Python is used to specify an assert statement, or an assertion about an expression. An assert statement will result in a no-op if the expression (<expr>) is truthy, and it will raise an AssertionError if the expression is falsy. To define an assertion, use assert followed by an expression:
+The assert keyword in Python is used to specify an assert statement, or an assertion about an expression. An assert 
+statement will result in a no-op if the expression (<expr>) is truthy, and it will raise an AssertionError if the 
+expression is falsy. To define an assertion, use assert followed by an expression:
 
 assert <expr>
-Generally, assert statements will be used to make sure something that needs to be true is. You shouldn’t rely on them, however, as they can be ignored depending on how your Python program is executed.
+Generally, assert statements will be used to make sure something that needs to be true is. You should n’t rely on them, 
+however, as they can be ignored depending on how your Python program is executed.
 
 
  Remove ads
 Asynchronous Programming Keywords: async, await
-Asynchronous programming is a complex topic. There are two Python keywords defined to help make asynchronous code more readable and cleaner: async and await.
+Asynchronous programming is a complex topic. There are two Python keywords defined to help make asynchronous code more 
+readable and cleaner: async and await.
 
-The sections below introduce the two asynchronous keywords and their basic syntax, but they won’t go into depth on asynchronous programming. To learn more about asynchronous programming, check out Async IO in Python: A Complete Walkthrough and Getting Started With Async Features in Python.
+The sections below introduce the two asynchronous keywords and their basic syntax, but they won’t go into depth on 
+asynchronous programming. To learn more about asynchronous programming, check out Async IO in Python: A Complete 
+Walk through and Getting Started With Async Features in Python.
 
 The async Keyword
-The async keyword is used with def to define an asynchronous function, or coroutine. The syntax is just like defining a function, with the addition of async at the beginning:
+The async keyword is used with def to define an asynchronous function, or coroutine. The syntax is just like defining a 
+function, with the addition of async at the beginning:
 
 async def <function>(<params>):
     <statements>
 You can make a function asynchronous by adding the async keyword before the function’s regular definition.
 
 The await Keyword
-Python’s await keyword is used in asynchronous functions to specify a point in the function where control is given back to the event loop for other functions to run. You can use it by placing the await keyword in front of a call to any async function:
+Python’s await keyword is used in asynchronous functions to specify a point in the function where control is given back 
+to the event loop for other functions to run. You can use it by placing the await keyword in front of a call to any 
+async function:
 
 await <some async function call>
 # OR
 <var> = await <some async function call>
-When using await, you can either call the asynchronous function and ignore the results, or you can store the results in a variable when the function eventually returns.
+When using await, you can either call the asynchronous function and ignore the results, or you can store the results in 
+a variable when the function eventually returns.
 
 Variable Handling Keywords: del, global, nonlocal
-Three Python keywords are used to work with variables. The del keyword is much more commonly used than the global and nonlocal keywords. But it’s still helpful to know and understand all three keywords so you can identify when and how to use them.
+Three Python keywords are used to work with variables. The del keyword is much more commonly used than the global and 
+nonlocal keywords. But it’s still helpful to know and understand all three keywords so you can identify when and how 
+to use them.
 
 The del Keyword
-del is used in Python to unset a variable or name. You can use it on variable names, but a more common use is to remove indexes from a list or dictionary. To unset a variable, use del followed by the variable you want to unset:
+del is used in Python to unset a variable or name. You can use it on variable names, but a more common use is to remove 
+indexes from a list or dictionary. To unset a variable, use del followed by the variable you want to unset:
 
 del <variable>
-Let’s assume you want to clean up a dictionary that you got from an API response by throwing out keys you know you won’t use. You can do so with the del keyword:
+Let’s assume you want to clean up a dictionary that you got from an API response by throwing out keys you know you 
+won’t use. You can do so with the del keyword:
 
 >>> del response["headers"]
 >>> del response["errors"]
 This will remove the "headers" and "errors" keys from the dictionary response.
 
 The global Keyword
-If you need to modify a variable that isn’t defined in a function but is defined in the global scope, then you’ll need to use the global keyword. This works by specifying in the function which variables need to be pulled into the function from the global scope:
+If you need to modify a variable that isn’t defined in a function but is defined in the global scope, then you’ll need 
+to use the global keyword. This works by specifying in the function which variables need to be pulled into the function 
+from the global scope:
 
 global <variable>
 A basic example_1 is incrementing a global variable with a function call. You can do that with the global keyword:
@@ -968,18 +1097,23 @@ A basic example_1 is incrementing a global variable with a function call. You ca
 >>> inc()
 >>> x
 2
-This is generally not considered good practice, but it does have its uses. To learn much more on the global keyword, check out Python Scope & the LEGB Rule: Resolving Names in Your Code.
+This is generally not considered good practice, but it does have its uses. To learn much more on the global keyword, 
+check out Python Scope & the LEGB Rule: Resolving Names in Your Code.
 
 The nonlocal Keyword
-The nonlocal keyword is similar to global in that it allows you to modify variables from a different scope. With global, the scope you’re pulling from is the global scope. With nonlocal, the scope you’re pulling from is the parent scope. The syntax is similar to global:
+The nonlocal keyword is similar to global in that it allows you to modify variables from a different scope. With global, 
+the scope you’re pulling from is the global scope. With nonlocal, the scope you’re pulling from is the parent scope. The 
+syntax is similar to global:
 
 nonlocal <variable>
-This keyword isn’t used very often, but it can be handy at times. For more on scoping and the nonlocal keyword, check out Python Scope & the LEGB Rule: Resolving Names in Your Code.
+This keyword isn’t used very often, but it can be handy at times. For more on scoping and the nonlocal keyword, check 
+out Python Scope & the LEGB Rule: Resolving Names in Your Code.
 
 
  Remove ads
 Deprecated Python Keywords
-Sometimes a Python keyword becomes a built-in function. That was the case with both print and exec. These used to be Python keywords in version 2.7, but they’ve since been changed to built-in functions.
+Sometimes a Python keyword becomes a built-in function. That was the case with both print and exec. These used to be 
+Python keywords in version 2.7, but they’ve since been changed to built-in functions.
 
 The Former print Keyword
 When print was a keyword, the syntax to print something to the screen looked like this:
@@ -987,7 +1121,8 @@ When print was a keyword, the syntax to print something to the screen looked lik
 print "Hello, World"
 Notice that it looks like a lot of the other keyword statements, with the keyword followed by the arguments.
 
-Now print is no longer a keyword, and printing is accomplished with the built-in print(). To print something to the screen, you now use the following syntax:
+Now print is no longer a keyword, and printing is accomplished with the built-in print(). To print something to the 
+screen, you now use the following syntax:
 
 print("Hello, World")
 For more on printing, check out Your Guide to the Python print() Function.
@@ -996,7 +1131,8 @@ The Former exec Keyword
 In Python 2.7, the exec keyword took Python code as a string and executed it. This was done with the following syntax:
 
 exec "<statements>"
-You can get the same behavior in Python 3+, only with the built-in exec(). For example_1, if you wanted to execute "x = 12 * 7" in your Python code, then you could do the following:
+You can get the same behavior in Python 3+, only with the built-in exec(). For example_1, if you wanted to execute 
+"x = 12 * 7" in your Python code, then you could do the following:
 
 >>> exec("x = 12 * 7")
 >>> x == 84
@@ -1004,16 +1140,19 @@ True
 For more on exec() and its uses, check out How to Run Your Python Scripts.
 
 Conclusion
-Python keywords are the fundamental building blocks of any Python program. Understanding their proper use is key to improving your skills and knowledge of Python.
+Python keywords are the fundamental building blocks of any Python program. Understanding their proper use is key to 
+improving your skills and knowledge of Python.
 
-Throughout this article, you’ve seen a few things to solidify your understanding Python keywords and to help you write more efficient and readable code.
+Throughout this article, you’ve seen a few things to solidify your understanding Python keywords and to help you write 
+more efficient and readable code.
 
 In this article, you’ve learned:
 
 The Python keywords in version 3.8 and their basic usage
 Several resources to help deepen your understanding of many of the keywords
 How to use Python’s keywords module to work with keywords in a programmatic way
-If you understand most of these keywords and feel comfortable using them, then you might be interested to learn more about Python’s grammar and how the statements that use these keywords are specified and constructed.
+If you understand most of these keywords and feel comfortable using them, then you might be interested to learn more 
+about Python’s grammar and how the statements that use these keywords are specified and constructed.
 
 
 '''

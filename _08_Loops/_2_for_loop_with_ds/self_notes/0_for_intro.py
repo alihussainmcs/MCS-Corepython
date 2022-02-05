@@ -23,4 +23,4 @@ for i in 'Python':
     print(i)
 
 for i in range(10):
-    print('Square of %i is ' %i, i*i)
+    print('Square of %i is ' % i, i * i)

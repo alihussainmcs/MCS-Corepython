@@ -15,5 +15,11 @@ b = "hello 123"
 c = "MY NAME IS PETER"
 print(".................................")
 print(a.isupper())
+
+print()
+
 print(b.isupper())
+
+print()
+
 print(c.isupper())

@@ -38,3 +38,25 @@ for name, colour in colours:
     favourite_colours[name].append(colour)
 
 print(favourite_colours)
+
+# Python program to demonstrate
+# defaultdict
+
+print()
+
+
+# Function to return a default
+# values for keys that is not
+# present
+def def_value():
+    return "Not Present"
+
+
+# Defining the dict
+d = defaultdict(def_value)
+d["a"] = '1'
+d["b"] = '2'
+
+print(d["a"])
+print(d["b"])
+print(d["c"])

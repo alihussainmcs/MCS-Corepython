@@ -33,7 +33,7 @@ x = 50
 y = 20
 print("Addition is : ", x+y)
 print("Subtraction is : ", x-y)
-print("Mulitplication is : ", x*y)
+print("Multiplication is : ", x*y)
 print("Division is : ", x/y)
 print("Floor Division is : ", x//y)
 

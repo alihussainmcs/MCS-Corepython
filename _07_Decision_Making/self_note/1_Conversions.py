@@ -1,5 +1,7 @@
 print("........................Conversions...........................")
+
 print(".........................Converting int in other data types ...........................")
+
 a = 10
 print("Number a is ", a)
 

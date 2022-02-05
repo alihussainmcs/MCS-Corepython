@@ -42,3 +42,11 @@ msg_3 = ' i am the moon '
 print("Using Build-in capitalize function it Capitalizes first letter of the string : ", msg_3.capitalize())
 
 print("string capitalize :", 'hello py'.capitalize())
+
+print()
+
+msg_4 = 'hi, ali'
+
+print('Given string :', msg_4)
+
+print('Capitalize :', msg_4.capitalize())
