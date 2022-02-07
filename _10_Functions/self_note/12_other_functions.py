@@ -266,10 +266,7 @@ lst = [2, 4, 7, 3]
 print(reduce(add, lst))
 
 """
-Running this code would yield:
-
 16
-Again, this could be written using lambdas:
 """
 
 from functools import reduce
@@ -279,7 +276,6 @@ print(reduce(lambda x, y: x + y, lst))
 print("With an initial value: " + str(reduce(lambda x, y: x + y, lst, 10)))
 
 """
-And the code would result in:
 
 16
 With an initial value: 26

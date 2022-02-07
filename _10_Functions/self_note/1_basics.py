@@ -54,3 +54,19 @@ print("Addition is : ", result)  # 3. Give response to user
 '''
 Code duplication == we should achieve ==> Code re-usability
 '''
+
+# REQ: Find subtraction of 2 numbers
+# I. STATE
+
+num1 = 21
+num2 = 11
+
+# II BEHAVIOR
+result = num1 - num2  # 2. BUSINESS LOGIC
+print('Subtraction is :', result)  # 3. Give response to user
+
+# Problem with above code
+
+'''
+CODE Duplication == we should achieve --> Code re-usability
+'''

@@ -2,6 +2,8 @@
 print("--------3 Using Functions----------")
 # I. STATE
 message = 'Hello World'
+
+
 # BEHAVIOR
 
 
@@ -19,20 +21,21 @@ get_str_len(message)
 message = 'Hello World'  # Global
 
 
-def get_str_len(msg):   # msg -> local scope
-    print("String is : ", message)  # Global variable can be accesssed from anywhere
-    lent = 0            # lent -> Local scope
+def get_str_len(msg):  # msg -> local scope
+    print("String is : ", message)  # Global variable can be accessed from anywhere
+    lent = 0  # lent -> Local scope
     for _ in msg:
         lent += 1
     return lent
-# print(msg, lent) # Local variables cant be accessed from outside fuction
 
 
-str_len = get_str_len(message)   # x = 10 print(x)
+# print(msg, lent) # Local variables cant be accessed from outside function
+
+
+str_len = get_str_len(message)  # x = 10 print(x)
 print("Length of given string : ", str_len)
 
-print("Length of given string : ", get_str_len(message))   # print(10)
-
+print("Length of given string : ", get_str_len(message))  # print(10)
 
 # Find number is even or odd
 x = 10
@@ -41,27 +44,29 @@ if x % 2 == 10:
 else:
     print("Odd number")
 
-
 # Print even and odd numbers between 1 to 100
 # STATE
 st = 100  # int(input("Enter start number"))
 end = 200  # int(input("Enter end number"))
+
+
 # BEHAVIOR
 
 
-def print_even_odd(ini_val, fin_val):   # evened()   evenOrOdd()
-    for num in range(ini_val, fin_val+1):
+def print_even_odd(ini_val, fin_val):  # evened()   evenOrOdd()
+    for num in range(ini_val, fin_val + 1):
         # p = 10
         if num % 2 == 0:
             print("EVen number : ", num)
         else:
             print("Odd number  : ", num)
     # print("Number : ", num, p)
+
+
 # print("Number : ", num, p)
 
 
 print_even_odd(st, end)
-
 
 # 1. capitalize() :: Returns a string where the first character is upper case.
 
@@ -75,3 +80,38 @@ def msg_cap(msg):
 
 
 msg_cap(str1)
+
+
+# REQ: CRUD -- Create Retrieve Update Delete
+
+def crud():
+
+    def create():
+        num = 101, 102
+        print(num)
+        print('Create...')
+        print()
+
+    def retrieve():
+        num = 101, 102
+        print('Retrieve...')
+        print(num)
+        print()
+
+    def update():
+        num = 101
+        num2 = num + 10
+        print('Update...')
+        print(num2)
+        print()
+
+    def delete():
+        num = [1, 2]
+        print(num)
+        print('deleted number', num.pop())
+        print('Delete...')
+
+    return create(), retrieve(), update(), delete()
+
+
+crud()

@@ -1,11 +1,17 @@
 print(101)
 
+print(143)
+
 # OR
 
 x = 101
 print(x)
 print(x+20)
 
+x = 143
+print(x)
+
+print(x+143)
 
 print(101+201)
 # OR
@@ -31,6 +37,13 @@ def sum_1(n1, n2):
 
 sum_1(100, 200)       # returns None
 print("Sum is  :", sum_1(100, 200))  # returns None
+
+
+def sub(a, b):
+    print('Subtraction is :', a - b)
+
+
+sub(121, 101)
 
 # with return type
 print("With return type ")

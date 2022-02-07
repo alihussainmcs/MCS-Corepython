@@ -1,8 +1,11 @@
 x = 10
 print("x details : ", x, id(x))
 
+x = 20
+print('Id of x :', id(x))
 
 # Function memory allocation
+
 
 def get_data():   # Function invocation
     print("Welcome to my method")
@@ -13,6 +16,8 @@ res = get_data()   # Function calling
 print("Result is : ", res)
 
 print("Function details ", get_data)  # Get function body address
+
+print('Function id :', id(get_data()))
 
 # Pass by value ,Pass by reference
 """
@@ -25,11 +30,6 @@ in Python and try to understand it with the help of examples.
 Is Python Argument Passing model a “Pass by Value” or “Pass by Reference”?
 You might want to punch something after reading ahead, so brace yourself. Python’s argument passing model is 
 neither “Pass by Value” nor “Pass by Reference” but it is “Pass by Object Reference”.
-
- Attention geek! Strengthen your foundations with the Python Programming Foundation Course and learn the basics.  
-
-To begin with, your interview preparations Enhance your Data Structures concepts with the Python DS Course. 
-And to begin with your Machine Learning Journey, join the Machine Learning - Basic Level Course
 
 The paradigms of “Pass by value”, “Pass by Reference” and “Pass by object Reference” can be understood by 
 exploring the below example_1 functions.

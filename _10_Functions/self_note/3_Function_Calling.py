@@ -38,3 +38,28 @@ sum_1((1, 2, 3, 7, 8, 9), (11, 22, 33, 77, 88, 99))
 19,20,21...... :            ==> arguments     
   
 """
+
+# REQ: Make function for subtraction
+
+
+def sub(m, n):
+    print('Subtraction :', m - n)
+
+
+sub(11, 10)
+
+sub(True, False)
+
+sub(10.1, 9.9)
+
+# sub('ab', 'b')  TypeError: unsupported operand type(s) for -: 'str' and 'str'
+
+sub(10+11j, 9+10j)
+
+# sub([2, 3], [2, 3]) TypeError: unsupported operand type(s) for -: 'list' and 'list'
+
+# sub((1, 2), (1, 2)) TypeError: unsupported operand type(s) for -: 'tuple' and 'tuple'
+
+sub({1, 2}, {1, 4})  # Subtraction : {2}
+
+# sub({1: 'a', 2: 'b'}, {3: 'c', 4: 'd'}) TypeError: unsupported operand type(s) for -: 'dict' and 'dict'

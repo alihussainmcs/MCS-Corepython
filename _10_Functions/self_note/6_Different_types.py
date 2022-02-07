@@ -28,6 +28,14 @@ def sum1(a, b):
 output = sum1(num1, num2)
 print("Addition of Cat 1 is : ", output)
 
+
+def sub(a, b):
+    return a-b
+
+
+print('Subtraction is :', sub(121, 111))
+
+
 print("------------CAT 2 -------------------")
 
 # 2nd -> T F :: Function with parameters, without return type
@@ -40,6 +48,13 @@ def sum2(a, b):
 
 
 sum2(101, 201)
+
+
+def sub(a, b):
+    print('Subtraction is :', a - b)
+
+
+sub(101, 100)
 
 print("------------CAT 3 -------------------")
 # 3rd --> F T :: Function without parameters, with return type
@@ -54,6 +69,24 @@ def sum3():
 
 
 print("Sum of Cat 3 is ", sum3())
+
+
+def sub():
+    a = 101
+    b = 99
+    return a - b
+
+
+print('Subtraction is :', sub)  # Subtraction is : <function sub at 0x000001B015634310>
+
+
+def sub():
+    a = 101
+    b = 99
+    return a - b
+
+
+print('Subtraction is :', sub())
 
 
 print("------------CAT 4 -------------------")
@@ -72,3 +105,12 @@ def sum4():
 sum4()
 
 print("Cat 4 : ", sum4())
+
+
+def sub():
+    a = 101
+    b = 99
+    print('Subtraction is :', a -b)
+
+
+sub()
