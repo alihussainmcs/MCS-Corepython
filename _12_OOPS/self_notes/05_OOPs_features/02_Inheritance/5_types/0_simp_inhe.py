@@ -101,7 +101,12 @@ class B(A):
 
 class C(A):
     def m3(self):
-        print("B m3()")
+        print("C m3()")
+
+
+class D(A):
+    def m4(self):
+        print("D m4()")
 
 
 print("-----------4. Hybrid Inheritance----------")

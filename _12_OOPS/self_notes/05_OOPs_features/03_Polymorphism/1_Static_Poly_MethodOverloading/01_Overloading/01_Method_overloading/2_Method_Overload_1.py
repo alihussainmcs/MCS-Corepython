@@ -67,6 +67,8 @@ b1.variety(100, 'Not bad')
 
 b1.variety(80, 'Bad')
 
+b1.variety(70, 'Very Bad')
+
 print("......................................................")
 
 

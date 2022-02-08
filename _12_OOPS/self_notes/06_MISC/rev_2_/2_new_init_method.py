@@ -1,8 +1,11 @@
-"""def __new__(cls,*args,**kwargs):
+"""
+
+def __new__(cls,*args,**kwargs):
         print(cls)
         print("*args =",*args)
         print("**kwargs =",**kwargs)
-  """
+
+"""
 
 
 # http://agiliq.com/blog/2012/06/__new__-python/

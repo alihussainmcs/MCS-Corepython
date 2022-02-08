@@ -1,4 +1,5 @@
 class Product(object):
+
     def __init__(self, name, price, weight, brand):
         self.name = name
         self.price = price

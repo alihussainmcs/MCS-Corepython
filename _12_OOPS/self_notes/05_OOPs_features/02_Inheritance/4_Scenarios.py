@@ -39,3 +39,15 @@ print(child.child_attribute)
 print(child.parent_attribute)
 
 child.parent_method()
+
+
+child1 = Child()
+
+# Show attributes and methods of child class
+
+print(child1.child_attribute)
+
+print(child1.parent_attribute)
+
+child1.parent_method()
+

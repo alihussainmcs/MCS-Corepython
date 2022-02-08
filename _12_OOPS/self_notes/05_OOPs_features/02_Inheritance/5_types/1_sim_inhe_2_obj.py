@@ -44,3 +44,6 @@ class GrandChild(Child):
 # Driver code
 g = GrandChild("Paa1", 23, "Noida")
 print(g.getName(), g.getAge(), g.getAddress())
+
+g = GrandChild("Junior Hulk", 8, "LA")
+print(g.getName(), g.getAge(), g.getAddress())

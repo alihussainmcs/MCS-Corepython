@@ -33,6 +33,6 @@ class Mango:
 
 
 m1 = Mango()
-m2 = Mango('Dashari')
-m3 = Mango('Bambai', m_price=80)
-m4 = Mango('Safeda', m_price=30, m_taste='Light sweet')
+m2 = Mango('Dasher')
+m3 = Mango('Bambi', m_price=80)
+m4 = Mango('Saved', m_price=30, m_taste='Light sweet')

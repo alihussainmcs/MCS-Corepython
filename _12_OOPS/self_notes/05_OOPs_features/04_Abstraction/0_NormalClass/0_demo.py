@@ -23,3 +23,8 @@ class College(University):
 
 u1 = College()
 u1.branch('CSE')
+
+print()
+
+u1 = College()
+u1.branch('EC')

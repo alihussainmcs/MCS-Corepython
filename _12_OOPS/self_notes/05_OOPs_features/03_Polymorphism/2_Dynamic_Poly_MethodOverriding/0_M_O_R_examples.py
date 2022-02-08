@@ -98,5 +98,6 @@ class Herbivorous(Animal):
 
 herbi = Herbivorous()
 herbi.feed()
+
 # calling some other function
 herbi.breathe()

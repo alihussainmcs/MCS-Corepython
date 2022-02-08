@@ -65,7 +65,7 @@ def find_length(in_str, domain=None):
             le += 1
         elif domain == 'Mobile':
             pass
-        elif domain == 'Heathcare':
+        elif domain == 'Healthcare':
             pass
         else:
             return 10

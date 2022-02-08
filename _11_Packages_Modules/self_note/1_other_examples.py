@@ -38,7 +38,6 @@ print(x)   # Multiple usage
 
 # Generate a random number between 1 to 100
 # include<stdio.h>
-import builtins
 
 from random import randint, choice, SystemRandom
 print("Random number : ", randint(1, 100))
@@ -120,4 +119,4 @@ print("Random number : ", randint(1, 100))
 import random     # x = 10   print(x)
 print("Random number : ", random.randint(1, 100))
 print("All functions : ", random.__all__)
-print("Other attributres  :", random.LOG4, random.RECIP_BPF)
+print("Other attributes  :", random.LOG4, random.RECIP_BPF)

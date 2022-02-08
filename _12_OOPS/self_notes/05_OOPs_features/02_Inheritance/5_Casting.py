@@ -1,5 +1,5 @@
 """
-    Water              Watercan
+    Water              Water can
     =====================================================
     1. 2L of water      2L Can   -  OK
     2. 5L of water      5L Can   -  OK
@@ -90,7 +90,7 @@ class Student(Child):
 
 # Driver code
 # An Object of Child
-std = Child("Ali")
+std = Child("Junior Hulk")
 print(std.getName(), std.isStudent())
 
 # An Object of Student

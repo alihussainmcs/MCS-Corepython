@@ -8,7 +8,7 @@ class M:
 
 class N(M):
     def fn1(self):
-        print("1st method of class N")
+        print("1st method of class N")  # Own method --> Method Over riding
 
 
 n1 = N()

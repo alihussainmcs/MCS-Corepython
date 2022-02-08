@@ -111,8 +111,12 @@ x = 10.5
 print(x)  - 10.5
 
 int x   = 10     # 1
+
 float x = 10.5   # 2
+
 float x = 10     # 3 Implicit casting   ==> float x = (float)10(internally converts)
+
+
 int x = 10.5  XX # 4 Explict casting    ==> int x = (int)10.5 (externally you have to write)
 
 '''

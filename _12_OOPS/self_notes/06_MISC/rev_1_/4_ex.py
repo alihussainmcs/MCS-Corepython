@@ -4,6 +4,7 @@ class Dog:
     animal = 'dog'
 
     # The init method or constructor
+
     def __init__(self, breed):
         # Instance Variable
         self.breed = breed

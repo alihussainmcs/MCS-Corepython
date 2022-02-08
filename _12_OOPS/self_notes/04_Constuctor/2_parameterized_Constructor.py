@@ -116,3 +116,6 @@ class Demo:
 
 d = Demo(24, 'India')
 d.hello()
+
+d1 = Demo(24, 'Earth')
+d1.hello()

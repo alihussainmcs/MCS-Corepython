@@ -1,0 +1,268 @@
+https://www.courseya.com/python-flask-interview-questions/
+
+Practice Best Python Flask Interview Questions;
+Q1. What is Flask-WTF?
+
+Flask-WTF is an inbuilt module of flask framework that provides an extensive way to designing HTML forms in flask web applications.
+
+Q2. For what python flask is used?
+
+Python flask is a web development framework. It can be used for
+
+1) Creating web services.
+2) Creating websites
+3) Building complex web applications
+4) Creating CRM or shopping websites.
+5) Creating Twitter/Facebook bot
+
+Q3. How to install python flask on linux?
+
+You can use the below command to install Python Flask.
+
+pip install flask
+Q4. How to deploy python flask app on Heroku?
+
+Follow the below-mentioned steps to deploy the python flask app on Heroku:
+
+Create a virtual environment with pipenv and install Flask and Gunicorn . - $ pipenv install
+Create a “Procfile” and write the following code. - $ touch Procfile flask gunicorn
+Create “runtime.txt” and write the following code. - $ touch runtime.txt
+ Create a folder named “app” and enter the folder. - $ mkdir app, $ cd app
+Create a python file, “main.py” and enter the sample code. -  touch main.py
+Get back to the previous directory “eflask”.Create a file“wsgi.py” and insert the following code. -$ cd ../ , $ touch wsgi.py
+Run the vitual environment. -$ pipenv shell
+Initialize an empty repo, add the files in the repo and commit all the changes.- $ git init, $ git add .
+- $ git commit -m "Initial Commit"
+Login to heroku CLI using - heroku login
+Now, Create a unique name for your Web app. -$ heroku create eflask-app
+Push your code from local to the heroku remote. -$ git push heroku master
+
+
+Q5. How to structure python flask project?
+
+A Single Flask module in the project is structured as below
+
+app.py
+config.py
+requirements.txt
+static/
+templates/
+Q6. How to check request is json type in flask?
+
+request.content_type is used to check the request type in Flask. To check request is of json type use if request.content_type == 'application/json':
+
+Q7. What is Jsonify in flask?
+
+jsonify() function is used to return flask.Response() object with content-type header 'application/json'.
+
+Q8. How to change Flask server host/port using config file?
+
+In the config file, you can set the server host and port values using the following line app.run(host=’host_value’, port=’port_value’) Here, you can set and change your host and port value of your server.
+
+Q9. How to log request body in python flask?
+
+You can take advantage of Flask.before_request hook to log the request body in python flask. Here is an example:
+
+@app.before_request
+def log_request_info():
+    app.logger.debug('Headers: %s', request.headers)
+    app.logger.debug('Body: %s', request.get_data())
+Q10. How to divide flask app into multiple py files?
+
+The Python package structure is used to divide the App into multiple modules. However, Flask uses a concept of blueprints for making application components and supporting common patterns within an application or across applications.
+
+Q11. Is python flask multithreaded?
+
+Yes, Flask is multithreaded.
+
+Q12. How to create an array with checkboxes in Flask?
+
+To create an array with checkboxes in Flask you have to create your checkbox input names with the same name.
+
+Below is an example which demonstrates how to create an array with checkboxes in Flask
+
+In your view
+
+<input type="checkbox" value="X" class="danger" name='my_checkbox'>
+<input type="checkbox" value="Y" class="danger" name='my_checkbox'>
+<input type="checkbox" value="Z" class="danger" name='my_checkbox'>
+In Flask code you can get selected checkbox values as
+
+print(request.form.getlist('my_checkbox'))
+Above code outputs value of all selected checkboxes
+
+Q13. How to get visitor ip address in Flask?
+
+request.remote_addr is used to get visitor IP address in Flask. Here is an example:
+
+from flask import request
+from flask import jsonify
+
+@app.route("/get_user_ip", methods=["GET"])
+def get_user_ip():
+    return jsonify({'ip': request.remote_addr}), 200
+Q14. What is g in python flask?
+
+Occasionally you might find a situation in which using a global variable is a perfectly reasonable solution to a problem. However, in a Flask app, your code is likely to end up running in an environment with multiple requests being handled at the same time. If you used a normal global variable, one request might modify the global variable and interfere with another request that happens to be executing simultaneously. To avoid that, Flask provides this g object to which you can attach such variables. Each request gets a different g object, so simultaneous requests can't interfere with each other, but you still have the same convenience as a global variable.
+
+Further Reading: Read More Flask g
+
+Q15. What is Flask Sijax?
+
+Flask Sijax is Python/jQuery library to perform  Ajax function in Flask.
+
+You can install Flask-Sijax by using below command
+
+easy_install flask-sijax
+pip install flask-sijax
+Q16. For what url_for() function is used in Flask?
+
+url_for() function in flask is used for generating dynamic URL for a specific function.url_for() accept the name of a function as the first parameter and one or more arguments for the variable part of URL.
+
+Q17. What is WSGI?
+
+WSGI stands for Web Server Gateway Interface. It a convention or standard that describes how web servers communicate to web applications or Python frameworks.
+
+Q18. How to get http headers in flask?
+
+You can use request.headers.get method to get http headers in the flask. request.headers method in flask framework behaves like a dictionary so the value of headers are available in array format too something like request.headers['your-header-name']
+
+Example
+
+from flask import request
+rrequest.headers.get('Authorization')
+Q19. How to serve static files in Flask?
+
+Static files should be added to the flasks/static directory and then the files are referenced in the HTML to serve the static files. Static files such as CSS and JavaScript acts as a template and adds more functions to your web application. All the static files are added to the flask/static directory and referenced by the following line to serve it.
+
+//referencing static files in the flask
+url_for(‘static’, filename=’static_file_name’)
+Q20. How to get a query string in Flask?
+
+The query string is a key/value pair that is sent by the client to the server in the web URL. These values are actually a part of the URL as a string of parameters and values. To get and work with the query string, we need to use the import request method from the flask.
+
+//example of getting a query string in the Flask
+from flask import request   //request method is used to work with the query string values
+@app.route("/query")
+def query():
+args = request.args     //here, we get the query string object in a variable called ‘args’ using
+print(args)
+Q21. How to import function into main file in flask?
+
+You can use the import statement to import functions from other files into the main file in the Flask. You can also use the 'from' statement with the 'import' statement to import a specific function from other files into your main flask file.
+
+//example of importing functions
+from otherFile import function  //importing function method from the file otherFile.py
+@app.route("/")
+@app.route("/index")
+def index():
+    baz = function()     //the function imported from your file otherFile.py
+if __name__ == '__main__':
+    app.run(debug=True)
+
+Q22. How to disable csrf for a view with flask-wft for a restapi?
+
+When you create the form, you can disable the CSRF for a view with flask-wtf for a restapi by using the following statement.
+
+form = myForm(request.form, csrf_enabled=False)
+Q23. How to share the global app object in flask?
+
+You can create an overall package and add an __init__.py file under the package folder where you declare all the global variables that you need to share between the classes. Then, you should add the code "app = Flask(__name__)" in the __init__.py file. Now you can share and use the app variables anywhere if you just import the package name.
+
+Q24. What is the purpose of Flask's context stacks?
+
+Flask in Python language helps to handle multiple apps in the process. Contexts allow separating application environments from one another.
+
+Q25. How to get logged user id in flask?
+
+current_user.get_id() is used to get logged in user id in flask.
+
+Here is an example:
+
+from flask import g
+if current_user.is_authenticated():
+        g.user = current_user.get_id()
+Q26. What is Python Flask?
+
+Python Flask is a popular, extensible micro web framework written building web applications using Python Programming Language. This does not require particular tools or libraries and does not have a database abstraction layer, form validation, or any other components.
+
+Q27. How to start python flask app?
+
+A simple Flask application looks like below
+
+from flask import Flask
+app = Flask(__name__)
+
+@app.route('/')
+def hello_world():
+    return 'Hello, World!'
+
+You can start the python flask app by running the below command
+
+$ export FLASK_APP=hello.py
+$ flask run
+ * Running on http://127.0.0.1:5000/
+Q28. How to check version of python flask?
+
+Run the below command to check the installed version of the python flask
+
+>> import flask
+>> flask.__version__
+Q29. Enlist few alternatives of python flask?
+
+Django, Sinatra, Pyramid, Falcon framework, Bottle, jam-py are some good alternatives to Python Flask.
+
+Q30. What is app routing in Python flask?
+
+App routing in Flask is used to map a specific URL with the associated function that is intended to perform some task.
+
+Q31. How to enable logging in python flask?
+
+Set app.debug to True and add the below code in your function where you want to enable logging in Flask.
+
+import logging
+from flask import Flask
+app = Flask(__name__)
+
+@app.route('/')
+def foo():
+    app.logger.warning('A warning occurred')
+    app.logger.error('An error occurred')
+    app.logger.info('Info')
+    return "foo"
+Q32. How to redirect to a url in python flask?
+
+You can use redirect() to redirect to a URL in python flask.
+
+Example:
+
+return redirect("http://www.example.com", code=301)
+Q33. What are python flask query parameters?
+
+Query Parameters are also known as query strings in Python. Flask is post or get data that is sent to the server via form or ajax method. You can use request.args.get('query_name') function to get a query string in Flask Framework.
+
+Q34. How to get all records for table in Flask?
+
+You can use the Model.query.all() method to get all records for the table in Flask.
+
+Example
+
+@app.route('/users')
+def users():
+    users = User.query.all()
+Q35. How to return json in flask?
+
+Use jsonify() function to return json in flask.
+
+Example
+
+from flask import jsonify
+@app.route('/users')
+def users():
+   users= User.query.all()
+    return jsonify(users)
+
+
+Q36. What are macros in python flask?What are macros in python flask?
+
+Flask macro is a tool to build a modular user interface on web pages.

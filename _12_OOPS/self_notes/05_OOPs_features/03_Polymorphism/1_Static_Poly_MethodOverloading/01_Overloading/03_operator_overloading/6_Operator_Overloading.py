@@ -134,8 +134,10 @@ p2 = Point(4, 5)
 print("Print object :", p2)
 
 print("--------------------------------")
+
 print("Add 2 objects :", p1 + p2)
 print("--------------------------------")
+
 print("Add 2 objects :", p1 - p2)
 
 '''

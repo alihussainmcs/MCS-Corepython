@@ -48,16 +48,16 @@ Employee.get_ecount()  # class method    ==> Employee.get_ecount(Employee)
 # To call class method, we can call using object,But don't do it.
 # ali.get_ecount()
 
-jaya = Employee(101, 'Jayadeep  Chowdary A', 20000)
-jaya.get_edata()
+jay = Employee(101, 'Jayden  Chowder A', 20000)
+jay.get_edata()
 Employee.get_ecount()
 
-mohan = Employee(102, 'Mohan Kumar', 45000)
-mohan.get_edata()
+moan = Employee(102, 'Moan Kumar', 45000)
+moan.get_edata()
 Employee.get_ecount()
 
 '''
-btech : stu_id, name, marks ==> instance variables
+b tech : stu_id, name, marks ==> instance variables
         college name        ==> class variables(share)
         attendance          ==> class variable (share+Modify)
 
@@ -89,7 +89,6 @@ print(".............................................")
 
 # Python program to demonstrate
 # use of a class method and static method.
-from datetime import date
 
 
 class Person:
@@ -136,7 +135,7 @@ class Person:
 
 
 person1 = Person('Ali', 25)
-person2 = Person.fromBirthYear('Alian', 1997)
+person2 = Person.fromBirthYear('Alien', 1997)
 
 print(person1.age)
 print(person2.age)

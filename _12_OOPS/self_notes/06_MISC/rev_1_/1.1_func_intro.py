@@ -56,4 +56,5 @@ def sum(num1, num2):
 
 x = 10
 y = 20
+
 print("Sum is  ", sum(x, y))

@@ -31,11 +31,11 @@ print("Length of list :", len(list1))
 print("---------Approach 1 : Normal code----------")
 # STATE
 list1 = [1, 2, 3, 4, 5]  # customer provided input
-le = 0  # To work on requirement
+le1 = 0  # To work on requirement
 # BEHAVIOR
 for each in list1:
-    le += 1
-print("Length of list :", le)
+    le1 += 1
+print("Length of list :", le1)
 
 # Disadvantage : Code reusability is missing
 
@@ -50,7 +50,7 @@ list1 = [1, 2, 3, 4, 5]
 # BEHAVIOR
 def find_length(in_list):
     le = 0
-    for each in in_list:
+    for _ in in_list:
         le += 1
     # print("Length of list : ", le)
     return le

@@ -20,6 +20,9 @@ mic.get_edata()
 nic = Employee(2002, "Nic Baba", 18900, "IBM")
 nic.get_edata()
 
+alien = Employee(2002, "Alien", 30000, "IBM")
+nic.get_edata()
+
 print("................Class with class variable .....................")
 
 

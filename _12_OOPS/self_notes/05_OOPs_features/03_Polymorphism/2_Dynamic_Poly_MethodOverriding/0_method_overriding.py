@@ -140,4 +140,5 @@ gfg = GFG3()
 
 # calling the function sub_GFG3() from class GHG3
 # which inherits both GFG1 and GFG2 classes
+
 gfg.sub_GFG(10)

@@ -6,7 +6,6 @@ _ __
 
 
 
-
 4. ABSTRACTION :
 ===================
 Hiding the implementation details i.e, method body
@@ -19,6 +18,7 @@ Inheritance: Super class Sub class
 		   : When all sub classes has unique implementation ==> 
 		               - Make class as Abstract class(super class)
 		               - Define abstract methods* in super class
+		               
 Abstraction : 0 to 100%
 0%   -- In super abstract class,all are concrete methods      define - class
 50%  -- 10 methods - 5 abstract methods + 5 concrete methods  define - abstract class

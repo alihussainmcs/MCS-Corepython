@@ -13,4 +13,5 @@ class Bus(Vehicle):
 
 
 School_bus = Bus("School DAV", 12, 50)
+
 print("Total Bus fare is:", School_bus.fare())

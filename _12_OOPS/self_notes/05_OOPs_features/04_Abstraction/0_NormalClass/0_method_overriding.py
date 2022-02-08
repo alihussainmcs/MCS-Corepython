@@ -38,6 +38,7 @@ class IndiaHuman(EarthHuman):
 
 
 class AmericaHuman(EarthHuman):
+
     def __init__(self):
         super().__init__()
         print("American Human ")

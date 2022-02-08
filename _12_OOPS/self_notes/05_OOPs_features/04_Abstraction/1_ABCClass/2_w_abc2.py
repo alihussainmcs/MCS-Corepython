@@ -16,6 +16,7 @@ class Human(Animal):
 
 
 class Dog(Animal):
+
     def move(self):
         print("I am Dog and I can bark")
 

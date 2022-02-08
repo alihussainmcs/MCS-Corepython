@@ -46,7 +46,7 @@ def get_data(**kwargs):  # keyword arguments
 get_data()  # {}
 get_data(id=100)  # {'id'=100}
 get_data(id=101, email='alihussain5499@gmail.com')  # {id=100, email='alihussain5499@gmail.com'}
-get_data(id=102, name='AliH', sal=20000)
+get_data(id=102, name='Ali H', sal=20000)
 
 '''
 print(1+2+3)  #     def __add__(self, *args, **kwargs): # real signature unknown

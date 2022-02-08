@@ -20,7 +20,9 @@ class Lion(Animal):
 
 
 K = Snake()
+
 K.move()
 
 K = Lion()
+
 K.move()

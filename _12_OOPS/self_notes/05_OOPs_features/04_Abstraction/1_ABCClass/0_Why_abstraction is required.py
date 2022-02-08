@@ -1,5 +1,7 @@
-# Abstraction : Hiding the implementation details
 """
+Abstraction : Hiding the implementation details
+
+
                               Animal
 
                  Cat    Dog              Tiger Lion

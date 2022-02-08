@@ -101,9 +101,8 @@ super class, sub class mechanism
     - Static Polymorphism  -- Method overloading
     - Dynamic Polymorphism -- Method overriding
 
-'''
+--------------------------------------------------------------------------------------------------------------
 
-'''
  1. Class Defined and provided special method i.e, 
    __init__(constructor) method to initialize instance variables, 
     define respective methods to get the BEHAVIOR
@@ -211,7 +210,8 @@ class Car:
     def __init__(self):
         self.__updateSoftware()
 
-    def drive(self):
+    @staticmethod
+    def drive():
         print('driving')
 
     # private static method

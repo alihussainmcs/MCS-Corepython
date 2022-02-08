@@ -1,5 +1,6 @@
 class University:
     # State
+
     def __init__(self, u_name, u_id, u_add):
         self.u_name = u_name
         self.u_id = u_id
@@ -10,7 +11,7 @@ class University:
         print("University Details : ", self.u_name, self.u_id, self.u_add)
 
 
-clg1 = University("RGPV", 4620, "MP")
+clg1 = University("RPG", 4620, "MP")
 clg1.uni()
 
 print(".....................2nd example_1 of class ...................")

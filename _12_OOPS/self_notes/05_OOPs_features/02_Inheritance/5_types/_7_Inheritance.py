@@ -260,3 +260,6 @@ class Derived(Base1, Base2):
 
 ob = Derived()
 ob.print_str()
+
+ob1 = Derived()
+ob1.print_str()

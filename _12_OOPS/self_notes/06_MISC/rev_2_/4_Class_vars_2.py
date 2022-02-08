@@ -2,6 +2,7 @@
 Class variable     : Will be initialized when class is loaded by interpreter
                     and memory allocation will be done at the loading itself
 Instance variable : When we create an object for class,these will get initialized
+
 """
 
 
@@ -83,4 +84,3 @@ fido.walk().walk().walk().run().run().pet().display_health()
 
 draco = Dragon("Draco")
 draco.fly().fly().fly().display_health()
-

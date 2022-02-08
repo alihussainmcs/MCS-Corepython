@@ -13,3 +13,5 @@ class College:
 coll_1 = College("IES", 177, "Bhopal")
 coll_1.college_info()
 
+coll_2 = College('Victoria memorial inter college', 10002, 'Siwan')
+coll_2.college_info()

@@ -28,6 +28,9 @@ class Employee:
 emp1 = Employee(1001, "Ali Hussain ", 20000)
 emp1.get_edata()
 
+emp2 = Employee(143, "Green Hulk ", 90000)
+emp2.get_edata()
+
 print(".............................")
 
 
@@ -101,3 +104,9 @@ print('Second Student')
 kelly = Student("Kelly", 16)
 # call instance method
 kelly.show()
+
+# create second object
+print('Third Student')
+ali = Student("Ali", 24)
+# call instance method
+ali.show()

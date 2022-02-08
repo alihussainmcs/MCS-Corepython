@@ -22,7 +22,7 @@ msg = str('Hello World')
 '''
 ali = Employee(101, 'Ali')
 li = list( [1,2,3] )
-list    -  classname -> builtins.py module 
+list    -  class name -> builtins.py module 
 [1,2,3] -  argument 
 li      -  object**/ instance*/ ref. variable 
 '''

@@ -12,3 +12,6 @@ class Mango:
 
 mango_1 = Mango('Dasahari', 'Yellow', 'Sweet')
 mango_1.mango_det()
+
+mango_2 = Mango('Maldev', 'Yellow', 'More Sweet')
+mango_2.mango_det()

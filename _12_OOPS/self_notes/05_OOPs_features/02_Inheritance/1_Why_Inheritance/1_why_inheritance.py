@@ -161,3 +161,7 @@ d = Derived()
 print(d.Summation(10, 20))
 print(d.Multiplication(10, 20))
 print(d.Divide(10, 20))
+
+print(d.Summation(11, 9))
+print(d.Multiplication(11, 9))
+print(d.Divide(11, 9))

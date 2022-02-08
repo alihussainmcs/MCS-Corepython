@@ -2,6 +2,7 @@ class EarthHuman:
     """
     def __init__(self):
         print('Human Pass')
+
     """
 
     def talk(self):

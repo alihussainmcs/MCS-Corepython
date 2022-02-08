@@ -56,7 +56,6 @@ class Student(Child):
         return True
 
 
-# Driver code
 # An Object of Child
 std = Child("Ali")
 print(std.getName(), std.isStudent())

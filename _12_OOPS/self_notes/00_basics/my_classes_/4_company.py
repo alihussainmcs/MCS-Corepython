@@ -10,5 +10,9 @@ class Company:
         print("Company Details :", self.c_name, self.c_id, self.c_add)
 
 
-compny = Company("MCS", "0001", 'Hydarabad')
-compny.Comp_det()
+comp = Company("MCS", "0001", 'Hyderabad')
+comp.Comp_det()
+
+
+comp1 = Company("Google", "0143", 'Bangalore')
+comp1.Comp_det()

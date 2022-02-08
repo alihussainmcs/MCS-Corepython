@@ -1,0 +1,387 @@
+https://www.tutorialandexample.com/flask-interview-questions/
+Top 31 Flask Interview Questions for 2020
+1) What is Flask?
+Flask is a micro web framework written in Python. It is based on Werkzeug toolkit and Jinja 2 template engine.
+
+2) Who is the developer of Flask?
+Armin Ronacher is the developer of Flask.
+
+3) What is the stable version of Flask?
+The stable version of Flask is 0.12.2 and released on 16 May 2017.
+
+4) What are Flask-WTF and its features?
+It is a template form that is integrated with Flask. It includes various features that are given below.
+
+It provides integration with WTF
+It manages secure form with CSRF token
+It manages global CSRF protection
+It provides Internationalization integration
+It supports recaptcha
+It handles the file upload that works with Flask uploads
+5) What is the benefit of flask?
+Flask is a part of the micro-framework. It does not require external libraries. It makes the framework light weight, less dependent and less security bugs.
+
+6) What are the differences between Django, Pyramid and Flask?
+There are following differences between Django, pyramid and Flask:
+
+Django	Pyramid	Flask
+It is a python framework.	It is same as Django.	It is micro framework.
+It is used to build large applications.	It is same as Django .	It is used to create small application.
+It includes an ORM.	It provides flexibility and right tools.	It does not require external libraries.
+7) What is the appropriate way to work with Flask script?
+The appropriate way to work with flask script includes the following steps:
+
+Either it should be the import path for our application
+Or the path to a Python file
+8) How can we access sessions in Flask?
+In Flask, a session allow us to remember information from one request to another. It uses a signed cookie so the user can look at the session contents. We can access session by using the secret key Flask.secret_key in the Flask framework.
+
+9) How can we request database connections in Flask?
+Flask provides three ways to establish database connection. These are given below.
+
+before_request() : It is called before a request and requires no arguments.
+after_request() : It is called after a request and pass the response that will be sent to the client
+teardown_request(): It is used when exception is raised and response are not guaranteed. It is called after the response and not allowed to modify the request or their values.
+10) What is Flask Sijax?
+Flask Sijax is a Simple Ajax & jQuery library. It is used to enable Ajax in web applications. It uses JSON to pass data between the server and the browser.
+
+11) How can we get a query string from the Flask?
+We can get a query string from the flask by using following function.
+
+@app.route(‘/data’)
+    def data ( ) :
+    user = request.arg.get (‘user’)
+12) How can we create request context in Flask?
+We can create request context by using following ways.
+
+Automatically when the application receives a request
+OR manually, by calling app.test_request_context (‘/route?param=value)
+13) How can we create structure of large Flask application?
+We can create structure of large Flask application by using following steps:
+
+attach to the functions and move them to different files.
+Use blueprints to assign the views to “categories”. For instance auth, profile, backend, etc.
+Use the underlying Werkzeug URL map and register functions on there on a central URL.
+14) What are the attributes of request objects?
+There are various attributes of request objects:
+
+Attributes	Description
+Form	It is a dictionary object containing key.
+Args	It parsed contents of query string which is part of URL after question mark (?).
+Cookies	Dictionary object holds Cookie names and values.
+Files	Data pertaining to uploaded file.
+Method	Current request method.
+15) What are the Mail class methods?
+There are following Mail class method:
+
+send(): It is used to send contents of Message class object.
+connect(): It is used to opens connection with mail host.
+send_message(): It is used to sends message object.
+16) What are the steps to develop MVC web application in Flask?
+There are following steps to develop web application:
+
+Flask import Flask
+
+app = Flask(_name_)
+@app.route("/")
+Def hello():
+return "Hello World"
+app.run(debug = True)
+In this code your,
+
+1
+2
+3
+4
+5
+6
+7
+8
+
+app = Flask(_name_)
+@app.route("/")
+Def hello():
+return "Hello World"
+app.run(debug = True)
+In this code your,
+
+Configuration part will be
+
+from flask import Flask
+        app = Flask(_name_)
+
+1
+2
+3
+4
+
+from flask import Flask
+        app = Flask(_name_)
+
+View part will be
+
+
+
+@app.route("/")
+        Def hello():
+        return "Hello World"
+
+1
+2
+3
+4
+5
+
+@app.route("/")
+        Def hello():
+        return "Hello World"
+
+While you model or main part will be
+
+app.run(debug = True)
+
+1
+2
+3
+
+app.run(debug = True)
+
+17) What is the extension of Flask?
+The extension of Flask is .Py.
+
+18) What is the default port of Flask?
+The default port of Flask is 5000.
+
+19) What is url_for() function in Flask?
+In Flask, url_for() function is used to build dynamic URL for specific function.
+
+20) What are the HTTP methods in Flask?
+In Flask, the HTTP methods are given below:
+
+GET : It is used to send the data in unencrypted form to the server.
+HEAD : It is same as GET, but without response body.
+POST: It is used to send HTML from data to server. Data received by POST method.
+PUT : It is used to replaces all the current representation uploaded content
+DELETE : It is used to removes all current reorientation.
+21) What is the default route request in Flask?
+In Flask, GET is the default route request.
+
+22) What are the delimiters used in Jinga2 template?
+{% … %}: It is used for Statements
+{{ … }}: It is used for Expressions to print to the template output
+{# … #}: It is used for Comments not included in the template output
+# … ## : It is used for Line Statements
+23) What is the use redirect() function.
+Redirect() function is used to display the login page again when a login attempt fails.
+
+24) What are the error codes in Flask?
+In Flask, the error code is given below:
+
+400 âˆ’ for Bad Request.
+401 âˆ’ for Unauthenticated.
+403 âˆ’ for Forbidden.
+404 âˆ’ for Not Found.
+406 âˆ’ for Not Acceptable.
+415 âˆ’ for Unsupported Media Type.
+429 âˆ’ Too Many Requests.
+25) How can we create a form for file uploading?
+We can create a form for file uploading by using following code:
+
+
+<html>
+   <body>
+           <form action = "http://localhost:5000/uploader" method = "POST"
+         enctype = "multipart/form-data">
+         <input type = "file" name = "file" />
+         <input type = "submit"/>
+      </form>
+   </body>
+</html>
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+
+<html>
+   <body>
+           <form action = "http://localhost:5000/uploader" method = "POST"
+         enctype = "multipart/form-data">
+         <input type = "file" name = "file" />
+         <input type = "submit"/>
+      </form>
+   </body>
+</html>
+
+26) What are the Mail methods in Flask?
+In Flask, the Mail methods are given below:
+
+send(): It is used to send contents of message class object.
+connect(): It is used to open connection with mail host.
+send_message(): It is used to send message object.
+27) What are the validators class of WTForms in Flask?
+In Flask, The validators class of WTForm are listed in below table:
+
+Validators class	Description
+DataRequired	It is used to check whether input field is empty
+Email	It is used to check whether text in the field follows email ID conventions.
+IPAddress	It is used to validate IP address in input field
+Length	It is used to verify if length of string in input field is in given range
+NumberRange	It is used to validates a number in input field within given range
+URL	It is used to validates URL entered in input field
+28) Does Flask support in-built SQlite database?
+Yes, Flask supports in-built SQlite database.
+
+29) What is ORM?
+ORM stands for Object Relation Mapping. It is a technique of mapping object parameter.
+
+30) What is WSGI?
+WSGI stands for Web Server Gateway Interface. It is used to python web application development.
+
+31) What are the popular server that contains WSGI application and Server HTTP?
+There are many popular server that contains WSGI application and server HTTP:
+
+Gunicorn
+Tornado
+Gevent
+Twisted Web
+----------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+https://www.interviewmocks.com/python-flask-interview-questions/
+
+Python Flask Interview Questions
+1) Explain what is Python Flask?
+Python Flask is a lightweight WSGI web application framework. It is designed to make getting started quick and easy, with the ability to scale up to complex applications. It began as a simple wrapper around Werkzeug and Jinja and has become one of the most popular Python web application frameworks.
+
+2) How to install python flask?
+Flask supports Python 3.5 and newer, Python 2.7, and PyPy. You can install flask through pip using below command.
+
+pip install flask
+3) What is g in python flask?
+g is an object provided by Flask. It is a global namespace for holding any data you want during a single app context. For example, a before_request handler could set g.user, which will be accessible to the route and other functions.
+
+from flask import g
+@app.before_request
+def load_user():
+    user = User.query.get(request.session.get("user_id"))
+    g.user = user
+
+@app.route("/admin")
+def admin():
+    if g.user is None or not g.user.is_admin:
+        return redirect(url_for("index"))
+In Flask, an app context lasts for one request / response cycle, g is not appropriate for storing data across requests.
+
+4) How to get http headers in flask?
+In Flask, flask.request.headers is used to get http headers.
+
+Example
+
+app = flask.Flask(__name__)
+@app.route("/")
+def index():
+    headers = flask.request.headers
+    return "Request headers:\n" + str(headers)
+
+app.run(host="127.1.0.1", port=8080)
+5) How to check installed version of python flask?
+You can run the below command to check the installed version of the python flask
+
+import flask
+flask.__version__
+Download Free : Python Flask Interview Questions PDF
+6) How do you enable logging in python flask?
+Standard Python logging is used in flask framework for logging. You can log messages about your Flask Application using app.logger, which takes the same name as app.name.
+
+Below is an example to log your own messages in Python Flask
+
+def login():
+    user = get_user(request.form['username'])
+
+    if user.check_password(request.form['password']):
+        login_user(user)
+        app.logger.info('%s logged in successfully', user.username)
+        return redirect(url_for('index'))
+    else:
+        app.logger.info('%s failed to log in', user.username)
+        abort(401)
+7) How to redirect to a url in python flask?
+You can use redirect() method to redirect a url in Python Flask. Here is an example code
+
+import os
+from flask import Flask,redirect
+
+app = Flask(__name__)
+
+@app.route('/')
+def hello():
+    return redirect("http://www.abc.com", code=301)
+
+8) What are macros in python flask?
+A macro in Flask is a tool to build modular user interface on web pages. Macro in flask contains
+
+Html file with the macro definition.
+Styles in the homonymous css file.
+Scripts in the homonymous js file with the class for manage of ui element.
+9) What is Flask-WTF?
+WTF in Flask stands for WT Forms which is intended to provide the interactive user interface for the user. The WTF is a built-in module of the flask which provides an alternative way of designing forms in the flask web applications.
+
+10) What is use of jsonify() in flask?
+jsonify() in Flask is a function in flask. json module. It serializes data to JavaScript Object Notation (JSON) format, wraps it in a Response object with the application/json mimetype. Note that jsonify is sometimes imported directly from the flask module instead of from flask.
+
+Take Free: Python flask MCQ & Quiz
+11) How to get visitor ip address in Flask?
+You can use request.remote_addr to get visitor IP address in Flask.
+
+Example Code
+
+from flask import request
+from flask import jsonify
+
+@app.route("/get_user_ip", methods=["GET"])
+def get_user_ip():
+    return jsonify({'ip': request.remote_addr}), 200
+12) What is Flask Sijax?
+Flask-Sijax is an extension for the Flask microframework, to simplify Sijax (PyPi, GitHub) setup and usage for Flask users. Sijax is a Python/jQuery library that makes AJAX easy to use in web applications.
+
+13) How to get logged user id in flask?
+You can use current_user.get_id() to get logged in user id in flask.
+
+Example Code
+
+from flask import g
+if current_user.is_authenticated():
+        g.user = current_user.get_id()
+14) List some important Flask extensions?
+Below are few important extentions in Flask, that makes development easier and quick
+
+flask-debugtoolbar
+Flask-WTF & WTForms-Components
+Flask-Login
+Flask-Limiter
+Flask-Philo-SQLAlchemy
+flask-pwa
+For More visit : Flask extention directory
+15) What is WSGI middleware component in flask?
+A WSGI middleware component is a Python callable that is itself a WSGI application, but may handle requests by delegating to other WSGI applications. These applications can themselves be WSGI middleware components.
+
+A middleware component can perform such functions as:
+
+Routing a request to different application objects based on the target URL, after changing the environment variables accordingly.
+Allowing multiple applications or frameworks to run side-by-side in the same process
+Load balancing and remote processing, by forwarding requests and responses over a network
+Performing content post-processing, such as applying XSLT stylesheets

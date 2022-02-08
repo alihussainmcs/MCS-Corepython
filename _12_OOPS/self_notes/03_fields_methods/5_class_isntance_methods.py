@@ -68,8 +68,6 @@ Employee.get_edata()
 # to call instance method
 ali = Employee(101, 'Ali Hussain', 15000)
 ali.get_empinfo()
-ali.get_edata()
-Employee.get_edata()
 
 print("-----static method--------")
 
@@ -110,7 +108,7 @@ class Dog:
 
 
 d1 = Dog("Bow Bow")
-d1.bark()
+d1.bark()  # Instance method
 
 print("...........................")
 

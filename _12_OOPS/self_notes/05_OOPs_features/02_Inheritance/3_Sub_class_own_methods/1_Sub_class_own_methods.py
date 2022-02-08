@@ -74,7 +74,7 @@ b1.read()
 b1.write()
 
 Inherited method  : execute()
-Overriden method  : read()
+Overridden method  : read()
 Own method        : write()
 
 '''

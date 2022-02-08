@@ -60,9 +60,9 @@ BEHAVIOR
 # A1 :: Using Functions
 # 1. STATE
 print("..................Using Function .......................")
-empid = 101
-name = 'Ali'
-sal = 25000
+empid1 = 101
+name1 = 'Ali'
+sal1 = 25000
 
 
 # 2. BEHAVIOR
@@ -72,7 +72,7 @@ def get_einfo(eid, ename, esal):
     print("Employee details are ", eid, ename, esal)
 
 
-get_einfo(empid, name, sal)
+get_einfo(empid1, name1, sal1)
 
 
 # Using OOPs  -- Class
@@ -143,10 +143,10 @@ class Univercity:
 
     # Behaviour
     def uni(self):
-        print("Univercity Details : ", self.u_name, self.u_id, self.u_add)
+        print("University Details : ", self.u_name, self.u_id, self.u_add)
 
 
-clg1 = Univercity("RGPV", 4620, "MP")
+clg1 = Univercity("RPG", 4620, "MP")
 clg1.uni()
 print(".....................4th example_1 of class ...................")
 
@@ -174,6 +174,7 @@ class Car(object):
         self.speed = speed
         self.mileage = mileage
         self.fuel = fuel
+        self.tax = tax
         if self.price > 10000:
             self.tax = 0.15
         else:
@@ -204,8 +205,8 @@ ford.display_all()
 corvette = Car("Corvette", 50000, 0.25, 90, 25, 0.10)
 corvette.display_all()
 
-bmw = Car("BMW", 60000, 0.75, 100, 35, 0.10)
-bmw.display_all()
-
 hyundai = Car("Hyundai", 70000, 1.25, 1000, 1000, 0.10)
 hyundai.display_all()
+
+bmw = Car("BMW", 60000, 0.75, 100, 35, 0.10)
+bmw.display_all()

@@ -15,7 +15,9 @@ def find_length(in_str):
 
 
 print("Length of string : ", find_length(str1))
+
 str1 = str1 + 'python world'
+
 print("Length of string : ", find_length(str1))
 # Here the state variable str1 can be accessed and modified by anyone in entire project
 # Solution is , combine both state and behavior and configure in a single entity(i.e, class)

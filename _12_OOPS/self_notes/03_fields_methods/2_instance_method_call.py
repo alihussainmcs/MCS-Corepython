@@ -40,14 +40,14 @@ class Employee:
 ali = Employee(1001, "Ali K", 20000)
 ali.get_edata()
 
-val = int(input("Enter your rating :"))
+val = 5  # int(input("Enter your rating :"))
 Employee.apply_hike(ali, val)
 print("-------------------------------")
 
-hulk = Employee(1002, "Hulk Hu", 30000)
+hulk = Employee(1002, "Green Hulk", 30000)
 hulk.get_edata()
 
-val = int(input("Enter your rating :"))
+val = 4  # int(input("Enter your rating :"))
 hulk.apply_hike(val)  # Employee.apply_hike(hulk, val)
 # hulk.apply_hike(hulk, val) TypeError: apply_hike() takes 2 positional arguments but 3 were given
 

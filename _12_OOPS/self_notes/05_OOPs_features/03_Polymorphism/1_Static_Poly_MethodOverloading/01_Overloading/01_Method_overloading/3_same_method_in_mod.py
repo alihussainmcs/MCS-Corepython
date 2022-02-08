@@ -59,6 +59,8 @@ def sum(a, b, c=0):
 
 print("Sum :", sum(10, 20))
 
+print("Sum :", sum(10, 20, 30))
+
 
 def sub_1(a, b):
     return a-b

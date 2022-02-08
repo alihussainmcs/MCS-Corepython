@@ -3,6 +3,7 @@ from abc import ABC, abstractmethod
 
 # Abstract Class
 class Bank(ABC):
+
     def bank_info(self):
         print("Welcome to bank")
 
@@ -74,6 +75,5 @@ b.offers()  # ERROR
 SBI s = Bank()   XXX
 
 SBI s = (s)Bank()   XXX
-
 
 """

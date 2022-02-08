@@ -43,16 +43,19 @@ class University:
 
     @classmethod
     def branch_data(cls, branch):
-
         print("Class method ..............")
         print("Branch :", branch)
 
 
-u = University(123456, "FALTU", 'Faltupur')
+u = University(123456, "FAULT", 'Falter')
 u.u_data()
 u.dep_data()
 u.branch_data('CS')
 
+u = University(177, "MGU", 'MP')
+u.u_data()
+u.dep_data()
+u.branch_data('EC')
 
 print("....................................................................")
 
@@ -73,7 +76,6 @@ class Counter:
 
 counter = Counter()
 
-
 counter.increment()
 counter.increment()
 counter.increment()
@@ -87,3 +89,27 @@ counter.increment()
 counter.current = -999
 
 print(counter.value())
+
+
+class Computer:
+
+    def __init__(self):
+        self.__maxprice = 900
+
+    def sell(self):
+        print("Selling Price: {}".format(self.__maxprice))
+
+    def setMaxPrice(self, price):
+        self.__maxprice = price
+
+
+c = Computer()
+c.sell()
+
+# change the price
+c.__maxprice = 1000
+c.sell()
+
+# using setter function
+c.setMaxPrice(1000)
+c.sell()

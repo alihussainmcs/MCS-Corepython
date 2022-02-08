@@ -24,6 +24,9 @@ class Sub1(SBI):
 
 
 s = Sub1()
+
 s.bank_info()
+
 s.balance()
+
 s.interest()

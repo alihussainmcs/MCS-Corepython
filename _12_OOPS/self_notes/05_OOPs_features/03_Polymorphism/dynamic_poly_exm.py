@@ -82,6 +82,7 @@ class Employee(Person):
 
 e1 = Employee('Ali', 24, 872425, 26000)
 e1.display()
+
 e2 = Employee('Ila', 42, 872426, 36000)
 e2.display()
 

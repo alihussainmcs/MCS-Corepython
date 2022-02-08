@@ -5,6 +5,7 @@ class Employee:
     def __init__(self, name, salary):
         self.name = name
         self.salary = salary
+
         Employee.empCount += 1
 
     def displayCount(self):

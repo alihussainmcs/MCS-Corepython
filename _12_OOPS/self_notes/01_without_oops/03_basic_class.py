@@ -5,8 +5,7 @@ Encapsulation
 Abstraction
 Inheritance
 Polymorphism
-"""
-'''
+
 # STATE    - data structures  - fields
 # BEHAVIOR - functions        - methods
 
@@ -14,7 +13,7 @@ variables value                 #   x = 10
 parameters arguments functions  #  def func(params)  func(args)
 fields, methods                 #  Inside class 
 
-'''
+"""
 
 # Retrieve employee information  with hike 10% in an organization
 # emp_data = [{'eid':100,'ename':'Madhu N','sal':10000},.......]
@@ -158,5 +157,17 @@ class Person:
         print("Hello my name is " + abc.name)
 
 
-p1 = Person("Johny")
+p1 = Person("Alien")
+p1.my_func()
+
+
+class Person1:
+    def __init__(ali, name):
+        ali.name = name
+
+    def my_func(ali):
+        print("Hello my name is " + ali.name)
+
+
+p1 = Person1("Ali")
 p1.my_func()

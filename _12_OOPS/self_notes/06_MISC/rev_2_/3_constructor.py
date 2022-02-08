@@ -62,4 +62,5 @@ class Student:
 
 
 st = Student()
+
 st.display()

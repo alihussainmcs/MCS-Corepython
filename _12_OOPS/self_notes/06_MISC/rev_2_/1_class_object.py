@@ -36,4 +36,5 @@ class Vehicle:
 
 
 s = Vehicle("School Volvo", 12, 50)
+
 s.display_bus_details()

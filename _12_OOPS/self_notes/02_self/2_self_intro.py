@@ -23,20 +23,24 @@ Here python will load the class Employee and provides memory for class body'''
 
 
 class Employee:
-    def __init__(self, eid, name, sal, adddr):
+    def __init__(self, eid, name, sal, addr):
         print("Self address  ", self)
         self.eid = eid
         self.name = name
         self.sal = sal
-        self.adddr = adddr
+        self.addr = addr
 
     def get_e_info(self):
-        print("Employee details are : ", self.eid, self.name, self.sal, self.adddr)
+        print("Employee details are : ", self.eid, self.name, self.sal, self.addr)
 
 
-print("Employee address : ", Employee)
+print("Employee body address : ", Employee)
+print('Employee id :', id(Employee))
 
 ali = Employee(101, 'Ali Hussain', 10000, {'hno': 67, 'area': 'BLR'})  # object creation
+ali.get_e_info()
+
+alien = Employee(101, 'Alien', 10001, {'hno': 143, 'area': 'NGR'})  # object creation
 ali.get_e_info()
 
 '''

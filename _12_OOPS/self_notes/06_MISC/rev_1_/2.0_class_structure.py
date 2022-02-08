@@ -40,6 +40,7 @@ class Fact:
             result = 1
         else:
             result = n * factorial(n - 1)
+
         print("Factorial is :", result)
 
         

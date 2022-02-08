@@ -116,6 +116,9 @@ built - in function
 fl = -54.26
 print('Absolute value of float is:', abs(fl))
 
+fl = -54.266553333
+print('Absolute value of float is:', abs(fl))
+
 # An integer
 i = -94
 print('Absolute value of integer is:', abs(i))
@@ -210,8 +213,7 @@ print('unicode value of ord("I") is :', value3)
 print(".....................  pow()        .............................")
 """
 pow() in Python
-Difficulty Level : Basic
-Last Updated : 22 Sep, 2021
+
 Python pow() function returns the power of the given numbers. This function computes x**y. This function first 
 converts its arguments into float and then computes the power. 
 
@@ -229,7 +231,7 @@ print("The value of pow(5, 1) is : ", pow(5, 1))
 print("The value of pow(5, 2) is : ", pow(5, 2))
 
 print("The value of (5**2) % 10 ie pow(3, 4, 10) is : ", pow(3, 4, 10))
-print("The value of (5**2) % 10 ie pow(3, 4, 10) is : ", pow(3, 4, 2))
+print("The value of (5**2) % 10 ie pow(3, 4, 2) is : ", pow(3, 4, 2))
 
 print("            2nd ex                       ")
 # and non-negative cases
@@ -265,8 +267,6 @@ print('------------------------------   dir()  ---------------------------------
 print(dir())
 
 # Now let's import two modules
-import random
-import math
 
 # return the module names added to
 # the local namespace including all
@@ -361,7 +361,6 @@ print('.............................  2nd ex.   ................................
 
 # The math class is used to include all the
 # math functions
-from math import *
 
 exec("print(dir())")
 

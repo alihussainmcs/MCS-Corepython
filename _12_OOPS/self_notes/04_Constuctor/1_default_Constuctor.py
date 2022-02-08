@@ -8,10 +8,10 @@ converts as below
                             def __init__(self):
                                 pass
 """
-print("Employee class @ ", Employee)
+print("Employee class @ :", Employee)
 obj = Employee()
 
-print("Employee object @ ", obj)
+print("Employee object @ :", obj)
 
 
 # Default constructor
