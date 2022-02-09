@@ -8,8 +8,12 @@ keywords in Python. This is called as Exception Handling.
 """
 
 
-# n = int(input())
-# print(n * 10)
+"""
+n = int(input())
+
+print(n * 10)
+
+"""
 
 
 try:

@@ -16,7 +16,7 @@ print("hello")
 print(list_1)
 
 # 1. Write print statements where ever required  III
-# 2. Deploy the application/Run the moudule debugging mode by setting break points   I
+# 2. Deploy the application/Run the module debugging mode by setting break points   I
 # 3. pdb module                       II
 
 # If we are not able to deploy the application in debug mode,either use 1 or 3 approach

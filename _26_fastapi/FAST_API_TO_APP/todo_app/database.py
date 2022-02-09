@@ -6,7 +6,7 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 
 SQLALCHEMY_DATABASE_URL = "postgresql://postgres:12345@127.0.0.1:5432/postgres"
-# 'name/atabasename/password/localhost:port/tabel name'
+# 'name/databasename/password/localhost:port/tabel name'
 # fastapi tiangalo sql query
 engine = create_engine(
     SQLALCHEMY_DATABASE_URL

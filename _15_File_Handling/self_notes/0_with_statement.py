@@ -20,7 +20,8 @@ with open('sample.txt', 'r') as data:
 
 # with statement to open a file and write data
 with open('sample_1.txt', 'w') as sm:
-    sm.writelines('The with statement can be used while opening a file.\nadvantage: \n it will take care of closing file '
+    sm.writelines('The with statement can be used while opening a file.\nadvantage: \n it will take care of closing '
+                  'file '
                   'which is opened by it \n Hence we need not to close the file explicitly. \n In case of exception '
                   'also, "with statement" will close the file before the exception handled.\n')
     sm.write(' This is last line ')

@@ -1,8 +1,10 @@
 class AgeError(Exception):
-    """Excpetions raised for errors in input
+    """
+    Exceptions raised for errors in input
        Attributes:
-         Expression : Input expression in which error occured.
+         Expression : Input expression in which error occurred.
          Message    : Explanation of error
+
     """
 
     def __init__(self, expression, message):

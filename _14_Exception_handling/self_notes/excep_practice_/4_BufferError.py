@@ -35,7 +35,8 @@ def main():
 
 
 def log_list(collection, include_index=False):
-    """Logs the each element in collection to the console.
+    """
+    Logs the each element in collection to the console.
 
     :param collection: Collection to be iterated and output.
     :param include_index: Determines if index is also output.

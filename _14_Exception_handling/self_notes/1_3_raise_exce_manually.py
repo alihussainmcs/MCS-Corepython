@@ -12,6 +12,7 @@ Java   : NameError name = NameError("Snuff. Funds")
 
 Python : name = NameError("Snuff. Funds")  # Rem. all scenarios
          NameError name = NameError("Snuff. Funds")   #Exception handling
+         
 '''
 
 

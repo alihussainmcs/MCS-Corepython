@@ -70,6 +70,5 @@ try:
 
     # Throws error since there are only 3 elements in array
     print("5th element = %d" % (a[5]))
-
 except:
     print("An error occurred")

@@ -12,6 +12,14 @@ except ArithmeticError as e:
     print(e)
 print('This is an example_1 of catching ArithmeticError')
 
+
+try:
+    101 / 0
+except ArithmeticError as e:
+    print(e)
+print('This is an example_1 of catching ArithmeticError')
+
+
 print("--------------------------------------------------------")
 """
 In Python,FloatingPointError is subclass of ArithmeticError. FloatingPointError occurred with floating point operations 

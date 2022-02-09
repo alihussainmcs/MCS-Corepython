@@ -28,9 +28,11 @@ index_error('i am the hulk !')
 
 print("-----------------------KeyError-----------------------")
 """
+
 A Python KeyError is raised when you try to access an item in a dictionary that does not exist. You can fix this error 
 by modifying your program to select an item from a dictionary that does exist. Or you can handle this error by checking
 if a key exists first.
+
 """
 raspberry_pi = {
     "name": "Raspberry Pi 4",

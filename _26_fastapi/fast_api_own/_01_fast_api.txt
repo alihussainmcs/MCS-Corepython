@@ -27,7 +27,7 @@ SQLAlchemy is the Python SQL toolkit and Object Relational Mapper that gives app
 flexibility of SQL.
 
 It provides a full suite of well known enterprise-level persistence patterns, designed for efficient and high-performing
-database access, adapted into a simple and Pythonic domain language.
+database access, adapted into a simple and Python domain language.
 
 Read more about SQLAlchemy on their official site.
 
@@ -260,7 +260,7 @@ def get_car_info(car_id: int, session: Session = Depends(get_db)):
         raise HTTPException(**cie.__dict__)
 
 
-# API to update a existing car info
+# API to update an existing car info
 @router.put("/cars/{car_id}", response_model=Car)
 def update_car(car_id: int, new_info: CreateAndUpdateCar, session: Session = Depends(get_db)):
 
@@ -271,7 +271,7 @@ def update_car(car_id: int, new_info: CreateAndUpdateCar, session: Session = Dep
         raise HTTPException(**cie.__dict__)
 
 
-# API to delete a car info from the data base
+# API to delete a car info from the database
 @router.delete("/cars/{car_id}")
 def delete_car(car_id: int, session: Session = Depends(get_db)):
 

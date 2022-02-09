@@ -15,6 +15,13 @@ x = 1
 y = 0
 assert y != 0, "Invalid Operation"  # denominator can't be 0    # AssertionError: Invalid Operation
 print(x / y)
+
+o/p:
+
+Traceback (most recent call last):
+  File "<input>", line 3, in <module>
+AssertionError: Invalid Operation
+
 """
 
 # Handling it manually

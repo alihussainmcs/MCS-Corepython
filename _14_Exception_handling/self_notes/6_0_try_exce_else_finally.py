@@ -1,7 +1,4 @@
 """
-'''
-@author: 0_sir_notes
-'''
 try:
     print("In try block")
     a=10/0
@@ -72,22 +69,30 @@ try:
     print(python)
 except NameError:
     print("python is not defined")
+
+
 try:
     list = [1, 2, 3]
     print(list[5])
 except IndexError as e:
     print(e)
 print("index error")
+
+
 try:
     from cv import numpy
 except Exception:
     print("improper module")
+
+
 try:
     print(hello)
 except:
     print("hello is not defined")
 finally:
     print(" The finally is executed")
+
+
 try:
     print(chair)
 except NameError:

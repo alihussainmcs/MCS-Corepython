@@ -4,6 +4,7 @@ Handling NameError Exception in Python
 There are several standard exceptions in Python and NameError is one among them. NameError is raised when the identifier
 being accessed is not defined in the local or global scope. General causes for NameError being raised are :
 
+
 """
 
 # prnt('ali')  # NameError: name 'prnt' is not defined

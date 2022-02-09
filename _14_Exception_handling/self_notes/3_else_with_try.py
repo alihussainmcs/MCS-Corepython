@@ -10,7 +10,7 @@ def get_number(x, y):
         except ZeroDivisionError as err:
             print("Please enter value other than Zero :: ",err, " is not supported programmatically")
         except TypeError as err:
-            print("Plese check the calculation :::  ",err)
+            print("Please check the calculation :::  ",err)
         except OverflowError as err:
             print("Please enter value other than Zero :: ",err, " is not supported programmatically")
         except Exception as err:
@@ -31,22 +31,30 @@ try:
     print(python)
 except NameError:
     print("python is not defined")
+
+
 try:
     list = [1, 2, 3]
     print(list[5])
 except IndexError as e:
     print(e)
 print("index error")
+
+
 try:
     from cv import numpy
 except Exception:
     print("improper module")
+
+
 try:
     print(hello)
 except:
     print("hello is not defined")
 finally:
     print(" The finally is executed")
+
+
 try:
     print(chair)
 except NameError:

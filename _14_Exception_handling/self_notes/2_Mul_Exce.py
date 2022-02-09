@@ -1,6 +1,7 @@
 import math
 
 integers = ['orange', 6, -8, 'apple']
+
 for i in integers:
     try:
         number_factorial = math.factorial(i)
@@ -9,6 +10,7 @@ for i in integers:
         print("The input is not supported.")
     except ValueError:
         print(i, " is not a positive integer.")
+
 
 print("---------------------------------------------------")
 
@@ -47,4 +49,3 @@ try:
     number = number+'5'
 except(TypeError, SyntaxError, ValueError)as e:
     print("The number is given in string format")
-

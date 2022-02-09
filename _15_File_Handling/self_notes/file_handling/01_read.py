@@ -29,7 +29,7 @@ for li in data_1:
 
 print("-----------------------------------    3rd file read  csv file    --------------------------------------------")
 
-data = open("C:/Users/ali hussain/Downloads/phone_dataset - Copy.csv")
+data = open("phone_dataset - Copy.csv")
 # print(data.readlines())
 my_da = []
 for line in data:
@@ -39,7 +39,7 @@ for line in data:
 print(my_da[0])
 
 print('-----------------------------------  4th ex. json file  ------------------------------------------------')
-data = open("C:/Users/ali hussain/Downloads/sample2.json")
+data = open("sample2.json")
 print(data)
 print('-----------------------------')
 
@@ -58,7 +58,7 @@ import xlrd as xl
 
 # data = open("C:/Users/ali hussain/Downloads/MCS_EAF.xls")
 
-data = xl.open_workbook("C:/Users/ali hussain/Downloads/MCS_EAF.xls")
+data = xl.open_workbook("MCS_EAF.xls")
 sheet = data.sheet_by_index(0)
 print(sheet.cell_value(0, 0))
 print(sheet.cell_value(0, 4))

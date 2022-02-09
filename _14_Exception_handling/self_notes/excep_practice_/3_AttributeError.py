@@ -2,7 +2,7 @@
 
 
 Python: AttributeError
-Last Updated : 09 Aug, 2021
+
 In every programming language, if we develop new programs, there is a high chance of getting errors or exceptions.
 These errors yield to the program not being executed. One of the error in Python mostly occurs is “AttributeError”.
 AttributeError can be defined as an error that is raised when an attribute reference or assignment fails.
@@ -15,18 +15,27 @@ Note: Attribute errors in Python are generally raised when an invalid attribute 
 There are a few chances of getting AttributeError.
 
 """
+"""
 # AttributeError
 
-# x = 10
+x = 10
 
 # Raises an AttributeError
-# x.append(6)  # AttributeError: 'int' object has no attribute 'append'
+x.append(6)  # AttributeError: 'int' object has no attribute 'append'
 
 # Raises an AttributeError as there is no
 # method as fst for strings
-# string = "The famous  movie is { }".fst("ali")  AttributeError: 'str' object has no attribute 'fst'
-# print(string)
+string = "The famous  movie is { }".fst("ali")  AttributeError: 'str' object has no attribute 'fst'
+print(string)
 
+o/p:
+
+ File "<input>", line 8
+    string = "The famous  movie is { }".fst("ali")  AttributeError: 'str' object has no attribute 'fst'
+                                                    ^
+SyntaxError: invalid syntax
+
+"""
 
 def attribute_error(a):
     try:
@@ -42,8 +51,3 @@ attribute_error(12.8)
 attribute_error(True)
 attribute_error(10j)
 attribute_error('a')
-
-
-
-
-

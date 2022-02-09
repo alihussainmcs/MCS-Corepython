@@ -25,7 +25,8 @@ def get_details(x, y):
             raise ZeroDivisionError("Please enter valid numerator/denominator")
         result = x / y
         print("Hello World")
-    except ZeroDivisionError as zde:  # ZeroDivisionError zde = ZeroDivisionError("Please enter valid numerator/denominator")
+    except ZeroDivisionError as zde:  # ZeroDivisionError zde = ZeroDivisionError("Please enter valid numerator
+                /denominator")
         print(zde)
     return result
 

@@ -103,6 +103,7 @@ number2 = 0
 
 # Division by zero is being done
 # encapsulating the doubtful code in try clause
+
 try:
     quotient = number1 / number2
     print("Quotient is {}".format(quotient))

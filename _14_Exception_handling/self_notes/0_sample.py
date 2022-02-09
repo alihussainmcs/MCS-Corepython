@@ -67,7 +67,8 @@ Exception
 # Exception handling
 """
 Traceback (most recent call last):
-  File "C:/Users/0_sir_notes/git_projects/Batch_16/B16_PythonTraining/_14_Exception_handling/mypractice/test1.py", line 11, in <module>
+  File "C:/Users/0_sir_notes/git_projects/Batch_16/B16_PythonTraining/_14_Exception_handling/mypractice/test1.py", 
+                line 11, in <module>
     print("Result is ", in_val + 10)
 TypeError: must be str, not int
 """
@@ -93,8 +94,8 @@ except NameError:
 
 print("----------------------------------------------------------------------")
 
+
 try:
     print(a)
 except NameError:
     print("a value not defined ")
-

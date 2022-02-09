@@ -84,6 +84,7 @@ Step 2:  Retrieval    : We are getting length of string
 Step 3:  Datatype     : String : 'Hello World'
 Step 4:  State :
          Behavior:
+         
 '''
 print("-----------------------------------------------------------------------")
 # State  --> Variables

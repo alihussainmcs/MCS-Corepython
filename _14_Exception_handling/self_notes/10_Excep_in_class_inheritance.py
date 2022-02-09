@@ -46,12 +46,14 @@ for cls in [X, Y, Z]:
         print("X")  # Exception
 
     '''
+    
     except X:         # Exception
         print("X")
     except Y:         # ArithmeticError
         print("Y")
     except Z:
         print("Z")    # ZeroDivisionError
+        
     '''
 
 print("--------------------------------------------------------")

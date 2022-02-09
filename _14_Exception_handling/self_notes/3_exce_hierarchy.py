@@ -4,12 +4,14 @@ try:
     c = m / n
 except ZeroDivisionError as e:
     print("The zero can't be divided")
+
 try:
     n = 2
     m = 'HEllo'
     p = m + n
 except TypeError:
     print('The number is in the string format')
+
 try:
     from cv import pandas
 except Exception:
@@ -23,10 +25,12 @@ except TypeError:
     print("x is not defined")
 except:
     print("Error")
+
 try:
     print(a + b)
 except:
     print("exception occured")
+
 try:
     print(hello)
 except SyntaxError as e:
