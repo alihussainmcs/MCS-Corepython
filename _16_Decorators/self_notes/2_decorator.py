@@ -9,12 +9,15 @@ def hello_decorator():
     print("MCS")
 
 
-'''Above code is equivalent to -
+'''
+Above code is equivalent to -
 
 def hello_decorator():
     print("MCS")
 
-hello_decorator = mcs_decorator(hello_decorator)'''
+hello_decorator = mcs_decorator(hello_decorator)
+
+'''
 
 In the above code, gfg_decorator is a callable function, will add some code on the top of some another callable
 function, hello_decorator function and return the wrapper function.
@@ -124,10 +127,10 @@ print("Sum =", sum_two_numbers(a, b))
 print("-----------------------------------------------------------------------------------")
 
 """
-In the above example_1, you may notice a keen difference in the parameters of the inner function. The inner function takes
-the argument as *args and **kwargs which means that a tuple of positional arguments or a dictionary of keyword arguments
-can be passed of any length. This makes it a general decorator that can decorate a function having any number of 
-arguments.
+In the above example_1, you may notice a keen difference in the parameters of the inner function. The inner function 
+takes the argument as *args and **kwargs which means that a tuple of positional arguments or a dictionary of keyword 
+arguments can be passed of any length. This makes it a general decorator that can decorate a function having any number 
+of arguments.
 
 
 Chaining Decorators
@@ -162,3 +165,35 @@ def num():
 print(num())
 
 # The above example_1 is similar to calling the function as     --–>     decor1(decor(num))
+
+
+print('----------------------------------------------------------------------')
+
+from datetime import datetime
+
+
+def log_datetime(func):
+    """Log the date and time of a function"""
+
+    def wrapper():
+        print(f'Function: {func.__name__}\nRun on: {datetime.today().strftime("%Y-%m-%d %H:%M:%S")}')
+        print(f'{"-" * 30}')
+        func()
+
+    return wrapper
+
+
+@log_datetime
+def daily_backup():
+    print('Daily backup job has finished.')
+
+
+daily_backup()
+
+'''
+o/p:
+Function: daily_backup
+Run on: 2022-02-10 09:50:47
+------------------------------
+Daily backup job has finished.
+'''

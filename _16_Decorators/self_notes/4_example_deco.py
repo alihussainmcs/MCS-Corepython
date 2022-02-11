@@ -25,3 +25,40 @@ def decorated_function_with_arguments(function_arg1, function_arg2, function_arg
 
 
 decorated_function_with_arguments(pandas, "Science", "Tools")
+
+print('------------------------------------------------------------------------------')
+
+
+def a_decorator_passing_arbitrary_arguments(function_to_decorate):
+    def a_wrapper_accepting_arbitrary_arguments(*args, **kwargs):
+        print('The positional arguments are', args)
+        print('The keyword arguments are', kwargs)
+        function_to_decorate(*args)
+
+    return a_wrapper_accepting_arbitrary_arguments
+
+
+@a_decorator_passing_arbitrary_arguments
+def function_with_no_argument():
+    print("No arguments here.")
+
+
+function_with_no_argument()
+print('----------------')
+
+
+@a_decorator_passing_arbitrary_arguments
+def function_with_arguments(a, b, c):
+    print(a, b, c)
+
+
+function_with_arguments(1, 2, 3)
+print('----------------')
+
+
+@a_decorator_passing_arbitrary_arguments
+def function_with_keyword_arguments():
+    print("This has shown keyword arguments")
+
+
+function_with_keyword_arguments(first_name="Ali", last_name="Hussain")

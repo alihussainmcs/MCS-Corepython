@@ -86,8 +86,9 @@ def create_adder(x):
 add_15 = create_adder(15)
 
 print(add_15(10))
+
 """
-In the above example_1, we have created a function inside of another function and then have returned the function created 
-inside.
+In the above example_1, we have created a function inside of another function and then have returned the function 
+created inside.
 The above three examples depict the important concepts that are needed to understand decorators. 
 """

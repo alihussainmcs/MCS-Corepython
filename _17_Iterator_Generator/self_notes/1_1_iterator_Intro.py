@@ -8,7 +8,7 @@ Technically, in Python, an iterator is an object which implements the iterator p
 __iter__() and __next__().
 
 Iterator vs Iterable
-Lists, tuples, dictionaries, and sets are all iterable objects. They are iterable containers which you can get an
+Lists, tuples, dictionaries, and sets are all iterable objects. They are iterable containers from which you can get an
 iterator from.
 
 All these objects have a iter() method which is used to get an iterator:
