@@ -9,6 +9,7 @@ def login():
     passwrd = request.args.get('pass')
     if uname == "ayush" and passwrd == "google":
         return "Welcome %s" % uname
+    return render_template('login.html')
 
 
 if __name__ == '__main__':
