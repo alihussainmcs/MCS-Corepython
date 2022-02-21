@@ -5,7 +5,7 @@ from . import models, schemas
 """
 1. get all tasks
 2. get task by id 
-3. create task --- i will save that to databasse
+3. create task --- i will save that to database
 4. update task by id
 5. delete task by id
 """

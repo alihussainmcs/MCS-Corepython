@@ -1,0 +1,50 @@
+Threading notes
+
+what is Threading ?
+
+A thread represent separate path to execute group of statements, these are executed by python virtual machine one by
+one. This execution is called a Thread, because PVM uses a thread to execute statements one by one.
+
+
+what is single Tasking ?
+
+In single tasking only one task is given to the processor at a time, it takes only fraction of second. Actually
+millions of instructions done per second.This means we are wasting a lot of time by processor time and
+microprocessor has to sit idle.This is draw back, But in some cases single tasking finishes tasks one by one
+without ant time gap this would be preferable.
+
+
+what is multitasking ?
+
+To use the processor time we have to assign several tasks at a time. This is called multitasking.we have 4 tasks
+load them into memory .The memory is divided into 4 parts
+The 1/4 th of second is called time slice.
+
+what is process ?
+process represents group of statement which are executed by PVM using main thread.we take a running program as an
+example.Each process will have its own memory.A programmer counter that keeps track of instruction eing executed
+The data of one process is isolated from another process.
+
+Thread also represents a group of statements within a program . Thread helps to turns one statement by main thread.
+
+what is concurrent programming ?
+
+In python ,it is possible to create multiple process and set them to work simultaneously. In same way multiple threads
+and excute them work in different parts of program simultaneously. executing the tasks or program simultaneously.
+
+GIL - Global interpreter Lock
+
+when morethan one thread is running the data of one thread is available to another thread.In such cases there is a
+possibility of data manipulations which will leads to errors.
+GIL does not allows to run more than one  thread at a time. it impose restrictions to run multiple.
+
+Uses of threads ?
+
+Threads are useful to run multiple threads more than one task at a time is called concurrent programming.
+
+Threads are mainly used in server side programs to serve the need of multiple clients on server or internet at a time.
+
+Threads are useful in games and animation
+
+
+
