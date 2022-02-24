@@ -1,16 +1,16 @@
 from fastapi import FastAPI
 import uvicorn
-from _26_fastapi.fastapi_001.blog import schemas, models
+from _26_fastapi.fastapi_001.blog import models
 from database import engine
+
+from routers import blog, user
 
 app = FastAPI()
 
 models.Base.metadata.create_all(engine)
+app.include_router(blog.router)
 
-
-@app.post('/blog')
-def create(request: schemas.Blog):
-    return request
+app.include_router(user.router)
 
 
 if __name__ == '__main__':
