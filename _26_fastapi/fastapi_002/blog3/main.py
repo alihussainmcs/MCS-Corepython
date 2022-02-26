@@ -3,7 +3,7 @@ import uvicorn
 from _26_fastapi.fastapi_001.blog import models
 from database import engine
 
-from routers import blog, user, authentication
+from routers import blog, user
 
 app = FastAPI()
 
@@ -12,7 +12,6 @@ app.include_router(blog.router)
 
 app.include_router(user.router)
 
-app.include_router(authentication.router)
 
 if __name__ == '__main__':
     uvicorn.run(app='main:app')

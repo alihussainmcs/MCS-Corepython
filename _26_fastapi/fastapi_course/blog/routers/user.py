@@ -1,8 +1,8 @@
-from fastapi import APIRouter
-from .. import database, schemas, models
+from _26_fastapi.fastapi_course.blog import schemas, database
+
 from sqlalchemy.orm import Session
-from fastapi import APIRouter, Depends, status
-from ..repository import user
+from fastapi import APIRouter, Depends
+from _26_fastapi.fastapi_course.blog.repository import user
 
 router = APIRouter(
     prefix="/user",
