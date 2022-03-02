@@ -37,17 +37,25 @@ just one place
 •	SQL statements are not executed too many times and are optimized internally
 •	Can easily drop into raw SQL whenever required
 •	Flexibility while using URL’s
+
+
 Q7. Explain Django architecture.
 Django follows the MVT or Model View Template architecture which is based on the MVC or Model View Controller
 architecture. The main difference between these two is that Django itself takes care of the controller part.
 
 According to Django, the ‘view’ basically describes the data presented to the user. It does not deal with how the data
-looks but rather what the data actually is. Views are basically callback functions for the specified URL’s and these
+looks but rather what the data actually is.
+
+Views are basically callback functions for the specified URL’s and these
 callback functions describe which data is presented.
+
 The ‘templates’ on the other hand deal with the presentation of data, thereby, separating the content from its
 presentation. In Django, views delegate to the templates to present the data.
+
 The ‘controller’ here is Django itself which sends the request to the appropriate view in accordance with the
 specified URL. This is why Django is referred to as MTV rather than MVC architecture.
+
+
 Q8. Give a brief about ‘django-admin’.
 django-admin is the command-line utility of Django for administrative tasks. Using the django-admin you can perform a
 number of tasks some of which are listed out in the following table:
@@ -62,6 +70,8 @@ Starting the development server	django-admin runserver
 Sending a test email in order to confirm the email sending through Django is working	django-admin sendtestemail
 To start the Python interactive interpreter	django-admin shell
 To show all the migrations in your project	django-admin showmigrations
+
+
 Q9. How do you connect your Django project to the database?
 Django comes with a default database which is SQLite. To connect your project to this database, use the
 following commands:
@@ -70,26 +80,38 @@ accordingly)
 2.	python manage.py makemigrations (tells Django you have created/ changed your models)
 3.	python manage.py sqlmigrate <name of the app followed by the generated id> (sqlmigrate takes the migration names
 and returns their SQL)
+
+
 Q10. What are the various files that are created when you create a Django Project? Explain briefly.
 When you create a project using the startproject command, the following files will be created:
 File Name	Description
 manage.py	A command-line utility that allows you to interact with your Django project
+
 __init__.py	An empty file that tells Python that the current directory should be considered as a Python package
+
 settings.py	Consists of the settings for the current project
+
 urls.py	Contains the URL’s for the current project
+
 wsgi.py	This is an entry-point for the web servers to serve the project you have created
+
+
 
 Q11. What are ‘Models’?
 Models are a single and definitive source for information about your data. It consists of all the essential fields and
 behaviors of the data you have stored. Often, each model will map to a single specific database table.
 In Django, models serve as the abstraction layer that is used for structuring and manipulating your data. Django models
 are a subclass of the django.db.models.Model class and the attributes in the models represent database fields.
+
+
 Q12. What are ‘views’?
 Django views serve the purpose of encapsulation. They encapsulate the logic liable for processing a user’s request and
 for returning
 the response back to the user. Views in Django either return an HttpResponse or raise an exception such as Http404.
 HttpResponse contains the objects that consist of the content that is to be rendered to the user. Views can also be
 used to perform tasks such as read records from the database, delegate to the templates, generate a PDF file, etc.
+
+
 Q13. What are ‘templates’?
 Django’s template layer renders the information to be presented to the user in a designer-friendly format. Using
 templates, you can generate HTML dynamically. The HTML consists of both static as well as dynamic parts of the content.
