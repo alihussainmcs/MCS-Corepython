@@ -11,8 +11,7 @@ Flask is created by Armin Ronacher and is developed as a part of the Pallets Pro
 
 Q #2) Is the Flask framework open source?
 
-Answer: Yes, the Flask framework is open-source. The source code of the Flask framework is available here . It is
-    released under the BSD-3 Clause “New” or “Revised” License.
+Answer: Yes, the Flask framework is open-source. It is released under the BSD-3 Clause “New” or “Revised” License.
 
 Q #3) How to get the development version of the Flask framework?
 
@@ -305,6 +304,7 @@ Q #29) How to create a RESTful application in Flask?
 Answer: A RESTful application can be created in Flask with the help of many extensions.
 
 Some proven Flask extensions are listed below.
+
 
 Flask-API
 Flask-RESTful
